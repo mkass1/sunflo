@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <SunfloLogo />
+            <SunfloLogo variant="wide" size="lg" />
             <p className="mt-6 text-sm text-gray-400 leading-relaxed">
               South Florida&apos;s trusted auto detailing experts since 2017.
               Passionate about paint, precision, and perfection.

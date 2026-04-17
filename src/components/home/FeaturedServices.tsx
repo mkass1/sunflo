@@ -112,14 +112,14 @@ export default function FeaturedServices() {
         >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-600 mb-3">
+              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand-400 mb-3">
                 Also available at our Oakland Park shop
               </p>
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
                 {["Ceramic Coatings", "Paint Protection Film", "Vehicle Wraps", "Window Tinting"].map((s, i) => (
                   <span key={s} className="flex items-center gap-6">
                     {i > 0 && <span className="hidden sm:block w-px h-3 bg-dark-border" />}
-                    <span className="text-sm text-gray-400 font-medium tracking-wide">{s}</span>
+                    <span className="text-sm text-white font-semibold tracking-wide">{s}</span>
                   </span>
                 ))}
               </div>
