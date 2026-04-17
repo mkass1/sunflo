@@ -16,6 +16,15 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import CTABanner from "@/components/layout/CTABanner";
 import { galleryImages } from "@/data/gallery";
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://sunflodetailing.com/" },
+    { "@type": "ListItem", position: 2, name: "Gallery", item: "https://sunflodetailing.com/gallery" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "Gallery",
   description:
@@ -25,6 +34,7 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Page hero */}
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>
@@ -61,7 +71,7 @@ export default function GalleryPage() {
               href="https://instagram.com/sunflodetailing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-brand-500 text-white font-semibold px-6 py-3 rounded-sm hover:bg-brand-600 transition-colors tracking-wide"
+              className="inline-flex items-center gap-2 bg-brand-600 text-white font-semibold px-6 py-3 rounded-sm hover:bg-brand-700 transition-colors tracking-wide"
             >
               @sunflodetailing
               <ExternalLink size={16} />

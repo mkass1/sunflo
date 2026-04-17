@@ -26,10 +26,12 @@ const pillars = [
 
 export default function AboutPreview() {
   return (
-    <section className="relative py-20 bg-dark-muted overflow-hidden">
-      {/* Background accents */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-brand-500/[0.05] blur-[110px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-700/[0.04] blur-[90px] pointer-events-none" />
+    <section className="relative py-20 sm:py-28 bg-dark-muted">
+      {/* Background accents — clipped independently */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 right-0 w-72 h-72 bg-brand-500/[0.05] blur-[110px]" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-brand-700/[0.04] blur-[90px]" />
+      </div>
 
       {/* Top hairline */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-brand-500/40" />
@@ -49,7 +51,7 @@ export default function AboutPreview() {
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-dark-border">
               <Image
                 src="/images/about/founder.jpg"
-                alt="Flo — Owner & Lead Detailer at Sunflo Detailing"
+                alt="Jason — Owner & Lead Detailer at Sunflo Detailing"
                 fill
                 className="object-cover object-[center_15%]"
                 sizes="(max-width: 1024px) 100vw, 42vw"
@@ -81,7 +83,7 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.05 }}
-              className="text-[11px] font-semibold tracking-[0.3em] uppercase text-brand-500 mb-4"
+              className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500 mb-4"
             >
               Est. 2017 · Oakland Park, FL
             </motion.p>
@@ -104,7 +106,7 @@ export default function AboutPreview() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="text-gray-300 text-base leading-relaxed max-w-md mb-6"
             >
-              Started by Flo in Oakland Park in 2017. Still the same small
+              Started by Jason in Oakland Park in 2017. Still the same small
               in-house team, same standards — no subcontractors, no shortcuts,
               every car treated like it&apos;s our own.
             </motion.p>
@@ -127,7 +129,7 @@ export default function AboutPreview() {
                     {pillar.num}
                   </span>
                   <div className="pt-1">
-                    <p className="text-[11px] tracking-[0.25em] uppercase text-gray-500 mb-2">
+                    <p className="text-[11px] font-medium tracking-[0.14em] uppercase text-gray-400 mb-2">
                       {pillar.title}
                     </p>
                     <p className="text-white text-sm leading-relaxed">
@@ -153,9 +155,9 @@ export default function AboutPreview() {
               className="text-xl text-white italic mb-1"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              — Flo
+              — Jason a.k.a Flo
             </p>
-            <p className="text-[11px] tracking-[0.25em] uppercase text-gray-500">
+            <p className="text-[11px] font-medium tracking-[0.14em] uppercase text-gray-400">
               Owner &amp; Lead Detailer
             </p>
           </div>

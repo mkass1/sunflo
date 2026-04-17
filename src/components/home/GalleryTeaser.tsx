@@ -12,7 +12,7 @@ export default function GalleryTeaser() {
   const preview = galleryImages.slice(0, 6);
 
   return (
-    <section className="py-28 bg-dark-muted overflow-hidden">
+    <section className="py-20 sm:py-28 bg-dark-muted">
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <SectionHeading

@@ -3,11 +3,13 @@ import type { ServiceItem } from "@/types";
 export const services: ServiceItem[] = [
   {
     id: "complete-interior",
-    name: "Complete Interior Detailing",
+    name: "Full Detail",
     tagline: "A deep clean your cabin deserves",
     description:
       "Experience the pinnacle of interior cleanliness. Every inch of your car's cabin is meticulously attended to — from the deepest carpet fibers to the finest dashboard detail — leaving you with a fresh, pristine driving environment.",
-    pricing: { small: 300, medium: 350, large: 400 },
+    pricing: { small: 200, medium: 350, large: 400 },
+    badge: "3 Tiers",
+    hasTiers: true,
     image: "/images/services/interior.jpg",
     exteriorServices: [],
     interiorServices: [

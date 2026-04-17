@@ -55,7 +55,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
               <Link
                 href="/contact"
-                className="hidden md:inline-flex items-center bg-brand-500 text-white text-sm font-semibold px-5 py-2.5 rounded-sm hover:bg-brand-600 transition-colors tracking-wide shadow-lg shadow-brand-500/20"
+                className="hidden md:inline-flex items-center bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-sm hover:bg-brand-700 transition-colors tracking-wide shadow-lg shadow-brand-500/20"
               >
                 Book Now
               </Link>

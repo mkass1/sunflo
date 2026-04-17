@@ -5,6 +5,7 @@ import BrandStrip from "@/components/home/BrandStrip";
 import FeaturedServices from "@/components/home/FeaturedServices";
 import GalleryTeaser from "@/components/home/GalleryTeaser";
 import TestimonialsPreview from "@/components/home/TestimonialsPreview";
+import LocationMap from "@/components/home/LocationMap";
 import CTABanner from "@/components/layout/CTABanner";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function HomePage() {
       <GalleryTeaser />
       <TestimonialsPreview />
       <CTABanner />
+      <LocationMap />
     </>
   );
 }

@@ -20,13 +20,12 @@ export default function CTABanner({
   buttonHref = "/contact",
 }: CTABannerProps) {
   return (
-    <section className="relative overflow-hidden py-28 bg-dark border-t border-brand-500/20">
-      {/* Blue glow anchored upper-left behind the headline */}
-      <div className="absolute -top-40 -left-40 w-[700px] h-[700px] bg-brand-700/18 rounded-full blur-[180px] pointer-events-none" />
-      {/* Subtle right-side diagonal wash */}
-      <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-brand-900/20 via-transparent to-transparent pointer-events-none" />
-      {/* Top hairline */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
+    <section className="relative py-20 sm:py-28 bg-dark border-t border-brand-500/20">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute -top-40 -left-40 w-[700px] h-[700px] bg-brand-700/18 rounded-full blur-[180px]" />
+        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-brand-900/20 via-transparent to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
+      </div>
 
       <Container>
         <div className="grid lg:grid-cols-12 gap-16 items-center">
@@ -38,7 +37,7 @@ export default function CTABanner({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-[11px] font-semibold tracking-[0.2em] uppercase text-brand-500 mb-6"
+              className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500 mb-6"
             >
               Oakland Park, FL · Est. 2017
             </motion.p>
@@ -87,7 +86,7 @@ export default function CTABanner({
               <div className="absolute bottom-0 right-0 w-10 h-px bg-brand-500/30" />
               <div className="absolute bottom-0 right-0 w-px h-10 bg-brand-500/30" />
 
-              <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-brand-500 mb-4">
+              <p className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500 mb-4">
                 Book An Appointment
               </p>
 
@@ -98,7 +97,7 @@ export default function CTABanner({
               <div className="flex flex-col gap-3">
                 <Link
                   href={buttonHref}
-                  className="inline-flex items-center justify-center gap-2.5 bg-brand-500 text-white font-semibold px-8 py-4 rounded-sm hover:bg-brand-600 transition-all duration-200 tracking-wide text-sm shadow-lg shadow-brand-500/25 group"
+                  className="inline-flex items-center justify-center gap-2.5 bg-brand-600 text-white font-semibold px-8 py-4 rounded-sm hover:bg-brand-700 transition-all duration-200 tracking-wide text-sm shadow-lg shadow-brand-500/25 group"
                 >
                   {buttonText}
                   <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform duration-200" />

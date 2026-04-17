@@ -21,7 +21,7 @@ function PricingTier({
 }) {
   return (
     <div className="flex flex-col items-center p-4 bg-dark-muted border border-dark-border rounded-sm">
-      <span className="text-xs text-gray-500 uppercase tracking-widest mb-2">{label}</span>
+      <span className="text-xs text-gray-500 uppercase tracking-[0.14em] mb-2">{label}</span>
       <span
         className="text-2xl font-bold text-white"
         style={{ fontFamily: "var(--font-heading)" }}
@@ -36,7 +36,7 @@ function ServiceList({ title, items }: { title: string; items: string[] }) {
   if (!items || items.length === 0) return null;
   return (
     <div>
-      <h4 className="text-xs font-semibold text-brand-400 uppercase tracking-widest mb-3">
+      <h4 className="text-xs font-semibold text-brand-400 uppercase tracking-[0.14em] mb-3">
         {title}
       </h4>
       <ul className="grid sm:grid-cols-2 gap-2">
@@ -68,7 +68,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/30 to-transparent" />
         {service.badge && (
-          <div className="absolute top-4 right-4 bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-sm tracking-wide">
+          <div className="absolute top-4 right-4 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-sm tracking-wide">
             {service.badge}
           </div>
         )}
@@ -135,7 +135,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         {/* CTA */}
         <Link
           href="/contact"
-          className="mt-6 flex w-full items-center justify-center gap-2 bg-brand-500 text-white font-semibold py-3.5 rounded-sm hover:bg-brand-600 transition-colors tracking-wide text-sm"
+          className="mt-6 flex w-full items-center justify-center gap-2 bg-brand-600 text-white font-semibold py-3.5 rounded-sm hover:bg-brand-700 transition-colors tracking-wide text-sm"
         >
           Book This Service
         </Link>

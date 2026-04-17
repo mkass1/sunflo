@@ -47,7 +47,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
             className={cn(
               "px-4 py-2 text-sm font-medium rounded-sm border transition-all duration-200",
               activeCategory === cat.value
-                ? "bg-brand-500 border-brand-500 text-white"
+                ? "bg-brand-600 border-brand-600 text-white"
                 : "border-dark-border text-gray-400 hover:border-brand-500/40 hover:text-white"
             )}
           >

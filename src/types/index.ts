@@ -16,6 +16,7 @@ export interface ServiceItem {
   benefits?: string[];
   featured?: boolean;
   badge?: string;
+  hasTiers?: boolean;
 }
 
 export interface FAQ {

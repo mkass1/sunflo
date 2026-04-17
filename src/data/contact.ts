@@ -7,4 +7,6 @@ export const contact = {
   addressShort: "Oakland Park, FL",
   instagram: "https://instagram.com/sunflodetailing",
   instagramHandle: "@sunflodetailing",
+  facebook: "https://www.facebook.com/Sunflodetailing/",
+  facebookHandle: "Sunflodetailing",
 };

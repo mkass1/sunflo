@@ -24,9 +24,11 @@ export default function TestimonialsPreview() {
   const [featured, ...rest] = testimonials.slice(0, 3);
 
   return (
-    <section className="relative py-28 bg-dark overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-brand-500/40" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-700/[0.04] blur-[120px] pointer-events-none" />
+    <section className="relative py-20 sm:py-28 bg-dark">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-brand-500/40" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-700/[0.04] blur-[120px]" />
+      </div>
 
       <Container className="relative">
         <div className="text-center mb-16">

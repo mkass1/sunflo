@@ -10,9 +10,26 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
     </svg>
   );
 }
+
+function FacebookIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4C16.5 3.4 15.5 3.3 14.4 3.3c-2.3 0-3.9 1.4-3.9 4v2.5H7.8V13h2.7v8h3z" />
+    </svg>
+  );
+}
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/contact/ContactForm";
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://sunflodetailing.com/" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: "https://sunflodetailing.com/contact" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Contact & Book",
@@ -23,6 +40,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Page hero */}
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>
@@ -93,6 +111,22 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
+                      <FacebookIcon size={16} />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Facebook</p>
+                      <a
+                        href="https://www.facebook.com/Sunflodetailing/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-300 text-sm hover:text-brand-400 transition-colors"
+                      >
+                        Sunflodetailing
+                      </a>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
                       <Phone size={16} className="text-brand-400" />
                     </div>
                     <div>
@@ -109,8 +143,8 @@ export default function ContactPage() {
                     <div>
                       <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Hours</p>
                       <p className="text-gray-300 text-sm">
-                        Mon – Sat: By Appointment<br />
-                        Sunday: Closed
+                        Mon – Fri: 8:00 AM – 6:00 PM<br />
+                        (By appointment only)
                       </p>
                     </div>
                   </li>

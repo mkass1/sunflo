@@ -1,20 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Sora, Big_Shoulders } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
 
-const inter = Inter({
+const sora = Sora({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
-const outfit = Outfit({
+const bigShoulders = Big_Shoulders({
   variable: "--font-outfit",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -95,18 +96,38 @@ const localBusinessJsonLd = {
     postalCode: "33334",
     addressCountry: "US",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 26.1725,
+    longitude: -80.1350,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+  ],
   areaServed: [
     { "@type": "City", name: "Oakland Park" },
     { "@type": "City", name: "Fort Lauderdale" },
     { "@type": "City", name: "Wilton Manors" },
     { "@type": "City", name: "Pompano Beach" },
+    { "@type": "City", name: "Lighthouse Point" },
+    { "@type": "City", name: "Lauderdale-by-the-Sea" },
     { "@type": "AdministrativeArea", name: "South Florida" },
   ],
-  sameAs: [contact.instagram],
+  sameAs: [
+    contact.instagram,
+    contact.facebook,
+    "https://share.google/ZTtTeqjzFHvDk16mr",
+    "https://www.google.com/search?kgmid=/g/11j37x7gnx",
+  ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: String(testimonials.length),
+    reviewCount: "120",
     bestRating: "5",
     worstRating: "1",
   },
@@ -133,7 +154,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${inter.variable} ${outfit.variable} h-full antialiased`}
+      className={`${sora.variable} ${bigShoulders.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-dark text-gray-100">
         <script

@@ -168,7 +168,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="flex items-center justify-center gap-2 bg-brand-500 text-white font-semibold py-4 rounded-sm hover:bg-brand-600 transition-colors tracking-wide disabled:opacity-60 disabled:cursor-not-allowed"
+        className="flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold py-4 rounded-sm hover:bg-brand-700 transition-colors tracking-wide disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {loading ? "Sending..." : "Send Message"}
         {!loading && <Send size={16} />}

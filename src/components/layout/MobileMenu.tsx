@@ -63,7 +63,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <Link
           href="/contact"
           onClick={onClose}
-          className="block w-full bg-brand-500 text-white text-center font-semibold py-4 rounded-sm tracking-wide hover:bg-brand-600 transition-colors"
+          className="block w-full bg-brand-600 text-white text-center font-semibold py-4 rounded-sm tracking-wide hover:bg-brand-700 transition-colors"
         >
           Book Your Service
         </Link>

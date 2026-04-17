@@ -18,7 +18,7 @@ export default function SectionHeading({
   return (
     <div className={cn(centered && "text-center", className)}>
       {label && (
-        <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-500">
+        <p className="mb-3 text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500">
           {label}
         </p>
       )}

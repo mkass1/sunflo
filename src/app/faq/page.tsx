@@ -10,11 +10,34 @@ import CTABanner from "@/components/layout/CTABanner";
 import { faqs } from "@/data/faq";
 import { testimonials } from "@/data/testimonials";
 
+const SITE_URL = "https://sunflodetailing.com";
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "FAQ", item: `${SITE_URL}/faq` },
+  ],
+};
+
 export default function FAQPage() {
   const [openId, setOpenId] = useState<string | null>("1");
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Page hero */}
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>

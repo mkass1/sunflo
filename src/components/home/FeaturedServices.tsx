@@ -20,10 +20,11 @@ export default function FeaturedServices() {
   const featured = services.filter((s) => s.featured);
 
   return (
-    <section className="relative py-28 bg-dark overflow-hidden">
-      {/* Atmosphere */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-brand-500/40" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-700/[0.04] blur-[120px] pointer-events-none" />
+    <section className="relative py-20 sm:py-28 bg-dark">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-px bg-brand-500/40" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-700/[0.04] blur-[120px]" />
+      </div>
 
       <Container>
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
@@ -74,8 +75,23 @@ export default function FeaturedServices() {
                   {service.name}
                 </h3>
 
+                {service.hasTiers && (
+                  <div className="flex items-end gap-1.5">
+                    {[3, 5, 7].map((h, idx) => (
+                      <div
+                        key={idx}
+                        className="w-2.5 bg-brand-500/70 rounded-[1px]"
+                        style={{ height: `${h}px` }}
+                      />
+                    ))}
+                    <span className="text-[9px] tracking-[0.22em] uppercase text-white/40 font-semibold ml-0.5 leading-none mb-[1px]">
+                      3 levels
+                    </span>
+                  </div>
+                )}
+
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[10px] tracking-widest uppercase text-gray-500">from</span>
+                  <span className="text-[10px] tracking-[0.12em] uppercase text-gray-500">from</span>
                   <span
                     className="text-brand-400 font-bold leading-none tabular-nums"
                     style={{
@@ -111,11 +127,11 @@ export default function FeaturedServices() {
           className="mt-12 pt-8 border-t border-dark-border"
         >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-            <div>
+            <div className="text-center sm:text-left">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand-400 mb-3">
                 Also available at our Oakland Park shop
               </p>
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-6 gap-y-2">
                 {["Ceramic Coatings", "Paint Protection Film", "Vehicle Wraps", "Window Tinting"].map((s, i) => (
                   <span key={s} className="flex items-center gap-6">
                     {i > 0 && <span className="hidden sm:block w-px h-3 bg-dark-border" />}
@@ -127,7 +143,7 @@ export default function FeaturedServices() {
 
             <Link
               href="/contact"
-              className="shrink-0 inline-flex items-center gap-2.5 bg-brand-500 text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-brand-600 transition-all duration-200 tracking-wide shadow-lg shadow-brand-500/20 group"
+              className="shrink-0 self-center sm:self-auto inline-flex items-center gap-2.5 bg-brand-600 text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-brand-700 transition-all duration-200 tracking-wide shadow-lg shadow-brand-500/20 group"
             >
               Get a Custom Quote
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
