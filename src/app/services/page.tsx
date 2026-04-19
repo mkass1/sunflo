@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import Container from "@/components/ui/Container";
-import SectionHeading from "@/components/ui/SectionHeading";
-import ServiceCard from "@/components/services/ServiceCard";
-import CTABanner from "@/components/layout/CTABanner";
+import ServicesContent from "@/components/services/ServicesContent";
 import { services } from "@/data/services";
 
 const SITE_URL = "https://sunflodetailing.com";
+
+const coreServices = services.filter((s) => s.category === "core");
+const specialtyServices = services.filter((s) => s.category === "specialty");
 
 const servicesJsonLd = {
   "@context": "https://schema.org",
@@ -19,12 +19,14 @@ const servicesJsonLd = {
       description: s.description,
       provider: { "@id": `${SITE_URL}#business` },
       areaServed: "South Florida",
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "USD",
-        lowPrice: s.pricing.small,
-        highPrice: s.pricing.large,
-      },
+      ...(s.pricing && {
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "USD",
+          lowPrice: s.pricing.small,
+          highPrice: s.pricing.large,
+        },
+      }),
     },
   })),
 };
@@ -49,42 +51,7 @@ export default function ServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      {/* Page hero */}
-      <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
-        <Container>
-          <SectionHeading
-            label="Services & Pricing"
-            title="Detailing Packages"
-            subtitle="Transparent pricing, no hidden fees. Every package is tailored to your vehicle size — Small, Medium, or Large — so you only pay for what you need."
-          />
-        </Container>
-      </section>
-
-      {/* Service grid */}
-      <section className="py-20 bg-dark">
-        <Container>
-          <div className="grid md:grid-cols-2 gap-8">
-            {services.map((service) => (
-              <ServiceCard key={service.id} service={service} />
-            ))}
-          </div>
-
-          {/* Additional services note */}
-          <div className="mt-12 p-6 bg-dark-card border border-dark-border rounded-sm text-center">
-            <p className="text-gray-400 text-sm leading-relaxed">
-              We also offer{" "}
-              <span className="text-white font-medium">paint protection film (PPF)</span>,{" "}
-              <span className="text-white font-medium">window tinting</span>,{" "}
-              and <span className="text-white font-medium">vinyl wraps</span>.{" "}
-              <a href="/contact" className="text-brand-400 hover:text-brand-300 transition-colors font-medium">
-                Contact us for a custom quote.
-              </a>
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      <CTABanner />
+      <ServicesContent coreServices={coreServices} specialtyServices={specialtyServices} />
     </>
   );
 }

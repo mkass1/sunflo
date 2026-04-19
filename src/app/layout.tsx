@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Sora, Big_Shoulders } from "next/font/google";
+import { Sora, Big_Shoulders, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const sora = Sora({
   variable: "--font-inter",
@@ -154,7 +157,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${sora.variable} ${bigShoulders.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", sora.variable, bigShoulders.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col bg-dark text-gray-100">
         <script

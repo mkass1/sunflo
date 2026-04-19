@@ -9,7 +9,7 @@ export interface ServiceItem {
   name: string;
   tagline: string;
   description: string;
-  pricing: ServicePricing;
+  pricing?: ServicePricing;
   image: string;
   exteriorServices: string[];
   interiorServices: string[];
@@ -17,6 +17,8 @@ export interface ServiceItem {
   featured?: boolean;
   badge?: string;
   hasTiers?: boolean;
+  quoteOnly?: boolean;
+  category?: "core" | "specialty";
 }
 
 export interface FAQ {

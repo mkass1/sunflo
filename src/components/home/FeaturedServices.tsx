@@ -99,7 +99,7 @@ export default function FeaturedServices() {
                       fontSize: `${1.9 + i * 0.1}rem`,
                     }}
                   >
-                    {formatPrice(service.pricing.small)}
+                    {service.pricing ? formatPrice(service.pricing.small) : "—"}
                   </span>
                 </div>
 

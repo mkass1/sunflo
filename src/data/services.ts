@@ -7,10 +7,11 @@ export const services: ServiceItem[] = [
     tagline: "A deep clean your cabin deserves",
     description:
       "Experience the pinnacle of interior cleanliness. Every inch of your car's cabin is meticulously attended to — from the deepest carpet fibers to the finest dashboard detail — leaving you with a fresh, pristine driving environment.",
-    pricing: { small: 200, medium: 350, large: 400 },
-    badge: "3 Tiers",
+    pricing: { small: 300, medium: 350, large: 400 },
+    badge: "Interior",
     hasTiers: true,
     image: "/images/services/interior.jpg",
+    category: "core",
     exteriorServices: [],
     interiorServices: [
       "Steam Clean Entire Interior",
@@ -35,6 +36,7 @@ export const services: ServiceItem[] = [
       "Our gloss enhancement process removes above-surface defects while adding a deep, glossy finish. Topped with an entry-level ceramic coating to protect your investment and keep that shine lasting longer.",
     pricing: { small: 800, medium: 900, large: 1000 },
     image: "/images/services/gloss.jpg",
+    category: "core",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
@@ -62,6 +64,7 @@ export const services: ServiceItem[] = [
       "Removes light swirls, scratches, and some below-surface defects. The result is a super glossy, deep finish topped with a professional-grade ceramic coating — the ideal balance of correction and protection.",
     pricing: { small: 1600, medium: 1800, large: 2000 },
     image: "/images/services/paint-enhancement.jpg",
+    category: "core",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
@@ -91,6 +94,7 @@ export const services: ServiceItem[] = [
       "Our multi-stage paint correction process removes 95% of all above and below-surface scratches, creating the ultimate gloss and paint clarity. Finished with two layers of professional-grade ceramic coating for maximum, long-lasting protection.",
     pricing: { small: 2000, medium: 2500, large: 3000 },
     image: "/images/services/paint-correction.jpg",
+    category: "core",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
@@ -110,5 +114,85 @@ export const services: ServiceItem[] = [
     interiorServices: [],
     featured: true,
     badge: "Premium",
+  },
+  {
+    id: "lease-return",
+    name: "Lease Return Package",
+    tagline: "Hand your lease back in like-new condition",
+    description:
+      "Turning in your lease? We restore the interior to near-factory condition and address exterior blemishes before the inspection — so you're not paying wear-and-tear fees on someone else's standards.",
+    image: "/images/services/interior.jpg",
+    category: "specialty",
+    quoteOnly: true,
+    badge: "By Quote",
+    exteriorServices: [
+      "Two Bucket Hand Wash",
+      "Wheels & Wheel Wells Cleaned",
+      "Tires Cleaned & Conditioned",
+      "Hand Dry",
+      "Minor Swirl & Scuff Reduction",
+      "Trim Dressed",
+    ],
+    interiorServices: [
+      "Steam Clean Entire Interior",
+      "Spot Treat Seats, Carpets & Mats",
+      "Deep Clean Door Jambs & Cupholders",
+      "Center Console & Dashboard Detailed",
+      "All Glass Cleaned Inside & Out",
+      "Vacuum & Floor Mat Cleaning",
+    ],
+  },
+  {
+    id: "new-vehicle-protection",
+    name: "New Vehicle Protection",
+    tagline: "Protect your new car before the first rainstorm",
+    description:
+      "Your new car leaves the factory unprotected. We decontaminate the paint, apply a professional-grade ceramic coating, and seal the interior fabrics and leather — locking in that factory finish before the elements get a chance.",
+    image: "/images/services/paint-enhancement.jpg",
+    category: "specialty",
+    quoteOnly: true,
+    badge: "By Quote",
+    exteriorServices: [
+      "Paint Decontamination",
+      "Clay Bar",
+      "Gloss Enhancement Prep",
+      "Professional-Grade Ceramic Coating",
+      "Ceramic Wheel-Face Sealant",
+    ],
+    interiorServices: [
+      "Fabric & Carpet Protectant",
+      "Leather Conditioning & Sealant",
+      "Glass Coating",
+    ],
+    benefits: [
+      "PPF — Hood, Front Bumper & Mirrors",
+      "PPF — Door Edge Guards & Rockers",
+      "Window Tint",
+      "Chrome-Delete Wraps",
+    ],
+  },
+  {
+    id: "boat-rv",
+    name: "Boat & RV Detailing",
+    tagline: "Saltwater-ready care for South Florida's other rides",
+    description:
+      "Specialized detailing for marine craft and recreational vehicles. Salt-safe exterior wash, oxidation removal, marine-grade ceramic or wax protection, and full cabin interior deep cleaning — built for what South Florida actually throws at your ride.",
+    image: "/images/services/paint-correction.jpg",
+    category: "specialty",
+    quoteOnly: true,
+    badge: "By Quote",
+    exteriorServices: [
+      "Salt-Safe Rinse & Wash",
+      "Oxidation Removal",
+      "Compound & Machine Polish",
+      "Marine-Grade Ceramic Coating or Wax",
+      "Metal Trim Polish",
+    ],
+    interiorServices: [
+      "Cabin Deep Clean",
+      "Vinyl Seat Conditioning",
+      "Upholstery Steam Clean",
+      "Glass & Mirror Polish",
+    ],
   },
 ];
