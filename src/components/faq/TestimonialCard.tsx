@@ -31,7 +31,9 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
             <p className="text-gray-500 text-xs mt-0.5">{testimonial.vehicle}</p>
           )}
           {testimonial.date && (
-            <p className="text-gray-600 text-xs mt-0.5">{testimonial.date}</p>
+            <p className="text-gray-600 text-xs mt-0.5">
+              {new Date(`${testimonial.date}-01`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" })}
+            </p>
           )}
         </div>
         <StarRating rating={testimonial.rating} />

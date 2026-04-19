@@ -26,9 +26,17 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: "Auto Detailing Gallery — Oakland Park, FL",
   description:
-    "Browse Sunflo Detailing's work — paint corrections, ceramic coatings, interior details, and more. South Florida's premium auto detailing studio.",
+    "Browse Sunflo Detailing's portfolio — paint corrections, ceramic coatings, interior details, and vehicle wraps. Premium auto detailing in Oakland Park, FL.",
+  alternates: { canonical: "/gallery" },
+  openGraph: {
+    title: "Gallery | Sunflo Detailing",
+    description:
+      "See our work — paint corrections, ceramic coatings, interior details, and more. South Florida's premium auto detailing studio.",
+    url: "https://sunflodetailing.com/gallery",
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing Gallery" }],
+  },
 };
 
 export default function GalleryPage() {
@@ -39,6 +47,7 @@ export default function GalleryPage() {
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>
           <SectionHeading
+            as="h1"
             label="Our Work"
             title="The Gallery"
             subtitle="Every vehicle tells a story. Browse our portfolio of transformations — from daily drivers to exotics."

@@ -1,0 +1,281 @@
+# Sunflo Detailing — Owner Action Plan
+
+**Created:** 2026-04-18  
+**Complements:** `docs/seo-audit.md` (code-level fixes already applied)
+
+The code side is done. Every technical SEO issue identified in the audit has been fixed — metadata, schemas, FAQ, service landing pages, contact form, llms.txt, and security headers are all in place. The work below is where your **remaining 80% of local search gains** live. None of it requires a developer.
+
+---
+
+## This Week — Critical (1–2 hours total)
+
+### 1. Verify and fix your Google Business Profile category
+
+Log in to [Google Business Profile](https://business.google.com) → Info → Edit Categories.
+
+**Required setup:**
+- Primary: **Car detailing service** ← most important local ranking signal
+- Secondary: Auto body shop, Window tinting service, Car wash
+
+If your primary category is "Auto repair shop" or anything else, change it to "Car detailing service" immediately. This is the single highest-impact action you can take for map pack ranking.
+
+---
+
+### 2. Submit your sitemap to Google Search Console
+
+1. Go to [Google Search Console](https://search.google.com/search-console)
+2. Add property → Domain → enter `sunflodetailing.com`
+3. Verify ownership (DNS TXT record — your host or Vercel will show where to add this)
+4. Left sidebar → Sitemaps → Add `https://sunflodetailing.com/sitemap.xml`
+5. Hit Submit
+
+This tells Google exactly what pages exist and how often they change. It dramatically speeds up indexing of the new service landing pages.
+
+---
+
+### 3. Submit to Bing Webmaster Tools
+
+1. Go to [Bing Webmaster Tools](https://www.bing.com/webmasters)
+2. Sign in with Microsoft account
+3. Add your site → Import from Google Search Console (easiest)
+4. Submit sitemap: `https://sunflodetailing.com/sitemap.xml`
+
+Bing feeds Bing Copilot (AI) search. Takes 10 minutes.
+
+---
+
+### 4. Set up the contact form (Resend)
+
+The contact form is now wired to a real API route. To activate it:
+
+1. Create a free account at [resend.com](https://resend.com)
+2. Go to Domains → Add Domain → enter `sunflodetailing.com`
+3. Add the DNS records Resend provides (typically 3 TXT records — your host supports this)
+4. Once domain is verified, go to API Keys → Create API Key → copy it
+5. In your Vercel dashboard → Project → Settings → Environment Variables:
+   - Add `RESEND_API_KEY` = (your key)
+   - Add `CONTACT_FORM_TO_EMAIL` = `sunflodetailing@gmail.com`
+6. Redeploy the site
+
+After setup, every contact form submission will arrive in your Gmail inbox. The free Resend plan covers 3,000 emails/month.
+
+---
+
+## Within 30 Days — High Impact (3–5 hours total)
+
+### 5. Claim your Yelp listing
+
+Yelp is the most impactful unclaimed citation for auto detailing in South Florida. It feeds Apple Maps, Siri, and major citation aggregators.
+
+1. Search [biz.yelp.com](https://biz.yelp.com) for "Sunflo Detailing Oakland Park"
+2. Claim the existing listing (it likely already exists from a customer)
+3. Complete: business name, address, phone, hours, website URL, 10 photos, service descriptions
+4. **NAP must match exactly:** `Sunflo Detailing` / `4708 NE 11th Ave, Oakland Park, FL 33334` / `(954) 235-6882`
+5. Once claimed, send me your Yelp URL and I'll add it to the site's schema in 2 minutes
+
+---
+
+### 6. Claim Apple Maps Connect
+
+Apple Maps and Siri pull location data from Apple Maps Connect — it has its own database, not just copying Google.
+
+1. Go to [mapsconnect.apple.com](https://mapsconnect.apple.com)
+2. Sign in with Apple ID
+3. Add your business or claim the existing listing
+4. Fill in all details (same NAP as everywhere else)
+5. Verify by phone call or postcard
+
+---
+
+### 7. Claim Bing Places for Business
+
+Bing Places feeds Bing Copilot and Windows Maps.
+
+1. Go to [bingplaces.com](https://www.bingplaces.com)
+2. Search for your business
+3. Claim and complete the listing
+4. Fastest path: import from Google Business Profile using your GBP email
+
+---
+
+### 8. Claim Nextdoor Business Page
+
+Nextdoor is hyper-local — Oakland Park and surrounding neighborhoods. Free, and residents actively recommend local businesses.
+
+1. Go to [nextdoor.com/business](https://nextdoor.com/business)
+2. Claim or create a business page
+3. Fill in NAP, services, hours
+4. Respond to any existing recommendations from neighbors
+
+---
+
+### 9. Claim your BBB listing
+
+BBB is a high-authority citation (Domain Authority ~91) that citation aggregators pick up.
+
+1. Go to [bbb.org/business](https://www.bbb.org/business)
+2. Search for your business
+3. Claim the listing → fill in all details
+4. No fee required for basic listing
+
+---
+
+### 10. Audit your Facebook Business Page NAP
+
+Go to your Facebook Business Page settings and confirm these match your website exactly:
+- Business name: **Sunflo Detailing** (not "Sunflo Car Detailing" or any variation)
+- Address: **4708 NE 11th Ave, Oakland Park, FL 33334**
+- Phone: **(954) 235-6882**
+- Website: **https://sunflodetailing.com**
+- Category: **Automotive Detailing Service**
+- Hours: Monday–Friday 8:00 AM – 6:00 PM
+
+NAP inconsistency across platforms is one of the most common local SEO ranking suppressors.
+
+---
+
+## Monthly / Per-Job — Ongoing
+
+### 11. Review acquisition: the 18-day rule
+
+The "18-day rule" (observed across hundreds of local businesses): going more than 18 days without a new review can cause your map pack position to drop. The algorithm rewards recency and velocity, not just total count.
+
+**What to do:**
+- Print a QR code card with your Google review link (generate at [QR Code Generator](https://www.qr-code-generator.com/))
+- Hand it to every client at vehicle pickup
+- Say: "If you're happy with the work, a quick Google review makes a huge difference for us"
+- Target: **2–4 new reviews per month**
+
+**Your review link:** `https://www.google.com/search?kgmid=/g/11j37x7gnx` → scroll to Reviews → Write a review (get the direct share link from your GBP dashboard)
+
+---
+
+### 12. Google Business Profile Posts — weekly
+
+GBP Posts appear in your Knowledge Panel and signal to Google that you're an active business.
+
+**Post weekly:**
+- Before/after photos of completed jobs (most engaging)
+- Seasonal promotions (Florida summer heat → UV protection push)
+- Tips (safe washing after ceramic coating, etc.)
+- New service announcements
+
+Keep posts 150–300 words. Include your service area city name ("ceramic coating in Oakland Park") at least once.
+
+---
+
+### 13. GBP Photos — 5 to 10 per month
+
+Photo uploads to your GBP profile are one of the highest-impact local signals — more than your website gallery.
+
+**What to upload:**
+- Before/after shots from finished jobs (show the transformation)
+- Interior shots of your shop and equipment
+- Team photos (builds trust)
+- Exterior of the building (helps clients find you)
+- Vehicles in various stages of service
+
+**Technical:** Photos should be at least 720×720px. Name files descriptively before uploading — e.g., `bmw-m4-ceramic-coating-oakland-park.jpg`. Google can read the filename.
+
+---
+
+### 14. Update review count monthly in the code
+
+The schema on your site shows `"120"` Google reviews. Keep this accurate:
+
+1. Check your GBP dashboard for the current review count
+2. Open `src/app/layout.tsx`
+3. Find line that says `reviewCount: "120"` (comment above it says `update this value monthly`)
+4. Change the number to match your current GBP count
+5. Redeploy
+
+---
+
+## Quarterly
+
+### 15. Citation audit for NAP consistency
+
+Use [Whitespark Local Citation Finder](https://whitespark.ca/local-citation-finder/) (free tier) to scan major directories for your business listing. Look for:
+- Wrong address format (abbreviations, missing suite)
+- Wrong phone number
+- Different business name variations
+- No website URL
+
+Fix every mismatch. NAP inconsistency confuses Google's entity graph and suppresses local ranking.
+
+---
+
+### 16. Local backlink outreach
+
+Links from local businesses are among the highest-value signals for local SEO.
+
+**Low-effort targets:**
+- The auto body shop or mechanic next door — "We'll send customers your way for collision repair; you send us ceramic coating clients"
+- Detailing product suppliers (Gyeon, CarPro, Rupes) — many maintain installer directories
+- Local car clubs: South Florida Ferrari Club, Porsche Club of America (Miami), local car meet organizers — sponsor or donate a detail service for a raffle
+- Broward County new car dealerships — dealership service advisors often refer clients for detailing
+
+**What to ask for:** a mention on their website ("Our recommended detailing shop: Sunflo Detailing") with a link to `sunflodetailing.com`. No money needs to change hands — reciprocal referrals are the pitch.
+
+---
+
+### 17. Gallery refresh
+
+The website currently shows 6 real photos. Target 12–20 for a more convincing portfolio.
+
+**Send me:**
+- Any before/after shots from recent jobs (phone camera is fine — bright Florida daylight is your best lighting)
+- Close-ups of paint correction results, ceramic coating water beading, PPF installations
+- Interior transformations
+- Boat/RV details if you've done them
+
+I'll optimize the images, write keyword-rich alt text, and update the gallery page and its schema.
+
+---
+
+## Owner-Supplied Content That Unlocks Future Code Work
+
+Once you supply these, I'll build the corresponding pages:
+
+### 18. About page
+
+Send me:
+- A short bio (3–5 sentences): how you started Sunflo, years in the industry, what makes you different
+- 1–2 photos of yourself at work or with a finished vehicle
+- Any certifications or training (Gyeon, CarPro, Modesta, IDA, etc.)
+
+This becomes an About page with `Person` + `AboutPage` schema — improves E-E-A-T signals significantly.
+
+---
+
+### 19. Blog / content articles
+
+A `/blog` section with 4–6 in-depth articles would capture long-tail searches. Topics with clear demand:
+
+- "How to maintain a ceramic coating in South Florida"
+- "Do I need PPF on a leased car in Florida?"
+- "How to choose between ceramic coating and wax"
+- "Florida tint laws: what's actually legal on your windows"
+- "What to expect when getting paint correction"
+- "How often should I wash my car with a ceramic coating?"
+
+Send rough notes or just approve the topics and I'll write the full articles.
+
+---
+
+## 3-Month Goal: Top-3 Oakland Park Map Pack
+
+**Baseline (estimated April 2026):** ranking 4–8 for "car detailing Oakland Park," not in map pack for most service keywords.
+
+**Target:** Top 3 in map pack for "car detailing near me" (Oakland Park) by July 2026.
+
+**Leading indicators to watch monthly:**
+- GBP profile views (Goal: +20% month-over-month)
+- GBP direction requests and call clicks (Goal: +2 calls/month increase)
+- New Google reviews (Goal: 4+ per month)
+- Search Console impressions for service keywords
+
+---
+
+*Owner action plan prepared by Matthew Kass for Sunflo Detailing on 2026-04-18.*  
+*Technical SEO changes are documented in `docs/seo-audit.md`.*

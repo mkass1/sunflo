@@ -6,6 +6,7 @@ interface SectionHeadingProps {
   subtitle?: string;
   centered?: boolean;
   className?: string;
+  as?: "h1" | "h2";
 }
 
 export default function SectionHeading({
@@ -14,6 +15,7 @@ export default function SectionHeading({
   subtitle,
   centered = false,
   className,
+  as: Tag = "h2",
 }: SectionHeadingProps) {
   return (
     <div className={cn(centered && "text-center", className)}>
@@ -22,12 +24,12 @@ export default function SectionHeading({
           {label}
         </p>
       )}
-      <h2
+      <Tag
         className="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
         style={{ fontFamily: "var(--font-heading)" }}
       >
         {title}
-      </h2>
+      </Tag>
       {subtitle && (
         <p className={cn("mt-4 max-w-2xl text-base text-gray-400 sm:text-lg leading-relaxed", centered && "mx-auto")}>
           {subtitle}

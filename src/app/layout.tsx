@@ -3,6 +3,7 @@ import { Sora, Big_Shoulders, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import LocationMapWrapper from "@/components/layout/LocationMapWrapper";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
 import { cn } from "@/lib/utils";
@@ -76,9 +77,21 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}#website`,
+  url: SITE_URL,
+  name: "Sunflo Detailing",
+  description:
+    "Premium auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL.",
+  publisher: { "@id": `${SITE_URL}#business` },
+};
+
+// reviewCount reflects the live GBP count — update this value monthly to keep it accurate.
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "AutoRepair",
+  "@type": "AutomotiveBusiness",
   "@id": `${SITE_URL}#business`,
   name: "Sunflo Detailing",
   alternateName: "Sunflo Car Detailing",
@@ -88,7 +101,7 @@ const localBusinessJsonLd = {
   telephone: contact.phoneHref.replace("tel:", ""),
   email: contact.email,
   image: `${SITE_URL}/images/hero/porsche-911.jpg`,
-  logo: `${SITE_URL}/images/hero/porsche-911.jpg`,
+  logo: `${SITE_URL}/images/sunflo-logo.png`,
   priceRange: "$$-$$$",
   foundingDate: "2017",
   address: {
@@ -101,8 +114,8 @@ const localBusinessJsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 26.1725,
-    longitude: -80.1350,
+    latitude: 26.17250,
+    longitude: -80.13500,
   },
   openingHoursSpecification: [
     {
@@ -119,6 +132,7 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Pompano Beach" },
     { "@type": "City", name: "Lighthouse Point" },
     { "@type": "City", name: "Lauderdale-by-the-Sea" },
+    { "@type": "City", name: "Deerfield Beach" },
     { "@type": "AdministrativeArea", name: "South Florida" },
   ],
   sameAs: [
@@ -162,10 +176,21 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-dark text-gray-100">
         <script
           type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-brand-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold focus:text-sm"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">{children}</main>
+        <LocationMapWrapper />
         <Footer />
       </body>
     </html>

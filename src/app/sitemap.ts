@@ -3,19 +3,15 @@ import type { MetadataRoute } from "next";
 const SITE_URL = "https://sunflodetailing.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-  const routes: Array<{ path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }> = [
-    { path: "", priority: 1.0, changeFrequency: "monthly" },
-    { path: "/services", priority: 0.9, changeFrequency: "monthly" },
-    { path: "/gallery", priority: 0.8, changeFrequency: "monthly" },
-    { path: "/faq", priority: 0.6, changeFrequency: "yearly" },
-    { path: "/contact", priority: 0.7, changeFrequency: "yearly" },
+  return [
+    { url: `${SITE_URL}/`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 1.0 },
+    { url: `${SITE_URL}/services`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${SITE_URL}/services/ceramic-coating`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/services/paint-correction`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/services/paint-protection-film`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/services/window-tinting`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/gallery`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/faq`, lastModified: new Date("2026-04-18"), changeFrequency: "yearly", priority: 0.6 },
+    { url: `${SITE_URL}/contact`, lastModified: new Date("2026-04-18"), changeFrequency: "yearly", priority: 0.7 },
   ];
-
-  return routes.map(({ path, priority, changeFrequency }) => ({
-    url: `${SITE_URL}${path}`,
-    lastModified: now,
-    changeFrequency,
-    priority,
-  }));
 }

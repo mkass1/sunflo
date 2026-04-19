@@ -82,7 +82,6 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/30 to-transparent" />
         {service.badge && (

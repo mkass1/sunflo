@@ -6,6 +6,7 @@ export interface ServicePricing {
 
 export interface ServiceItem {
   id: string;
+  slug?: string;
   name: string;
   tagline: string;
   description: string;
@@ -18,11 +19,14 @@ export interface ServiceItem {
   badge?: string;
   hasTiers?: boolean;
   quoteOnly?: boolean;
-  category?: "core" | "specialty";
+  category?: "core" | "specialty" | "alacarte";
 }
+
+export type FaqCategory = "services" | "pricing" | "aftercare" | "location";
 
 export interface FAQ {
   id: string;
+  category: FaqCategory;
   question: string;
   answer: string;
 }
@@ -48,4 +52,27 @@ export interface GalleryImage {
   category: "interior" | "exterior" | "ceramic" | "correction" | "all";
   width: number;
   height: number;
+}
+
+export interface ServiceSection {
+  heading: string;
+  body: string;
+}
+
+export interface ServiceFAQ {
+  question: string;
+  answer: string;
+}
+
+export interface ServicePage {
+  slug: string;
+  eyebrow: string;
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  intro: string;
+  sections: ServiceSection[];
+  faqs: ServiceFAQ[];
+  related: { slug: string; label: string }[];
+  ogImage?: string;
 }

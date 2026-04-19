@@ -79,7 +79,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 width={image.width}
                 height={image.height}
                 className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                unoptimized
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                 <span className="text-white font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -131,7 +130,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 width={filtered[lightboxIndex].width}
                 height={filtered[lightboxIndex].height}
                 className="max-h-[85vh] w-auto object-contain rounded-sm"
-                unoptimized
               />
               <p className="mt-3 text-center text-gray-400 text-sm">
                 {filtered[lightboxIndex].alt}

@@ -6,6 +6,7 @@ const SITE_URL = "https://sunflodetailing.com";
 
 const coreServices = services.filter((s) => s.category === "core");
 const specialtyServices = services.filter((s) => s.category === "specialty");
+const alaCarteServices = services.filter((s) => s.category === "alacarte");
 
 const servicesJsonLd = {
   "@context": "https://schema.org",
@@ -20,12 +21,11 @@ const servicesJsonLd = {
       provider: { "@id": `${SITE_URL}#business` },
       areaServed: "South Florida",
       ...(s.pricing && {
-        offers: {
-          "@type": "AggregateOffer",
-          priceCurrency: "USD",
-          lowPrice: s.pricing.small,
-          highPrice: s.pricing.large,
-        },
+        offers: [
+          { "@type": "Offer", name: "Small Vehicle", price: String(s.pricing.small), priceCurrency: "USD" },
+          { "@type": "Offer", name: "Medium Vehicle", price: String(s.pricing.medium), priceCurrency: "USD" },
+          { "@type": "Offer", name: "Large Vehicle", price: String(s.pricing.large), priceCurrency: "USD" },
+        ],
       }),
     },
   })),
@@ -41,9 +41,17 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Services & Pricing",
+  title: "Auto Detailing Services & Pricing in Oakland Park, FL",
   description:
-    "Explore Sunflo Detailing's full range of services — from interior detailing to full paint correction and ceramic coatings. Serving Oakland Park and South Florida.",
+    "Explore Sunflo Detailing's full range of services — interior detailing, paint correction, ceramic coatings, PPF, tints, and wraps in Oakland Park, FL.",
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: "Auto Detailing Services & Pricing | Sunflo Detailing",
+    description:
+      "Interior detailing, paint correction, ceramic coatings, PPF, window tinting, and wraps. Serving Oakland Park and South Florida since 2017.",
+    url: "https://sunflodetailing.com/services",
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing Services" }],
+  },
 };
 
 export default function ServicesPage() {
@@ -51,7 +59,7 @@ export default function ServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <ServicesContent coreServices={coreServices} specialtyServices={specialtyServices} />
+      <ServicesContent coreServices={coreServices} specialtyServices={specialtyServices} alaCarteServices={alaCarteServices} />
     </>
   );
 }

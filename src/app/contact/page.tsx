@@ -18,6 +18,7 @@ function FacebookIcon({ size = 16 }: { size?: number }) {
     </svg>
   );
 }
+import { contact } from "@/data/contact";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "@/components/contact/ContactForm";
@@ -34,7 +35,15 @@ const breadcrumbJsonLd = {
 export const metadata: Metadata = {
   title: "Contact & Book",
   description:
-    "Contact Sunflo Detailing to book your auto detailing appointment. Located at 4708 NE 11th Ave, Oakland Park, Florida.",
+    "Contact Sunflo Detailing to book your auto detailing appointment in Oakland Park, FL. Call or message us — appointment-only, Mon–Fri 8am–6pm.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact & Book | Sunflo Detailing",
+    description:
+      "Book your auto detailing appointment at our Oakland Park, FL studio. Ceramic coatings, paint correction, PPF, and more.",
+    url: "https://sunflodetailing.com/contact",
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
+  },
 };
 
 export default function ContactPage() {
@@ -45,6 +54,7 @@ export default function ContactPage() {
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>
           <SectionHeading
+            as="h1"
             label="Get in Touch"
             title="Book Your Service"
             subtitle="Fill out the form below and we'll get back to you to confirm your appointment. For urgent inquiries, reach us on Instagram."
@@ -89,7 +99,7 @@ export default function ContactPage() {
                         rel="noopener noreferrer"
                         className="text-gray-300 text-sm hover:text-white transition-colors"
                       >
-                        4708 NE 11th Ave<br />Oakland Park, FL
+                        4708 NE 11th Ave<br />Oakland Park, FL 33334
                       </a>
                     </div>
                   </li>
@@ -130,10 +140,14 @@ export default function ContactPage() {
                       <Phone size={16} className="text-brand-400" />
                     </div>
                     <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Booking</p>
-                      <p className="text-gray-300 text-sm">
-                        By appointment only.<br />Use the form or DM on Instagram.
-                      </p>
+                      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Phone / Booking</p>
+                      <a
+                        href={contact.phoneHref}
+                        className="text-gray-300 text-sm hover:text-white transition-colors"
+                      >
+                        {contact.phone}
+                      </a>
+                      <p className="text-gray-500 text-xs mt-0.5">By appointment only.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
