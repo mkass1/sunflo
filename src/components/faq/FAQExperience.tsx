@@ -181,10 +181,11 @@ export default function FAQExperience({ faqs, categories }: FAQExperienceProps) 
             </div>
 
             {/* Mobile category chips */}
-            <div
-              className="lg:hidden flex gap-2 overflow-x-auto pb-3 mb-6"
-              style={{ scrollbarWidth: "none" }}
-            >
+            <div className="lg:hidden relative mb-6">
+              <div
+                className="flex gap-2 overflow-x-auto pb-3"
+                style={{ scrollbarWidth: "none" }}
+              >
               {allTabs.map(({ id, label }) => (
                 <button
                   key={id}
@@ -201,6 +202,9 @@ export default function FAQExperience({ faqs, categories }: FAQExperienceProps) 
                   <span className="ml-1.5 text-xs opacity-60">{counts[id] ?? 0}</span>
                 </button>
               ))}
+              </div>
+              {/* Right-edge fade signals horizontal scrollability */}
+              <div className="absolute right-0 top-0 bottom-3 w-12 bg-gradient-to-l from-dark to-transparent pointer-events-none" />
             </div>
 
             {/* FAQ accordion */}

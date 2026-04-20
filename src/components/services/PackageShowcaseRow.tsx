@@ -55,18 +55,6 @@ export default function PackageShowcaseRow({ service, index }: PackageShowcaseRo
         </div>
       )}
 
-      {/* Tier indicator bars — bottom-left */}
-      {service.pricing && (
-        <div className="absolute bottom-5 left-5 z-10 flex items-end gap-1">
-          {[3, 5, 7].map((h, i) => (
-            <div key={i} className="w-2.5 bg-brand-500/70 rounded-[1px]" style={{ height: `${h}px` }} />
-          ))}
-          <span className="text-[9px] tracking-[0.2em] uppercase text-white/40 font-semibold ml-1 leading-none mb-[1px]">
-            3 tiers
-          </span>
-        </div>
-      )}
-
       {/* Hover wipe */}
       <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-brand-500 group-hover:w-full transition-all duration-[600ms] ease-out" />
     </motion.div>
@@ -147,7 +135,7 @@ export default function PackageShowcaseRow({ service, index }: PackageShowcaseRo
             href="/contact"
             className="relative inline-flex items-center gap-2.5 bg-brand-600 text-white font-semibold px-7 py-3.5 rounded-sm hover:bg-brand-700 transition-colors duration-200 tracking-wide text-sm shadow-lg shadow-brand-500/20 group/cta"
           >
-            Book This Service
+            Book This Package
             <ArrowRight size={14} className="group-hover/cta:translate-x-1 transition-transform duration-200" />
           </Link>
         </div>

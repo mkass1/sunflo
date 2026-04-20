@@ -10,6 +10,7 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
+    unoptimized: true,
   },
   async headers() {
     return [

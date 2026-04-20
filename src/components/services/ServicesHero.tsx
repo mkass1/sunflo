@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-const chips = ["7 Packages", "Oakland Park, FL", "Custom Quotes Available"];
+const chips = ["Fixed & Custom Pricing", "Oakland Park, FL", "Custom Quotes Available"];
 
 export default function ServicesHero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -46,10 +46,11 @@ export default function ServicesHero() {
           }}
         >
           <Image
-            src="/images/services/paint-correction.jpg"
+            src="/images/services/ferrari-red-process.jpg"
             alt=""
             fill
-            className="object-cover object-center"
+            className="object-cover"
+            style={{ objectPosition: "center 85%" }}
             priority
             sizes="100vw"
           />
@@ -160,10 +161,10 @@ export default function ServicesHero() {
             </Link>
           </div>
           <a
-            href="#compare"
+            href="#correction"
             className="inline-flex items-center gap-2.5 border border-white/15 text-white/70 text-sm font-semibold px-6 py-3.5 rounded-sm hover:border-brand-500/50 hover:text-white hover:bg-white/[0.04] transition-all duration-200 tracking-wide group"
           >
-            Compare Packages
+            See Premium Tier
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
           </a>
         </motion.div>

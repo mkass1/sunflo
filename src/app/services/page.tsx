@@ -4,7 +4,9 @@ import { services } from "@/data/services";
 
 const SITE_URL = "https://sunflodetailing.com";
 
-const coreServices = services.filter((s) => s.category === "core");
+const autoDetailServices = services.filter((s) => s.tier === "auto-detail");
+const interiorServices = services.filter((s) => s.tier === "interior");
+const correctionServices = services.filter((s) => s.tier === "correction");
 const specialtyServices = services.filter((s) => s.category === "specialty");
 const alaCarteServices = services.filter((s) => s.category === "alacarte");
 
@@ -19,7 +21,7 @@ const servicesJsonLd = {
       name: s.name,
       description: s.description,
       provider: { "@id": `${SITE_URL}#business` },
-      areaServed: "South Florida",
+      areaServed: { "@type": "City", name: "Oakland Park", containedInPlace: { "@type": "State", name: "Florida" } },
       ...(s.pricing && {
         offers: [
           { "@type": "Offer", name: "Small Vehicle", price: String(s.pricing.small), priceCurrency: "USD" },
@@ -59,7 +61,13 @@ export default function ServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      <ServicesContent coreServices={coreServices} specialtyServices={specialtyServices} alaCarteServices={alaCarteServices} />
+      <ServicesContent
+        autoDetailServices={autoDetailServices}
+        interiorServices={interiorServices}
+        correctionServices={correctionServices}
+        specialtyServices={specialtyServices}
+        alaCarteServices={alaCarteServices}
+      />
     </>
   );
 }

@@ -5,13 +5,16 @@ export function ServiceList({ title, items }: { title: string; items: string[] }
   if (!items || items.length === 0) return null;
   return (
     <div>
-      <h4 className="text-xs font-semibold text-brand-400 uppercase tracking-[0.14em] mb-3">
-        {title}
-      </h4>
-      <ul className="grid sm:grid-cols-2 gap-2">
+      <div className="flex items-center gap-2.5 mb-3">
+        <span className="w-3 h-px bg-brand-500/70" />
+        <h4 className="text-[10px] font-semibold text-brand-400 uppercase tracking-[0.18em]">
+          {title}
+        </h4>
+      </div>
+      <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-1.5">
         {items.map((item) => (
-          <li key={item} className="flex items-start gap-2 text-sm text-gray-400">
-            <Check size={13} className="text-brand-500 mt-0.5 shrink-0" />
+          <li key={item} className="flex items-start gap-2 text-[13px] text-gray-400 leading-snug">
+            <Check size={12} className="text-brand-500 mt-[3px] shrink-0" />
             {item}
           </li>
         ))}
@@ -31,15 +34,26 @@ export function PricingTier({
 }) {
   return (
     <div
-      className={`flex flex-col items-center p-4 border rounded-sm transition-colors ${
+      className={`relative flex flex-col items-center px-2 pt-3.5 pb-3 border rounded-sm transition-all overflow-hidden ${
         highlighted
-          ? "bg-brand-500/[0.06] border-brand-500/40"
-          : "bg-dark-muted border-dark-border"
+          ? "bg-gradient-to-b from-brand-500/[0.08] to-brand-500/[0.02] border-brand-500/40"
+          : "bg-gradient-to-b from-dark-muted to-[#0f0f0f] border-dark-border hover:border-brand-500/25"
       }`}
     >
-      <span className="text-xs text-gray-500 uppercase tracking-[0.14em] mb-2">{label}</span>
+      {/* top hairline accent */}
       <span
-        className="text-2xl font-bold text-white tabular-nums"
+        className={`absolute top-0 left-0 right-0 h-px ${
+          highlighted ? "bg-brand-500/80" : "bg-brand-500/30"
+        }`}
+        aria-hidden="true"
+      />
+      <span className="text-[10px] text-gray-500 uppercase tracking-[0.18em] mb-1.5 font-medium">
+        {label}
+      </span>
+      <span
+        className={`text-[1.55rem] font-bold tabular-nums leading-none ${
+          highlighted ? "text-white" : "text-white"
+        }`}
         style={{ fontFamily: "var(--font-heading)" }}
       >
         {formatPrice(price)}

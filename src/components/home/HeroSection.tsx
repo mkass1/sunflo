@@ -135,7 +135,7 @@ export default function HeroSection() {
           </div>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 text-gray-400 font-medium text-sm hover:text-white transition-colors duration-200 group"
+            className="inline-flex items-center gap-2 border border-white/20 text-gray-300 font-medium text-sm px-6 py-3.5 hover:text-white hover:border-white/40 transition-colors duration-200 group"
           >
             View Services
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />

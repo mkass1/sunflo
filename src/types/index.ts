@@ -20,6 +20,7 @@ export interface ServiceItem {
   hasTiers?: boolean;
   quoteOnly?: boolean;
   category?: "core" | "specialty" | "alacarte";
+  tier?: "auto-detail" | "interior" | "correction";
 }
 
 export type FaqCategory = "services" | "pricing" | "aftercare" | "location";

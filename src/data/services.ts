@@ -1,17 +1,125 @@
 import type { ServiceItem } from "@/types";
 
+export const PRICING_DISCLAIMER = "All prices are subject to change upon final inspection.";
+
 export const services: ServiceItem[] = [
+  // ============ AUTO DETAILING PACKAGES (Level 1/2/3) ============
+  {
+    id: "auto-detail-level-1",
+    name: "Level 1 Auto Detailing",
+    tagline: "Entry-level shine with lasting protection",
+    description:
+      "A complete inside-and-out detail finished with a paint spray sealant — a great starter service that brings back the gloss and adds a layer of protection between full details.",
+    pricing: { small: 200, medium: 225, large: 250 },
+    image: "/images/services/corvette-silver-front.jpg",
+    category: "core",
+    tier: "auto-detail",
+    exteriorServices: [
+      "Pre Rinse",
+      "Two Bucket Wash Method",
+      "Wheels & Wheel Wells Deep Cleaned",
+      "Tires Cleaned & Conditioned",
+      "Hand Dry",
+      "Paint Spray Sealant",
+    ],
+    interiorServices: [
+      "Clean Door Jambs",
+      "Vacuum Interior",
+      "Clean Door Panels",
+      "Clean Glass",
+      "Clean Center Console",
+    ],
+  },
+  {
+    id: "auto-detail-level-2",
+    name: "Level 2 Auto Detailing",
+    tagline: "Two months of paint protection",
+    description:
+      "A step-up detail that finishes with a 2-month paint protection treatment — extended hydrophobic protection without committing to a full ceramic coating.",
+    pricing: { small: 250, medium: 275, large: 300 },
+    image: "/images/services/audi-rs5-black-front.jpg",
+    category: "core",
+    tier: "auto-detail",
+    badge: "Popular",
+    exteriorServices: [
+      "Pre Rinse",
+      "Two Bucket Wash Method",
+      "Wheels & Wheel Wells Deep Cleaned",
+      "Tires Cleaned & Conditioned",
+      "Hand Dry",
+      "2-Month Paint Protection Applied",
+    ],
+    interiorServices: [
+      "Clean Door Jambs",
+      "Vacuum Interior",
+      "Clean Door Panels",
+      "Clean Glass",
+      "Clean Center Console",
+    ],
+  },
+  {
+    id: "auto-detail-level-3",
+    name: "Level 3 Auto Detailing",
+    tagline: "Six-month machine-applied protection",
+    description:
+      "Our top-tier detail experience — paint decontamination, clay bar, trim coating, and a 6-month dual-action machine buffer-applied paint sealant. The ideal combination of restoration and protection without stepping into full correction territory.",
+    pricing: { small: 400, medium: 500, large: 600 },
+    image: "/images/services/porsche-blue-full-rear.jpg",
+    category: "core",
+    tier: "auto-detail",
+    badge: "Premium",
+    exteriorServices: [
+      "Pre Rinse",
+      "Paint Decontamination",
+      "Clay Bar",
+      "Wheels & Wheel Wells Deep Cleaned",
+      "Tires Cleaned & Conditioned",
+      "Hand & Forced-Air Blow Dry",
+      "Trim Cleaned & Coated",
+      "6-Month D/A Machine Buffer Applied Paint Sealant",
+    ],
+    interiorServices: [
+      "Clean Door Jambs",
+      "Vacuum Interior",
+      "Clean Door Panels",
+      "Clean Glass",
+      "Clean Center Console",
+    ],
+  },
+
+  // ============ INTERIOR PACKAGES ============
+  {
+    id: "mini-interior",
+    name: "Mini Interior Refresh",
+    tagline: "Quick reset between full details",
+    description:
+      "A targeted interior refresh for cars that just need a pick-me-up. Vacuum, wipe-down, glass, and mats — perfect in between full interior details or before a weekend trip.",
+    pricing: { small: 120, medium: 140, large: 160 },
+    image: "/images/services/sunflo-tech-interior.jpg",
+    category: "core",
+    tier: "interior",
+    badge: "Quick Service",
+    exteriorServices: [],
+    interiorServices: [
+      "Thorough Vacuum",
+      "Floor Mats Vacuumed & Wiped",
+      "Dashboard, Console & Door Panels Wiped",
+      "All Glass Cleaned",
+      "Cupholders & Door Pockets Cleaned",
+    ],
+  },
   {
     id: "complete-interior",
-    name: "Full Detail",
+    name: "Complete Interior Detailing",
     tagline: "A deep clean your cabin deserves",
     description:
-      "Experience the pinnacle of interior cleanliness. Every inch of your car's cabin is meticulously attended to — from the deepest carpet fibers to the finest dashboard detail — leaving you with a fresh, pristine driving environment.",
+      "A full cabin deep clean — steam, extraction, and hand-detail work on every surface. For interiors that need a reset, not a wipe-down.",
     pricing: { small: 300, medium: 350, large: 400 },
-    badge: "Interior",
+    badge: "Deep Clean",
     hasTiers: true,
-    image: "/images/services/interior.jpg",
+    image: "/images/services/rolls-royce-steering.jpg",
     category: "core",
+    tier: "interior",
     exteriorServices: [],
     interiorServices: [
       "Steam Clean Entire Interior",
@@ -28,6 +136,8 @@ export const services: ServiceItem[] = [
     ],
     featured: true,
   },
+
+  // ============ PAINT CORRECTION & CERAMIC COATING ============
   {
     id: "gloss-enhancement",
     name: "Gloss Enhancement Package",
@@ -35,8 +145,9 @@ export const services: ServiceItem[] = [
     description:
       "Our gloss enhancement process removes above-surface defects while adding a deep, glossy finish. Topped with an entry-level ceramic coating to protect your investment and keep that shine lasting longer.",
     pricing: { small: 800, medium: 900, large: 1000 },
-    image: "/images/services/gloss.jpg",
+    image: "/images/services/ferrari-red-process.jpg",
     category: "core",
+    tier: "correction",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
@@ -63,8 +174,9 @@ export const services: ServiceItem[] = [
     description:
       "Removes light swirls, scratches, and some below-surface defects. The result is a super glossy, deep finish topped with a professional-grade ceramic coating — the ideal balance of correction and protection.",
     pricing: { small: 1600, medium: 1800, large: 2000 },
-    image: "/images/services/paint-enhancement.jpg",
+    image: "/images/services/bmw-hood-ceramic-reflection.jpg",
     category: "core",
+    tier: "correction",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
@@ -92,37 +204,39 @@ export const services: ServiceItem[] = [
     name: "Paint Correction",
     tagline: "The ultimate paint transformation",
     description:
-      "Our multi-stage paint correction process removes 95% of all above and below-surface scratches, creating the ultimate gloss and paint clarity. Finished with two layers of professional-grade ceramic coating for maximum, long-lasting protection.",
+      "Our multi-stage paint correction process removes the vast majority of above-surface swirls and many below-surface defects, creating the ultimate gloss and paint clarity. Finished with two layers of professional-grade ceramic coating for maximum, long-lasting protection.",
     pricing: { small: 2000, medium: 2500, large: 3000 },
-    image: "/images/services/paint-correction.jpg",
+    image: "/images/services/bmw-hood-mirror-finish.jpg",
     category: "core",
+    tier: "correction",
     exteriorServices: [
       "Pre Rinse",
       "Paint Decontamination",
       "Clay Bar",
       "Wheels & Wheel Wells Deep Cleaned",
       "Tires Cleaned & Conditioned",
-      "Pro Level Ceramic Coating",
+      "Two Layers of Pro Level Ceramic Coating",
       "Multi-Stage Paint Correction",
     ],
-    benefits: [
+    interiorServices: [
       "Clean Door Jambs",
       "Clean Cupholders",
       "Clean Door Panels",
       "Clean Glass",
       "Clean Center Console",
     ],
-    interiorServices: [],
     featured: true,
     badge: "Premium",
   },
+
+  // ============ SPECIALTY PACKAGES ============
   {
     id: "lease-return",
     name: "Lease Return Package",
     tagline: "Hand your lease back in like-new condition",
     description:
       "Turning in your lease? We restore the interior to near-factory condition and address exterior blemishes before the inspection — so you're not paying wear-and-tear fees on someone else's standards.",
-    image: "/images/services/interior.jpg",
+    image: "/images/services/rolls-royce-rear-cabin.jpg",
     category: "specialty",
     quoteOnly: true,
     badge: "By Quote",
@@ -148,8 +262,8 @@ export const services: ServiceItem[] = [
     name: "New Vehicle Protection",
     tagline: "Protect your new car before the first rainstorm",
     description:
-      "Your new car leaves the factory unprotected. We decontaminate the paint, apply a professional-grade ceramic coating, and seal the interior fabrics and leather — locking in that factory finish before the elements get a chance.",
-    image: "/images/services/paint-enhancement.jpg",
+      "Your new car leaves the factory unprotected. We decontaminate the paint, apply a professional-grade ceramic coating, and seal the interior fabrics and leather — locking in that factory finish before the sun, salt, and road grime get at it.",
+    image: "/images/services/tesla-model-s-blue.jpg",
     category: "specialty",
     quoteOnly: true,
     badge: "By Quote",
@@ -166,10 +280,10 @@ export const services: ServiceItem[] = [
       "Glass Coating",
     ],
     benefits: [
-      "PPF — Hood, Front Bumper & Mirrors",
-      "PPF — Door Edge Guards & Rockers",
-      "Window Tint",
-      "Chrome-Delete Wraps",
+      "Add-On: Paint Protection Film — Hood, Front Bumper & Mirrors",
+      "Add-On: Paint Protection Film — Door Edges & Rockers",
+      "Add-On: Window Tint",
+      "Add-On: Chrome-Delete Wraps",
     ],
   },
   {
@@ -178,7 +292,7 @@ export const services: ServiceItem[] = [
     tagline: "Saltwater-ready care for South Florida's other rides",
     description:
       "Specialized detailing for marine craft and recreational vehicles. Salt-safe exterior wash, oxidation removal, marine-grade ceramic or wax protection, and full cabin interior deep cleaning — built for what South Florida actually throws at your ride.",
-    image: "/images/services/paint-correction.jpg",
+    image: "/images/services/boat-center-console.jpg",
     category: "specialty",
     quoteOnly: true,
     badge: "By Quote",
@@ -196,6 +310,33 @@ export const services: ServiceItem[] = [
       "Glass & Mirror Polish",
     ],
   },
+
+  {
+    id: "custom-job",
+    name: "Custom / Special Request",
+    tagline: "Tell us what you need — we'll scope it",
+    description:
+      "Have a job that doesn't fit any package? A one-off event prep, a unique surface, a vehicle type we haven't listed, or a specific concern you want addressed — bring it to us. We'll inspect, scope, and quote a service tailored to exactly what you need.",
+    image: "/images/services/sunflo-tech-ferrari.jpg",
+    category: "specialty",
+    quoteOnly: true,
+    badge: "Bespoke",
+    exteriorServices: [
+      "Tailored to your specific request",
+      "Any vehicle type considered",
+      "On-location service available",
+      "One-off and recurring jobs welcome",
+    ],
+    interiorServices: [],
+    benefits: [
+      "Personal walk-through inspection",
+      "Custom-scoped pricing",
+      "No obligation quote",
+      "We'll tell you honestly if it's outside our wheelhouse",
+    ],
+  },
+
+  // ============ À LA CARTE ============
   {
     id: "ppf",
     slug: "paint-protection-film",
@@ -203,7 +344,7 @@ export const services: ServiceItem[] = [
     tagline: "Invisible armor for your paint",
     description:
       "A virtually invisible urethane film that shields your vehicle's most vulnerable surfaces from rock chips, road debris, scratches, and UV damage — without altering your paint's color or finish.",
-    image: "/images/gallery/bmw-m2-white.jpg",
+    image: "/images/services/bmw-hood-clarity.jpg",
     category: "alacarte",
     quoteOnly: true,
     badge: "By Quote",
@@ -231,18 +372,18 @@ export const services: ServiceItem[] = [
     tagline: "Privacy, comfort, and UV protection",
     description:
       "Professional-grade window film blocks up to 99% of UV rays and significantly reduces heat buildup — keeping your cabin cooler, protecting your interior, and adding a clean, polished look.",
-    image: "/images/gallery/ferrari-gtc4.jpg",
+    image: "/images/services/lexus-lfa-silver.jpg",
     category: "alacarte",
     quoteOnly: true,
     badge: "By Quote",
-    exteriorServices: [],
-    interiorServices: [
+    exteriorServices: [
       "Front Side Windows",
       "Rear Side Windows",
       "Rear Windshield",
       "Sunroof Glass (if applicable)",
       "Windshield Strip Tint",
     ],
+    interiorServices: [],
     benefits: [
       "Up to 99% UV Rejection",
       "Significant Heat Reduction",
@@ -257,7 +398,7 @@ export const services: ServiceItem[] = [
     tagline: "Reinvent your vehicle's look",
     description:
       "Transform your vehicle with a high-quality vinyl wrap — full color change, partial accent panels, chrome delete, or matte-to-gloss conversions. Fully reversible with no damage to your original paint.",
-    image: "/images/gallery/ferrari-wrap-coating.jpg",
+    image: "/images/services/porsche-blue-front-aerial.jpg",
     category: "alacarte",
     quoteOnly: true,
     badge: "By Quote",
@@ -274,6 +415,126 @@ export const services: ServiceItem[] = [
       "100% Reversible — OEM Paint Preserved",
       "Protects Original Paint Underneath",
       "Color-Matched Touch-Ups Available",
+    ],
+  },
+  {
+    id: "headlight-restoration",
+    name: "Headlight Restoration",
+    tagline: "Clear lenses, brighter nights",
+    description:
+      "Oxidized, foggy headlights compromise nighttime visibility and make your vehicle look older than it is. We sand, polish, and seal the lenses — restoring clarity and adding a UV-protective topcoat to keep them clear longer.",
+    image: "/images/services/grand-national-black.jpg",
+    category: "alacarte",
+    quoteOnly: true,
+    badge: "Add-On",
+    exteriorServices: [
+      "Multi-Stage Wet Sanding",
+      "Compound & Polish",
+      "UV-Protective Sealant Topcoat",
+      "Both Headlight Lenses",
+    ],
+    interiorServices: [],
+    benefits: [
+      "Improved Nighttime Visibility",
+      "Restored OEM Clarity",
+      "Sealed Against Re-Oxidation",
+      "Tail Lights Available On Request",
+    ],
+  },
+  {
+    id: "engine-bay-detail",
+    name: "Engine Bay Detail",
+    tagline: "Show-quality under the hood",
+    description:
+      "A safe, controlled engine bay cleanup — degrease, hand-wash sensitive components, dress plastics and rubber, and finish with a satin protectant. Keeps your engine bay looking as clean as the body.",
+    image: "/images/services/classic-black-rear.jpg",
+    category: "alacarte",
+    quoteOnly: true,
+    badge: "Add-On",
+    exteriorServices: [
+      "Safe Degrease & Hand Wash",
+      "Sensitive Component Protection",
+      "Plastic & Rubber Trim Dressing",
+      "Satin Finish Protectant",
+      "Hand Dry & Detail",
+    ],
+    interiorServices: [],
+    benefits: [
+      "Spot Mechanical Issues Sooner",
+      "Protects Hoses & Wiring From UV",
+      "Boosts Resale Presentation",
+    ],
+  },
+  {
+    id: "leather-reconditioning",
+    name: "Leather Reconditioning",
+    tagline: "Bring tired leather back to life",
+    description:
+      "A standalone deep clean and reconditioning service for leather seats and trim. Lifts embedded grime, restores suppleness, and adds a UV-protective conditioner — preventing cracking and fade in the Florida sun.",
+    image: "/images/services/interior.jpg",
+    category: "alacarte",
+    quoteOnly: true,
+    badge: "Add-On",
+    exteriorServices: [],
+    interiorServices: [
+      "Deep Leather Cleaning",
+      "Stain & Dye-Transfer Treatment",
+      "Premium Leather Conditioner",
+      "UV-Protective Sealant",
+      "Stitching & Perforation Detail",
+    ],
+    benefits: [
+      "Prevents Cracking & Drying",
+      "Restores Original Suppleness",
+      "Florida-Sun Specific Protection",
+    ],
+  },
+  {
+    id: "convertible-top-care",
+    name: "Convertible Top Care",
+    tagline: "Soft tops, deep clean, full waterproofing",
+    description:
+      "Specialized cleaning and re-waterproofing for fabric and vinyl convertible tops. We lift years of grime and re-seal the fabric to repel water, UV, and salt air — built for South Florida's elements.",
+    image: "/images/services/porsche-blue-rear.jpg",
+    category: "alacarte",
+    quoteOnly: true,
+    badge: "Add-On",
+    exteriorServices: [
+      "Deep Fabric / Vinyl Cleaning",
+      "Stain & Mildew Treatment",
+      "Premium Waterproofing Sealant",
+      "UV Protectant Application",
+      "Frame & Seal Detail",
+    ],
+    interiorServices: [],
+    benefits: [
+      "Restored Water Repellency",
+      "UV & Salt-Air Protection",
+      "Extended Top Lifespan",
+    ],
+  },
+  {
+    id: "odor-removal",
+    name: "Odor Removal / Ozone Treatment",
+    tagline: "Eliminate odors at the source",
+    description:
+      "Smoke, mildew, pet, or food odors neutralized where they actually live — inside vents, headliners, and upholstery. We deep-clean affected surfaces, then run a professional ozone treatment to finish the job.",
+    image: "/images/services/rolls-royce-rear-cabin.jpg",
+    category: "alacarte",
+    quoteOnly: true,
+    badge: "Add-On",
+    exteriorServices: [],
+    interiorServices: [
+      "Source Identification & Surface Treatment",
+      "HVAC Vent Cleaning",
+      "Headliner & Upholstery Treatment",
+      "Professional Ozone Generator Cycle",
+      "Final Air Refresh",
+    ],
+    benefits: [
+      "Eliminates Smoke, Pet & Mildew Odors",
+      "Treats HVAC System & Headliner",
+      "Long-Lasting, Not a Cover-Up",
     ],
   },
 ];
