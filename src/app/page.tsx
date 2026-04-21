@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",
     description:
       "Professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, Florida. Est. 2017.",
-    url: "https://sunflodetailing.com",
+    url: "https://www.sunflodetailing.com",
     images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
   },
 };

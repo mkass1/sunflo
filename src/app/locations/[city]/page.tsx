@@ -8,7 +8,7 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/layout/CTABanner";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const MAPS_URL =
   "https://maps.google.com/?q=4708+NE+11th+Ave,+Oakland+Park,+FL+33334";

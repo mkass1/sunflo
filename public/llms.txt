@@ -47,13 +47,13 @@ All prices are tiered by vehicle size: Small / Medium / Large.
 
 ## Key Service Pages
 
-- [Ceramic Coating in Oakland Park, FL](https://sunflodetailing.com/services/ceramic-coating)
-- [Paint Correction in Oakland Park, FL](https://sunflodetailing.com/services/paint-correction)
-- [Paint Protection Film (PPF) in Oakland Park, FL](https://sunflodetailing.com/services/paint-protection-film)
-- [Window Tinting in Oakland Park, FL](https://sunflodetailing.com/services/window-tinting)
-- [All Services & Pricing](https://sunflodetailing.com/services)
-- [FAQ](https://sunflodetailing.com/faq)
-- [Contact & Book](https://sunflodetailing.com/contact)
+- [Ceramic Coating in Oakland Park, FL](https://www.sunflodetailing.com/services/ceramic-coating)
+- [Paint Correction in Oakland Park, FL](https://www.sunflodetailing.com/services/paint-correction)
+- [Paint Protection Film (PPF) in Oakland Park, FL](https://www.sunflodetailing.com/services/paint-protection-film)
+- [Window Tinting in Oakland Park, FL](https://www.sunflodetailing.com/services/window-tinting)
+- [All Services & Pricing](https://www.sunflodetailing.com/services)
+- [FAQ](https://www.sunflodetailing.com/faq)
+- [Contact & Book](https://www.sunflodetailing.com/contact)
 
 ## Frequently Asked Questions (Top 5)
 
@@ -74,4 +74,4 @@ Yes — by appointment only. Book via our contact form at sunflodetailing.com/co
 
 ## Sitemap
 
-https://sunflodetailing.com/sitemap.xml
+https://www.sunflodetailing.com/sitemap.xml

@@ -16,7 +16,7 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import CTABanner from "@/components/layout/CTABanner";
 import { galleryImages } from "@/data/gallery";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Gallery | Sunflo Detailing",
     description:
       "See our work — paint corrections, ceramic coatings, interior details, and more. South Florida's premium auto detailing studio.",
-    url: "https://sunflodetailing.com/gallery",
+    url: `${SITE_URL}/gallery`,
     images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing Gallery" }],
   },
 };

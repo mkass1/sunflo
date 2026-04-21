@@ -1,13 +1,76 @@
 # Sunflo Detailing — Full SEO Audit Report
 
-**Audit Date:** 2026-04-21  
+**Latest pass:** Post-Launch Live — 2026-04-21 (evening)  
+**Original audit:** 2026-04-21 (pre-launch, local codebase)  
 **Auditor:** Matthew Kass (web / SEO manager)  
-**Site:** https://sunflodetailing.com (not yet deployed — audit performed against local codebase)  
+**Site:** https://www.sunflodetailing.com — LIVE  
 **Stack:** Next.js 16.2.4, React 19.2.4, App Router, Tailwind v4, TypeScript  
 
 ---
 
-## Overall SEO Health Score: 82 / 100
+## Post-Launch Live Pass — 2026-04-21 (Evening)
+
+### Updated Overall SEO Health Score: 86 / 100
+
+| Category | Weight | Pre-Launch | Post-Launch | Delta |
+|---|---|---|---|---|
+| Technical SEO | 22% | 84 | 88 | +4 |
+| Content Quality | 23% | 79 | 82 | +3 |
+| On-Page SEO | 20% | 90 | 92 | +2 |
+| Schema / Structured Data | 10% | 91 | 94 | +3 |
+| Performance (CWV) | 10% | 62 | 73 | +11 |
+| AI Search Readiness | 10% | 90 | 92 | +2 |
+| Images | 5% | 76 | 76 | 0 |
+| **TOTAL** | **100%** | **82.8** | **86.4** | **+3.6** |
+
+### Critical finding discovered on live site
+
+The most significant finding from the live inspection was a **www vs. non-www canonical mismatch** that affected every single page. The site deploys to `https://www.sunflodetailing.com` (Vercel's default behavior with www configured as primary), but `SITE_URL` in all 10 source files was set to `https://sunflodetailing.com` (non-www). This meant every `<link rel="canonical">` tag on every page pointed to a non-www URL that responded with a **307 Temporary Redirect** to www — a redirect type that does not consolidate ranking signals the way a 301 would. Google was seeing canonical tags pointing at the wrong version.
+
+### Code changes applied in this pass
+
+| # | File | Change |
+|---|---|---|
+| 1 | All 10 page files with `SITE_URL` | Changed `"https://sunflodetailing.com"` → `"https://www.sunflodetailing.com"` (canonical mismatch resolution) |
+| 2 | `src/app/layout.tsx` | Geist font: added `display:'swap'` |
+| 3 | `src/app/layout.tsx` | Geo coordinates corrected: `26.17250/-80.13500` → `26.185207/-80.135131` (was 1.4 km off from real place_id pin) |
+| 4 | `src/app/layout.tsx` | Review schema type fixes: `ratingValue` / `bestRating` / `worstRating` changed from strings to numbers |
+| 5 | `src/app/contact/page.tsx` | Maps iframe: replaced placeholder CID `0x0` with real `0x88d9a7071fb518fb:0x8db1839c761770d4` |
+| 6 | `src/app/about/page.tsx` | Added Jason Girasol surname to body copy ("Jason Girasol started Sunflo Detailing…") |
+| 7 | `src/app/services/page.tsx:54` | Fixed hardcoded `https://sunflodetailing.com/services` OG url (not covered by SITE_URL const) |
+| 8 | `src/app/gallery/page.tsx:59` | Fixed hardcoded `https://sunflodetailing.com/gallery` OG url (not covered by SITE_URL const) |
+| 9 | `src/data/faq.ts` | FAQ #9: added CashApp to payment methods (was missing; listed in llms.txt) |
+| 10 | `src/data/faq.ts` | FAQ #18: "hundreds of satisfied clients" → "more than 2,000 vehicles serviced" |
+| 11 | `src/components/layout/Navbar.tsx` | Removed `hidden sm:inline` from phone span — number now visible on all screen sizes |
+| 12 | `src/app/locations/page.tsx` | NEW: `/locations` index page — prevents 404 from breadcrumb links on city pages |
+| 13 | `public/llms.txt` | All internal URLs updated to www |
+| 14 | `public/videos/cinematic-reel.mp4` | Deleted 18.8 MB unreferenced original (optimized 3 MB version remains) |
+
+### New findings from live site inspection
+
+| Finding | Severity | Status |
+|---|---|---|
+| www/non-www canonical mismatch (307 redirect) | Critical | ✅ Fixed |
+| GeoCoordinates in schema 1.4 km off actual place_id pin | High | ✅ Fixed |
+| Review schema ratingValue/bestRating/worstRating as strings | Medium | ✅ Fixed |
+| Contact page Maps iframe had stale placeholder CID | High | ✅ Fixed |
+| Phone number hidden on mobile (`hidden sm:inline`) | High | ✅ Fixed |
+| Jason surname missing from /about body copy | Medium | ✅ Fixed |
+| FAQ #9 CashApp missing (NAP-style payment inconsistency) | Low | ✅ Fixed |
+| FAQ #18 "hundreds" inconsistent with 2,000+ figure | Low | ✅ Fixed |
+| services/page.tsx line 54 — hardcoded non-www OG url | Medium | ✅ Fixed |
+| gallery/page.tsx line 59 — hardcoded non-www OG url | Medium | ✅ Fixed |
+| /locations/\[city\] breadcrumbs 404 (no /locations page) | Medium | ✅ Fixed |
+| llms.txt had 9 non-www internal URLs | Low | ✅ Fixed |
+| 18.8 MB original video unreferenced but deployed to CDN | Medium | ✅ Fixed |
+| CSP header still absent from next.config.ts | Medium | Open |
+| `aggregateRating.reviewCount: 120` not synced to live GBP | Medium | Open (owner) |
+| No per-service or per-city OG images | Low | Open |
+| No blog / article content for long-tail keywords | Medium | Open |
+
+---
+
+## Overall SEO Health Score: 82 / 100 (pre-launch baseline)
 
 | Category | Weight | Score | Weighted |
 |---|---|---|---|
@@ -282,25 +345,35 @@ Sunflo Detailing's website entered this audit with a solid technical foundation 
 
 ## Bug Registry — Confirmed and Resolved
 
-| # | Bug | File(s) | Fixed |
-|---|---|---|---|
-| 1 | Mobile detailing contradiction | HeroSection.tsx:116, LocationMap.tsx | ✅ |
-| 2 | `next/image` optimization globally disabled | next.config.ts:13 | ✅ |
-| 3 | 18.8 MB video — no poster/preload | GalleryGrid.tsx | ✅ Partial |
-| 4 | `aggregateRating.reviewCount` hardcoded string "120" | layout.tsx:147 | ✅ Fixed to number + TODO |
-| 5 | Sitemap hand-maintained with static dates | sitemap.ts | ✅ |
-| 6 | ContactForm duplicate service options | ContactForm.tsx:154–164 | ✅ |
-| 7 | Google Maps iframe placeholder CID `0x0` | LocationMap.tsx | TODO (owner) |
-| 8 | LocationMap rendered on every page globally | layout.tsx, LocationMapWrapper.tsx | ✅ |
-| 9 | Footer service links all went to `/services` | Footer.tsx:100–109 | ✅ |
-| 10 | `ceramic-coating` slug gap in services.ts | services.ts | ✅ |
-| 11 | Homepage prose under 300 words | AboutPreview.tsx | ✅ |
-| 12 | No About page | — | ✅ Created |
-| 13 | Gallery had no ImageObject schema | gallery/page.tsx | ✅ |
-| 14 | NAP phone format drift | contact.ts, api/contact/route.ts | ✅ |
-| 15 | No click-to-call in Navbar | Navbar.tsx | ✅ |
-| 16 | Root layout canonical inheritance risk | layout.tsx | ✅ Removed |
-| 17 | Hero image empty alt (LCP element) | HeroSection.tsx | ✅ |
+| # | Bug | File(s) | Pass | Fixed |
+|---|---|---|---|---|
+| 1 | Mobile detailing contradiction | HeroSection.tsx:116, LocationMap.tsx | Pre-launch | ✅ |
+| 2 | `next/image` optimization globally disabled | next.config.ts:13 | Pre-launch | ✅ |
+| 3 | 18.8 MB video — no poster/preload + unreferenced original | GalleryGrid.tsx, public/videos/ | Pre-launch + Live | ✅ Original deleted |
+| 4 | `aggregateRating.reviewCount` hardcoded string "120" | layout.tsx | Pre-launch | ✅ Number + TODO |
+| 5 | Sitemap hand-maintained with static dates | sitemap.ts | Pre-launch | ✅ |
+| 6 | ContactForm duplicate service options | ContactForm.tsx | Pre-launch | ✅ |
+| 7 | Google Maps iframe placeholder CID | LocationMap.tsx, contact/page.tsx | Pre-launch + Live | ✅ Real CID in both |
+| 8 | LocationMap rendered on every page globally | layout.tsx, LocationMapWrapper.tsx | Pre-launch | ✅ |
+| 9 | Footer service links all went to `/services` | Footer.tsx | Pre-launch | ✅ |
+| 10 | `ceramic-coating` slug gap in services.ts | services.ts | Pre-launch | ✅ |
+| 11 | Homepage prose under 300 words | AboutPreview.tsx | Pre-launch | ✅ |
+| 12 | No About page | — | Pre-launch | ✅ Created |
+| 13 | Gallery had no ImageObject schema | gallery/page.tsx | Pre-launch | ✅ |
+| 14 | NAP phone format drift | contact.ts, api/contact/route.ts | Pre-launch | ✅ |
+| 15 | No click-to-call in Navbar | Navbar.tsx | Pre-launch | ✅ |
+| 16 | Root layout canonical inheritance risk | layout.tsx | Pre-launch | ✅ |
+| 17 | Hero image empty alt (LCP element) | HeroSection.tsx | Pre-launch | ✅ |
+| 18 | www/non-www canonical mismatch (SITE_URL non-www in 10 files) | 10 page files | **Live** | ✅ |
+| 19 | GeoCoordinates 1.4 km off actual place_id pin | layout.tsx | **Live** | ✅ |
+| 20 | Review schema rating types (strings instead of numbers) | layout.tsx | **Live** | ✅ |
+| 21 | Phone hidden on mobile (`hidden sm:inline`) | Navbar.tsx | **Live** | ✅ |
+| 22 | Jason surname missing from /about body copy | about/page.tsx | **Live** | ✅ |
+| 23 | Hardcoded non-www OG urls in services + gallery pages | services/page.tsx:54, gallery/page.tsx:59 | **Live** | ✅ |
+| 24 | /locations/\[city\] breadcrumbs 404 (no index page) | — | **Live** | ✅ Created |
+| 25 | FAQ #9 missing CashApp (inconsistent with llms.txt) | faq.ts | **Live** | ✅ |
+| 26 | FAQ #18 "hundreds" inconsistent with 2,000+ site-wide | faq.ts | **Live** | ✅ |
+| 27 | llms.txt had 9 non-www internal URLs | public/llms.txt | **Live** | ✅ |
 
 ---
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicesContent from "@/components/services/ServicesContent";
 import { services } from "@/data/services";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const autoDetailServices = services.filter((s) => s.tier === "auto-detail");
 const interiorServices = services.filter((s) => s.tier === "interior");
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Auto Detailing Services & Pricing | Sunflo Detailing",
     description:
       "Interior detailing, paint correction, ceramic coatings, PPF, window tinting, and wraps. Serving Oakland Park and South Florida since 2017.",
-    url: "https://sunflodetailing.com/services",
+    url: `${SITE_URL}/services`,
     images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing Services" }],
   },
 };

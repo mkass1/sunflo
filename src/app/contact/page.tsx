@@ -27,8 +27,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://sunflodetailing.com/" },
-    { "@type": "ListItem", position: 2, name: "Contact", item: "https://sunflodetailing.com/contact" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sunflodetailing.com/" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: "https://www.sunflodetailing.com/contact" },
   ],
 };
 
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Contact & Book | Sunflo Detailing",
     description:
       "Book your auto detailing appointment at our Oakland Park, FL studio. Ceramic coatings, paint correction, PPF, and more.",
-    url: "https://sunflodetailing.com/contact",
+    url: "https://www.sunflodetailing.com/contact",
     images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
   },
 };
@@ -166,13 +166,10 @@ export default function ContactPage() {
               </div>
 
               {/* Google Maps embed */}
-              {/* TODO(owner): Replace src with the real GBP embed URL from your Google Maps listing.
-                  Go to Maps → your listing → Share → Embed → copy iframe src.
-                  Current URL uses a placeholder CID (0x0) and won't show the verified GBP card. */}
               <div className="rounded-sm overflow-hidden border border-dark-border h-64">
                 <iframe
                   title="Sunflo Detailing Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.7!2d-80.1350!3d26.1725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9097db9bcaef3%3A0x0!2s4708+NE+11th+Ave%2C+Oakland+Park%2C+FL+33334!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3525503083524!2d-80.13513052466247!3d26.185207477088312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7071fb518fb%3A0x8db1839c761770d4!2sSunflo%20Detailing!5e0!3m2!1sen!2sus!4v1776789160519!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}

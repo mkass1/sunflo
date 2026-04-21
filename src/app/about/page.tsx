@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/layout/CTABanner";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 export const metadata: Metadata = {
   title: "About Sunflo Detailing — Oakland Park, FL Auto Detailing Studio",
@@ -203,7 +203,7 @@ export default function AboutPage() {
 
               <div className="space-y-5 text-gray-300 text-base leading-relaxed">
                 <p>
-                  Jason started Sunflo Detailing in Oakland Park in 2017 with a straightforward philosophy:
+                  Jason Girasol started Sunflo Detailing in Oakland Park in 2017 with a straightforward philosophy:
                   if you&apos;re going to protect someone&apos;s vehicle, do it correctly — or don&apos;t do
                   it at all. He had been detailing cars for several years before opening the studio, working
                   through every mistake and learning curve in private before building the business around

@@ -71,7 +71,7 @@ export const faqs: FAQ[] = [
     category: "pricing",
     question: "What payment methods do you accept?",
     answer:
-      "We accept cash, Zelle, Venmo, and major credit/debit cards. Payment is typically collected at time of service. For larger packages like full paint correction or ceramic coating, we may require a deposit to hold your appointment — we'll confirm this when you book.",
+      "We accept cash, Zelle, Venmo, CashApp, and major credit/debit cards. Payment is typically collected at time of service. For larger packages like full paint correction or ceramic coating, we may require a deposit to hold your appointment — we'll confirm this when you book.",
   },
   {
     id: "10",
@@ -136,6 +136,6 @@ export const faqs: FAQ[] = [
     category: "location",
     question: "How long has Sunflo Detailing been in business?",
     answer:
-      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 9 years of experience and hundreds of satisfied clients across Oakland Park, Fort Lauderdale, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
+      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 9 years of experience and more than 2,000 vehicles serviced across Oakland Park, Fort Lauderdale, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
   },
 ];

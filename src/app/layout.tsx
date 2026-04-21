@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({subsets:['latin'],variable:'--font-sans',display:'swap'});
 
 const sora = Sora({
   variable: "--font-inter",
@@ -24,7 +24,7 @@ const bigShoulders = Big_Shoulders({
   display: "swap",
 });
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -122,8 +122,8 @@ const localBusinessJsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 26.17250,
-    longitude: -80.13500,
+    latitude: 26.185207,
+    longitude: -80.135131,
   },
   openingHoursSpecification: [
     {
@@ -163,9 +163,9 @@ const localBusinessJsonLd = {
     author: { "@type": "Person", name: t.name },
     reviewRating: {
       "@type": "Rating",
-      ratingValue: String(t.rating),
-      bestRating: "5",
-      worstRating: "1",
+      ratingValue: t.rating,
+      bestRating: 5,
+      worstRating: 1,
     },
     reviewBody: t.text,
     ...(t.date && { datePublished: t.date }),

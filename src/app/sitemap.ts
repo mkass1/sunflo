@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { servicePages } from "@/data/service-pages";
 import { cityPages } from "@/data/city-pages";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 const NOW = new Date();
 
 export default function sitemap(): MetadataRoute.Sitemap {

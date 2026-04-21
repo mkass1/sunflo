@@ -7,7 +7,7 @@ import CTABanner from "@/components/layout/CTABanner";
 import TestimonialCard from "@/components/faq/TestimonialCard";
 import FAQExperience from "@/components/faq/FAQExperience";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const faqJsonLd = {
   "@context": "https://schema.org",

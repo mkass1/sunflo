@@ -8,7 +8,7 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/layout/CTABanner";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const AREA_SERVED = [
   "Oakland Park",

@@ -1,48 +1,55 @@
 # Sunflo Detailing — Manager Action Plan (Web / SEO)
 
-**Updated:** 2026-04-21  
+**Updated:** 2026-04-21 (post-launch live pass)  
 **Scope:** Code + SEO manager tasks only. Owner tasks are in `docs/seo-owner-actions.md`.
 
-All items from the April 2026 audit pass are marked ✅. Items below are outstanding work.
+See `FULL-AUDIT-REPORT.md` for the full post-launch findings and updated score (86/100).
 
 ---
 
-## Critical (Blockers for Launch)
+## Resolved — Post-Launch Pass (2026-04-21 evening)
 
-### C1. Wire the real Google Maps CID
-**File:** `src/components/home/LocationMap.tsx`  
-**When:** Owner provides the full Google Maps browser URL  
-**Effort:** 5 minutes
+| Item | Resolution |
+|---|---|
+| ~~C1. Wire the real Google Maps CID~~ | ✅ Real CID `0x88d9a7071fb518fb:0x8db1839c761770d4` added to both `LocationMap.tsx` and `contact/page.tsx` |
+| ~~C2. Compress the cinematic reel video~~ | ✅ Original 18.8 MB file deleted; `cinematic-reel-opt.mp4` (3 MB) is the only version |
+| ~~C4. Verify and deploy~~ | ✅ Site is live at https://www.sunflodetailing.com |
+| ~~H2. Add Jason's last name to Person schema~~ | ✅ `about/page.tsx` body copy updated; schema was already correct |
+| ~~H6. Set up Vercel Analytics~~ | ✅ Analytics + SpeedInsights deployed |
+| www/non-www canonical mismatch | ✅ All 10 SITE_URL instances updated to www |
+| GeoCoordinates 1.4 km off | ✅ Fixed to 26.185207 / -80.135131 |
+| Review schema type errors | ✅ ratingValue/bestRating/worstRating are numbers |
+| Phone hidden on mobile | ✅ Removed `hidden sm:inline` from Navbar |
+| FAQ #9 CashApp missing | ✅ Added to payment methods |
+| FAQ #18 "hundreds" inconsistency | ✅ Updated to "more than 2,000 vehicles" |
+| llms.txt non-www URLs | ✅ All 9 URLs updated to www |
+| /locations 404 on breadcrumb | ✅ `/locations/page.tsx` created |
+| Hardcoded non-www OG urls (services, gallery) | ✅ Fixed to use SITE_URL const |
 
-Replace the two placeholder occurrences of the Maps URL with the real `place_id` CID. The TODO comment in the file marks the exact spot. Also generate the review link: `https://search.google.com/local/writereview?placeid=<real_cid>` and add it to `docs/seo-owner-actions.md` item 11.
+---
 
-### C2. Compress the cinematic reel video
-**File:** `public/videos/cinematic-reel.mp4` (18.8 MB)  
-**When:** Before or immediately after first deploy  
-**Effort:** 30 minutes
+## Critical (Fix Now)
 
-The video needs to be re-encoded to under 3 MB at 1280×720 with H.264 at ~2 Mbps. Command:
-```bash
-ffmpeg -i cinematic-reel.mp4 -vf scale=1280:-2 -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 128k -movflags +faststart public/videos/cinematic-reel-opt.mp4
+### C1. Add CSP header
+**File:** `next.config.ts` (securityHeaders array)  
+**Effort:** 45–60 minutes
+
+Only remaining security header gap. Start with:
 ```
-Then update the `<video>` src in `src/components/gallery/GalleryGrid.tsx`. Also add an IntersectionObserver to only mount the video when it scrolls into view (the component is already "use client", so this is straightforward).
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self' https://api.resend.com https://vitals.vercel-insights.com;
+```
+Test carefully — Framer Motion uses inline styles. Run Lighthouse after adding to verify no breakage.
 
-### C3. Sync aggregateRating with live GBP
-**File:** `src/app/layout.tsx` (line ~152)  
+### C2. Sync aggregateRating with live GBP
+**File:** `src/app/layout.tsx` (line ~154)  
 **When:** Owner confirms current GBP review count + average star rating  
 **Effort:** 2 minutes
 
-Update `ratingValue` and `reviewCount` to match live GBP numbers. The TODO comment in the file marks the spot. This should also become a monthly checkin item.
-
-### C4. Verify and deploy
-**When:** Owner signals DNS is ready  
-**Effort:** 1–2 hours following LAUNCH-CHECKLIST.md
-
-See `LAUNCH-CHECKLIST.md` for the step-by-step.
+The comment reads "Verified 2026-04-21 — update reviewCount monthly to match live GBP." Get the actual live count from the owner and update `reviewCount: 120` to the real number.
 
 ---
 
-## High (Within 1 Week of Launch)
+## High (This Week)
 
 ### H1. Run image optimization script
 **File:** `public/images/gallery/*`, `public/images/services/*`  
@@ -52,124 +59,112 @@ See `LAUNCH-CHECKLIST.md` for the step-by-step.
 node scripts/optimize-images.mjs
 ```
 
-The script uses sharp (already installed). After re-enabling `next/image`, Next.js will handle WebP conversion on-the-fly via the built-in optimizer — but pre-optimizing source files reduces the initial conversion delay on first page load.
+Sharp is installed. Pre-optimizing source files reduces the initial WebP conversion delay on first page load.
 
-### H2. Add Jason's last name to Person schema
-**Files:** `src/app/layout.tsx`, `src/app/about/page.tsx`  
-**When:** Owner confirms last name  
-**Effort:** 5 minutes
-
-Two TODO comments mark the exact locations. The full name strengthens Google's entity disambiguation for the Knowledge Panel. Both Person schema nodes should match exactly.
-
-### H3. Add Yelp + Apple Maps URLs to sameAs
+### H2. Add Yelp + Apple Maps URLs to sameAs
 **File:** `src/app/layout.tsx` (AutomotiveBusiness sameAs array)  
 **When:** Owner claims listings (see owner plan items 5 & 6)  
 **Effort:** 5 minutes per listing
 
 Once the owner shares the URLs, add them to the `sameAs` array alongside the existing Instagram, Facebook, and kgmid URLs.
 
-### H4. Add CSP header
-**File:** `next.config.ts` (securityHeaders array)  
-**Effort:** 45 minutes
-
-Next.js App Router with Framer Motion requires careful CSP tuning. Start with:
-```
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self' https://api.resend.com;
-```
-Test thoroughly — Framer Motion uses inline styles, and Google Maps iframes need `frame-src`. Run Lighthouse after adding to verify no breakage.
-
-### H5. Add IntersectionObserver lazy-mount for video
+### H3. Add IntersectionObserver lazy-mount for video
 **File:** `src/components/gallery/GalleryGrid.tsx`  
 **Effort:** 20 minutes
 
-The video is currently in the gallery page with `preload="metadata"`. Add a `useRef` + `IntersectionObserver` so the `<video>` element only renders when the gallery section scrolls into view. This prevents the browser from downloading even the metadata until the user scrolls to it.
+The video currently uses `preload="metadata"`. Add `useRef` + `IntersectionObserver` so the `<video>` element only renders when scrolled into view. The component is already "use client".
 
-### H6. Set up Vercel Analytics or Plausible
-**Effort:** 30 minutes (Vercel Analytics is zero-config with their dashboard)
+### H4. Submit sitemap to GSC + Bing
+**When:** Owner confirms GSC is set up  
+**Effort:** 10 minutes
 
-```bash
-npm install @vercel/analytics
-```
-Add `<Analytics />` to `src/app/layout.tsx`. No cookie consent required for Vercel Analytics (cookieless). Plausible is also cookieless and GDPR-compliant if preferred.
+Ensure `https://www.sunflodetailing.com/sitemap.xml` is submitted. The sitemap currently has 16 URLs (added `/locations` this pass). Also request indexing for homepage, `/services/ceramic-coating`, `/about`, `/locations/fort-lauderdale` via URL Inspection.
 
 ---
 
-## Medium (Within 1 Month)
+## Medium (Within 30 Days)
 
 ### M1. Gallery photo refresh
 **When:** Owner supplies 12–20 new before/after photos  
 **Effort:** 30 minutes per batch
 
-Add photos to `public/images/gallery/`, update `src/data/gallery.ts` with alt text and metadata. Run the image optimizer after adding. Update the `imageGalleryJsonLd` in `gallery/page.tsx` (it auto-generates from the galleryImages array — just adding entries to gallery.ts is enough).
+Add to `public/images/gallery/`, update `src/data/gallery.ts` with alt text. Run the image optimizer after each batch.
 
-### M2. Blog / article content (long-tail keywords)
-**Effort:** 2–3 hours per article
-
-Create `src/app/blog/page.tsx` and `src/app/blog/[slug]/page.tsx`. Topics by search demand:
-1. "How to maintain a ceramic coating in South Florida"
-2. "Florida tint laws: what percentage is legal?"
-3. "PPF vs ceramic coating: which do you need?"
-4. "How much does ceramic coating cost in Fort Lauderdale?"
-5. "What to expect from a paint correction appointment"
-
-Add `Article` + `BreadcrumbList` schema per post. Update sitemap to include blog entries.
-
-### M3. Add Review schema items from testimonials
-**File:** `src/app/layout.tsx` (already has `review:` array mapped from testimonials)  
-**Effort:** 30 minutes
-
-Verify each `testimonials` item in `src/data/testimonials.ts` has a `date` field. Add `datePublished` to any missing. Add `reviewUrl` pointing to the Google review URL for items where it's known.
-
-### M4. Service OG images
+### M2. Service OG images (4 needed)
 **Effort:** 2 hours
 
-Each of the 4 service detail pages currently falls back to `porsche-911.jpg` for OpenGraph. Create or commission a unique OG image for each service (1200×630) and add them to `servicePages` data in `src/data/service-pages.ts` as `ogImage`.
+Each service detail page falls back to `porsche-911.jpg` for OpenGraph. Create or commission 4 unique 1200×630 images and add them to `src/data/service-pages.ts` as `ogImage`.
 
-### M5. City page OG images
+### M3. City page OG images (5 needed)
 **Effort:** 1 hour
 
-The 5 city landing pages at `/locations/[city]` currently have no `openGraph.images`. Add a suitable image to the `generateMetadata` function or to the city data. A single high-quality shop/vehicle photo with the brand bar is acceptable as a shared city OG.
+City landing pages have no `openGraph.images`. Add a shared brand image or city-specific photo to `generateMetadata` in `locations/[city]/page.tsx`.
 
-### M6. Topic cluster build-out
-**Effort:** 4–6 hours
+### M4. Add Review schema datePublished + reviewUrl
+**File:** `src/app/layout.tsx` (review array), `src/data/testimonials.ts`  
+**Effort:** 30 minutes
 
-The ceramic coating service page is the natural hub. Planned spokes:
-- Ceramic coating vs wax (Fort Lauderdale focus)
-- How long does ceramic coating last in Florida?
-- Ceramic coating aftercare guide
-- Ceramic coating cost guide (Oakland Park / South Florida)
+Add `datePublished` to all testimonial items missing a `date` field. Add `reviewUrl` to any item with a known Google review URL.
 
-Internal link each spoke back to `/services/ceramic-coating`. Add to sitemap.
+### M5. Structured data for individual service Offer prices
+**Files:** `src/data/service-pages.ts`, `src/app/services/[slug]/page.tsx`  
+**Effort:** 1 hour
+
+The Services schema currently uses `priceRange`. Add explicit `Offer` items per vehicle tier (Small/Medium/Large) to enable SERP pricing rich results.
+
+### M6. Blog pillar + spoke build-out
+**Effort:** 3–4 hours per article
+
+Create `src/app/blog/page.tsx` and `src/app/blog/[slug]/page.tsx`. Highest-demand topics for this market:
+1. "How to maintain a ceramic coating in South Florida" → links to `/services/ceramic-coating`
+2. "Florida tint laws 2026: what's actually legal on each window" → links to `/services/window-tinting`
+3. "PPF vs ceramic coating: which one for your car?" → links to both
+4. "How much does ceramic coating cost in Fort Lauderdale?" → links to `/services/ceramic-coating`
+5. "What to expect from a paint correction appointment"
+
+Add `Article` + `BreadcrumbList` schema per post.
 
 ---
 
 ## Low (Backlog)
 
-### L1. Search action in WebSite schema
-If an internal search is ever added to the site, add `potentialAction: { "@type": "SearchAction" }` to the WebSite schema in `layout.tsx`. No action needed until search exists.
+### L1. Favicon audit
+Verify `public/favicon.ico` and `public/favicon.png` dimensions. Consider migrating to Next.js 15+ `app/favicon.ico` + `app/apple-icon.png`.
 
-### L2. Favicon audit
-Verify `public/favicon.ico` and `public/favicon.png` are high-quality and the correct dimensions. Next.js 13+ supports `app/favicon.ico` and `app/apple-icon.png` in the app directory — consider migrating.
+### L2. Search action in WebSite schema
+If internal search is ever added, add `potentialAction: { "@type": "SearchAction" }` to WebSite schema in `layout.tsx`.
 
-### L3. Structured data for individual service packages
-The service pages describe specific packages (e.g., Gloss Enhancement $800, Paint Correction $2,000–$3,000). Adding individual `Offer` items with explicit `price` fields to the Service schema could enable Rich Results for pricing in SERPs. Currently blocked by lack of `priceRange` in the data model.
-
-### L4. Remove `.DS_Store` from public/
-Add `public/**/.DS_Store` to `.gitignore`. Confirm it's not committed to the repo — visible `.DS_Store` files waste crawl budget (though Next.js won't serve them by default, they should not be tracked).
+### L3. Remove `.DS_Store` from public/
+Add `public/**/.DS_Store` to `.gitignore`.
 
 ---
 
-## Post-Deploy Verification (run after DNS is live)
+## Ongoing (Monthly)
 
-1. `curl -I https://sunflodetailing.com/` — confirm 200, HSTS header present
-2. `curl https://sunflodetailing.com/sitemap.xml` — confirm 15 URLs, all with lastModified
-3. `curl https://sunflodetailing.com/robots.txt` — confirm AI crawler allow rules
-4. Lighthouse audit on live URL (not localhost) — target: Performance ≥85, SEO 100, Best Practices ≥95, Accessibility ≥90
-5. Google Rich Results Test: paste `/services/ceramic-coating` and `/about` JSON-LD — expect 0 errors
-6. Submit sitemap to GSC + Bing Webmaster Tools
-7. Verify Resend contact form end-to-end: submit `/contact` form → confirm email arrives in Gmail
+1. Sync `aggregateRating.reviewCount` in `layout.tsx` with live GBP count (owner sends number on 1st of month)
+2. Run `node scripts/optimize-images.mjs` after any new images land in `public/`
+3. Add new Yelp/Apple Maps/Bing Places URLs to `sameAs` as owner claims each listing
+4. Check GSC for new keyword impressions — update city/service page copy to target emerging terms
 
 ---
 
-*Action plan maintained by Matthew Kass. Last updated 2026-04-21.*  
+## Verification Commands
+
+```bash
+# www canonical serving correctly (should return 200 and www canonical)
+curl -I https://www.sunflodetailing.com/
+
+# non-www redirects to www with 308 or 301 (not 307)
+curl -I https://sunflodetailing.com/
+
+# sitemap has 16 URLs
+curl https://www.sunflodetailing.com/sitemap.xml | grep -c '<url>'
+
+# robots.txt AI crawler rules present
+curl https://www.sunflodetailing.com/robots.txt
+```
+
+---
+
+*Action plan maintained by Matthew Kass. Last updated 2026-04-21 (post-launch live pass).*  
 *See `FULL-AUDIT-REPORT.md` for full findings context.*

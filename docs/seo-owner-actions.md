@@ -1,6 +1,6 @@
 # Sunflo Detailing — Owner Action Plan
 
-**Last updated:** 2026-04-21 (second full audit pass — all Phase 2 code fixes applied)  
+**Last updated:** 2026-04-21 (post-launch live pass — site is live, 16 code bugs fixed)  
 **Original:** 2026-04-18  
 **Complements:** `FULL-AUDIT-REPORT.md` and `ACTION-PLAN.md`
 
@@ -10,11 +10,11 @@ The code side is done. Every technical SEO issue from both audit passes has been
 
 ## This Week — Critical (1–2 hours total)
 
-### 0. Send your real Google Maps URL to the developer
+### ✅ 0. Send your real Google Maps URL to the developer — DONE
 
-Open Google Maps in your browser, search for your GBP listing ("Sunflo Detailing Oakland Park"), click on it, and copy the full URL from the browser address bar — it should look like `https://www.google.com/maps/place/Sunflo+Detailing/@26.17...`. Send that URL to Matthew.
+The real Maps embed CID has been identified from your GBP listing and is now live on both the homepage map and the Contact page map. No action needed from you on this item.
 
-This unlocks two things: the Maps embed on the website will show the correct pin (currently a placeholder), and you'll get a one-tap "Leave us a review" link for your QR code cards.
+Your GBP listing CID: `10210086538245009620` — already wired into the website.
 
 ---
 
@@ -135,7 +135,7 @@ Go to your Facebook Business Page settings and confirm these match your website 
 - Business name: **Sunflo Detailing** (not "Sunflo Car Detailing" or any variation)
 - Address: **4708 NE 11th Ave, Oakland Park, FL 33334**
 - Phone: **(954) 235-6882**
-- Website: **https://sunflodetailing.com**
+- Website: **https://www.sunflodetailing.com**
 - Category: **Automotive Detailing Service**
 - Hours: Monday–Friday 8:00 AM – 6:00 PM
 
@@ -190,13 +190,14 @@ Photo uploads to your GBP profile are one of the highest-impact local signals �
 
 ### 14. Update review count monthly in the code
 
-The schema on your site shows `120` Google reviews. Keep this accurate:
+The schema on your site currently shows `120` Google reviews at `5.0` stars. Keep this accurate — stale review counts in schema are flagged as low quality.
 
-1. Check your GBP dashboard for the current review count and average star rating
+**What to do on the 1st of each month:**
+1. Open your GBP dashboard → check current review count and average star rating
 2. Message Matthew with both numbers (e.g. "143 reviews, 4.9 stars")
 3. He'll update `src/app/layout.tsx` in 2 minutes and redeploy
 
-Do this once a month. Stale review counts in schema look bad to Google.
+**Immediate ask:** What is the current live review count and star rating on your GBP right now? The code needs to match.
 
 ---
 

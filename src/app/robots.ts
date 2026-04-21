@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://sunflodetailing.com";
+const SITE_URL = "https://www.sunflodetailing.com";
 
 const AI_CRAWLERS = ["GPTBot", "Claude-Web", "anthropic-ai", "CCBot", "GoogleExtended", "PerplexityBot"];
 

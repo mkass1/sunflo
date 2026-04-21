@@ -60,7 +60,7 @@ export default function Navbar() {
                 className="flex items-center gap-1.5 text-gray-300 hover:text-white transition-colors"
               >
                 <Phone size={15} className="text-brand-400 shrink-0" />
-                <span className="hidden sm:inline text-sm font-medium tracking-wide">{contact.phone}</span>
+                <span className="text-sm font-medium tracking-wide">{contact.phone}</span>
               </a>
 
               <Link
