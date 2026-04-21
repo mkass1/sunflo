@@ -78,19 +78,19 @@ export default function GalleryPage() {
         </Container>
       </section>
 
-      {/* Gallery intro */}
-      <section className="py-12 bg-dark border-b border-dark-border">
-        <Container>
-          <p className="text-gray-400 max-w-3xl text-[15px] leading-relaxed">
-            Every vehicle in this gallery came through our Oakland Park, FL studio for a specific reason — swirls from a bad detail shop, a brand-new car that needed ceramic protection before the first rainstorm, or an exotic that needed a full multi-stage correction before a show. Each job is handled by the same small in-house team using professional-grade compounds, coatings, and protective films. Browse by category to see exterior details, paint corrections, ceramic coating results, and interior transformations.
-          </p>
-        </Container>
-      </section>
-
       {/* Gallery */}
       <section className="py-20 bg-dark">
         <Container>
           <GalleryGrid images={galleryImages} />
+        </Container>
+      </section>
+
+      {/* SEO copy */}
+      <section className="py-12 bg-dark border-t border-dark-border">
+        <Container>
+          <p className="text-gray-500 max-w-3xl text-sm leading-relaxed">
+            Every vehicle in this gallery came through our Oakland Park, FL studio for a specific reason — swirls from a bad detail shop, a brand-new car that needed ceramic protection before the first rainstorm, or an exotic that needed a full multi-stage correction before a show. Each job is handled by the same small in-house team using professional-grade compounds, coatings, and protective films. Browse by category to see exterior details, paint corrections, ceramic coating results, and interior transformations.
+          </p>
         </Container>
       </section>
 
