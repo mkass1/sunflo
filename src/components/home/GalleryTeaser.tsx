@@ -7,8 +7,10 @@ import { ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { galleryImages } from "@/data/gallery";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 export default function GalleryTeaser() {
+  const isDesktop = useIsDesktop();
   const preview = galleryImages.slice(0, 6);
 
   return (
@@ -33,9 +35,9 @@ export default function GalleryTeaser() {
           {preview.map((img, i) => (
             <motion.div
               key={img.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={isDesktop ? { opacity: 0, y: 20 } : false}
+              whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+              viewport={isDesktop ? { once: true } : undefined}
               transition={{ duration: 0.45, delay: i * 0.07 }}
               className="group relative overflow-hidden rounded-sm bg-dark-card border border-dark-border aspect-[4/3] hover:border-brand-500/30 transition-colors"
             >

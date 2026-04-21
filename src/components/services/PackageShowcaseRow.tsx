@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { ServiceList, PricingTier } from "./_shared";
 import type { ServiceItem } from "@/types";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 interface PackageShowcaseRowProps {
   service: ServiceItem;
@@ -21,14 +22,15 @@ const OBJECT_POSITIONS: Record<string, string> = {
 };
 
 export default function PackageShowcaseRow({ service, index }: PackageShowcaseRowProps) {
+  const isDesktop = useIsDesktop();
   const imageLeft = index % 2 === 0;
   const isFeatured = service.id === "paint-enhancement";
 
   const ImageBlock = (
     <motion.div
-      initial={{ opacity: 0, x: imageLeft ? -32 : 32 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
+      initial={isDesktop ? { opacity: 0, x: imageLeft ? -32 : 32 } : false}
+      whileInView={isDesktop ? { opacity: 1, x: 0 } : undefined}
+      viewport={isDesktop ? { once: true } : undefined}
       transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       className="relative aspect-[4/5] md:aspect-[3/4] rounded-sm overflow-hidden border border-dark-border hover:border-brand-500/40 transition-all duration-500 group"
     >
@@ -62,9 +64,9 @@ export default function PackageShowcaseRow({ service, index }: PackageShowcaseRo
 
   const ContentBlock = (
     <motion.div
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      initial={isDesktop ? { opacity: 0, y: 28 } : false}
+      whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+      viewport={isDesktop ? { once: true } : undefined}
       transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       className="flex flex-col justify-center"
     >

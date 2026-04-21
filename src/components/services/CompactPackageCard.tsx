@@ -8,6 +8,7 @@ import { Plus, ArrowRight } from "lucide-react";
 import { ServiceList, PricingTier } from "./_shared";
 import { cn } from "@/lib/utils";
 import type { ServiceItem } from "@/types";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 interface CompactPackageCardProps {
   service: ServiceItem;
@@ -21,15 +22,16 @@ export default function CompactPackageCard({
   index = 0,
   tierLabel,
 }: CompactPackageCardProps) {
+  const isDesktop = useIsDesktop();
   const [expanded, setExpanded] = useState(false);
   const ctaLabel = service.quoteOnly ? "Request a Quote" : "Book This Package";
   const indexNum = String(index + 1).padStart(2, "0");
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
+      initial={isDesktop ? { opacity: 0, y: 24 } : false}
+      whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+      viewport={isDesktop ? { once: true, margin: "-80px" } : undefined}
       transition={{ duration: 0.55, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
       className="group relative flex flex-col bg-dark-card border border-dark-border rounded-sm overflow-hidden hover:border-brand-500/40 hover:shadow-[0_24px_60px_-30px_rgba(59,130,246,0.35)] transition-all duration-500"
     >

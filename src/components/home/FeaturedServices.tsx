@@ -8,6 +8,7 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { services } from "@/data/services";
 import { formatPrice } from "@/lib/utils";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 const OBJECT_POSITIONS: Record<string, string> = {
   "complete-interior": "center 85%",
@@ -17,6 +18,7 @@ const OBJECT_POSITIONS: Record<string, string> = {
 };
 
 export default function FeaturedServices() {
+  const isDesktop = useIsDesktop();
   const featured = services.filter((s) => s.featured);
 
   return (
@@ -46,9 +48,9 @@ export default function FeaturedServices() {
           {featured.map((service, i) => (
             <motion.article
               key={service.id}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              initial={isDesktop ? { opacity: 0, y: 28 } : false}
+              whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+              viewport={isDesktop ? { once: true } : undefined}
               transition={{ duration: 0.55, delay: i * 0.08, ease: "easeOut" }}
               className="group relative aspect-[3/4] rounded-sm overflow-hidden border border-dark-border hover:border-brand-500/40 transition-all duration-300"
             >
@@ -120,9 +122,9 @@ export default function FeaturedServices() {
 
         {/* Also available strip */}
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={isDesktop ? { opacity: 0, y: 12 } : false}
+          whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+          viewport={isDesktop ? { once: true } : undefined}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 pt-8 border-t border-dark-border"
         >

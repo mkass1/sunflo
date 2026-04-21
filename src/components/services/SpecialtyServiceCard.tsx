@@ -8,6 +8,7 @@ import { ArrowRight, Plus } from "lucide-react";
 import { ServiceList } from "./_shared";
 import { cn } from "@/lib/utils";
 import type { ServiceItem } from "@/types";
+import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 interface SpecialtyServiceCardProps {
   service: ServiceItem;
@@ -15,6 +16,7 @@ interface SpecialtyServiceCardProps {
 }
 
 export default function SpecialtyServiceCard({ service, index }: SpecialtyServiceCardProps) {
+  const isDesktop = useIsDesktop();
   const [expanded, setExpanded] = useState(false);
   const hasExterior = service.exteriorServices.length > 0;
   const hasInterior = service.interiorServices.length > 0;
@@ -24,9 +26,9 @@ export default function SpecialtyServiceCard({ service, index }: SpecialtyServic
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      initial={isDesktop ? { opacity: 0, y: 20 } : false}
+      whileInView={isDesktop ? { opacity: 1, y: 0 } : undefined}
+      viewport={isDesktop ? { once: true } : undefined}
       transition={{ duration: 0.55, delay: index * 0.08, ease: "easeOut" }}
       className="group relative bg-dark-card/60 backdrop-blur-sm border border-dark-border rounded-sm overflow-hidden hover:border-brand-500/30 hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
     >
