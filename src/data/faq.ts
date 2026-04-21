@@ -122,20 +122,20 @@ export const faqs: FAQ[] = [
     category: "location",
     question: "What areas of South Florida do you serve?",
     answer:
-      "Sunflo Detailing primarily serves clients from our Oakland Park studio, but we welcome vehicles from across South Florida including Fort Lauderdale, Pompano Beach, Wilton Manors, Lauderdale-by-the-Sea, Lighthouse Point, Deerfield Beach, Boca Raton, and Miami. Most clients drop off their vehicle — we currently do not offer mobile detailing at your location.",
+      "Sunflo Detailing serves all of South Florida — including Fort Lauderdale, Pompano Beach, Wilton Manors, Lauderdale-by-the-Sea, Lighthouse Point, Deerfield Beach, Boca Raton, and Miami. You can drop off at our Oakland Park studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
   },
   {
     id: "17",
     category: "location",
-    question: "Do you offer mobile detailing or do I have to come to your shop?",
+    question: "Do you offer mobile detailing?",
     answer:
-      "All services are performed at our Oakland Park studio, which allows us to use professional equipment, controlled lighting, and a full range of tools unavailable in a mobile setup. This ensures the best possible results on every vehicle. Simply drop off your car and we'll contact you when it's ready.",
+      "Yes — Sunflo Detailing offers both studio and mobile appointments. Drop off at our Oakland Park studio at 4708 NE 11th Ave, or we can come to your home, office, or wherever your vehicle is located across South Florida. Some services — like multi-stage paint correction and ceramic coating applications — deliver better results in our climate-controlled studio environment, but we offer mobile for a wide range of detailing work. Call or message us and we&apos;ll recommend the right setup for your job.",
   },
   {
     id: "18",
     category: "location",
     question: "How long has Sunflo Detailing been in business?",
     answer:
-      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 7 years of experience and hundreds of satisfied clients across Oakland Park, Fort Lauderdale, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
+      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 9 years of experience and hundreds of satisfied clients across Oakland Park, Fort Lauderdale, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
   },
 ];

@@ -6,11 +6,12 @@ import FeaturedServices from "@/components/home/FeaturedServices";
 import GalleryTeaser from "@/components/home/GalleryTeaser";
 import TestimonialsPreview from "@/components/home/TestimonialsPreview";
 import CTABanner from "@/components/layout/CTABanner";
+import LocationMap from "@/components/home/LocationMap";
 
 export const metadata: Metadata = {
-  title: "Auto Detailing, Ceramic Coatings & Paint Correction in Oakland Park, FL",
+  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Oakland Park & Fort Lauderdale, FL",
   description:
-    "Sunflo Detailing — in-house auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL. Serving South Florida since 2017.",
+    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL. Serving Fort Lauderdale and South Florida since 2017.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",
@@ -30,6 +31,7 @@ export default function HomePage() {
       <FeaturedServices />
       <GalleryTeaser />
       <TestimonialsPreview />
+      <LocationMap />
       <CTABanner />
     </>
   );

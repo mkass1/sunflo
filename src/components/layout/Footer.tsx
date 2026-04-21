@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { navLinks } from "@/data/navigation";
 import { services } from "@/data/services";
+import { cityPages } from "@/data/city-pages";
 import { contact } from "@/data/contact";
 import SunfloLogo from "./SunfloLogo";
 
@@ -65,8 +66,8 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* 3-column grid: Links, Services, Contact */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
+        {/* 4-column grid: Links, Services, Area, Contact */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
           {/* Quick Links */}
           <div>
@@ -100,7 +101,7 @@ export default function Footer() {
               {services.map((s) => (
                 <li key={s.id}>
                   <Link
-                    href="/services"
+                    href={s.slug ? `/services/${s.slug}` : "/services"}
                     className="text-sm text-gray-400 hover:text-white transition-colors duration-150"
                   >
                     {s.name}
@@ -115,6 +116,30 @@ export default function Footer() {
                   View All Services
                   <span aria-hidden="true">→</span>
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Service Area */}
+          <div>
+            <h3
+              className="text-white/60 font-semibold text-[11px] uppercase tracking-[0.15em] mb-6"
+            >
+              Service Area
+            </h3>
+            <ul className="space-y-3">
+              {cityPages.map((c) => (
+                <li key={c.slug}>
+                  <Link
+                    href={`/locations/${c.slug}`}
+                    className="text-sm text-gray-400 hover:text-white transition-colors duration-150"
+                  >
+                    {c.city}
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-3 mt-1 border-t border-white/[0.04]">
+                <span className="text-sm text-gray-600">Oakland Park <span className="text-brand-500">(home base)</span></span>
               </li>
             </ul>
           </div>

@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { MapPin, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/ui/Container";
 import { contact } from "@/data/contact";
 
@@ -104,11 +105,26 @@ export default function AboutPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.15 }}
-              className="text-gray-300 text-base leading-relaxed max-w-md mb-6"
+              className="text-gray-300 text-base leading-relaxed max-w-lg mb-4"
             >
-              Started by Jason in Oakland Park in 2017. Still the same small
-              in-house team, same standards — no subcontractors, no shortcuts,
-              every car treated like it&apos;s our own.
+              Started by Jason in Oakland Park in 2017, Sunflo Detailing was built around one principle: do
+              the work properly or don&apos;t do it at all. South Florida&apos;s sun, salt air, and UV
+              intensity demand more from paint protection than the rest of the country — and that&apos;s
+              the environment we&apos;ve been working in for nine years. We serve Oakland Park, Fort
+              Lauderdale, Wilton Manors, Pompano Beach, and surrounding Broward County from our shop
+              at 4708 NE 11th Ave.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-gray-400 text-sm leading-relaxed max-w-lg mb-6"
+            >
+              Every service — from a mini interior refresh to a multi-stage paint correction topped with
+              two layers of ceramic coating — is performed by our own hands in a climate-controlled bay
+              with professional lighting. We use CarPro, XPEL, 3M, and ShineSupply products because
+              they perform, not because they&apos;re cheap. No subcontractors, no shortcuts.
             </motion.p>
 
             {/* Numbered pillars */}
@@ -139,6 +155,23 @@ export default function AboutPreview() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Learn more link */}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.45 }}
+              className="mt-6"
+            >
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 text-sm font-medium tracking-wide transition-colors duration-200 group"
+              >
+                Learn more about Sunflo
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+              </Link>
+            </motion.div>
           </div>
         </div>
 

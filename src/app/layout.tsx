@@ -3,7 +3,6 @@ import { Sora, Big_Shoulders, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import LocationMapWrapper from "@/components/layout/LocationMapWrapper";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
 import { cn } from "@/lib/utils";
@@ -66,9 +65,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "/",
-  },
 };
 
 export const viewport: Viewport = {
@@ -86,6 +82,16 @@ const websiteJsonLd = {
   description:
     "Premium auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL.",
   publisher: { "@id": `${SITE_URL}#business` },
+};
+
+const ownerJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE_URL}#jason`,
+  name: "Jason Girasol",
+  jobTitle: "Owner & Lead Detailer",
+  worksFor: { "@id": `${SITE_URL}#business` },
+  knowsAbout: ["Auto Detailing", "Ceramic Coating", "Paint Correction", "Paint Protection Film", "Window Tinting"],
 };
 
 // reviewCount reflects the live GBP count — update this value monthly to keep it accurate.
@@ -138,15 +144,17 @@ const localBusinessJsonLd = {
   sameAs: [
     contact.instagram,
     contact.facebook,
-    "https://share.google/ZTtTeqjzFHvDk16mr",
     "https://www.google.com/search?kgmid=/g/11j37x7gnx",
+    "https://www.google.com/maps?cid=10210086538245009620",
   ],
+  employee: { "@id": `${SITE_URL}#jason` },
+  // Verified 2026-04-21 — update reviewCount monthly to match live GBP
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: "120",
-    bestRating: "5",
-    worstRating: "1",
+    ratingValue: 5.0,
+    reviewCount: 120,
+    bestRating: 5,
+    worstRating: 1,
   },
   review: testimonials.map((t) => ({
     "@type": "Review",
@@ -170,7 +178,6 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-scroll-behavior="smooth"
       className={cn("h-full", "antialiased", sora.variable, bigShoulders.variable, "font-sans", geist.variable)}
     >
       <body className="min-h-full flex flex-col bg-dark text-gray-100">
@@ -182,6 +189,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ownerJsonLd) }}
+        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-brand-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-sm focus:font-semibold focus:text-sm"
@@ -190,7 +201,6 @@ export default function RootLayout({
         </a>
         <Navbar />
         <main id="main" className="flex-1">{children}</main>
-        <LocationMapWrapper />
         <Footer />
       </body>
     </html>

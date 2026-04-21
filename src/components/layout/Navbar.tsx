@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import { navLinks } from "@/data/navigation";
+import { contact } from "@/data/contact";
 import MobileMenu from "./MobileMenu";
 import SunfloLogo from "./SunfloLogo";
 import { cn } from "@/lib/utils";
@@ -52,7 +53,16 @@ export default function Navbar() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
+              <a
+                href={contact.phoneHref}
+                aria-label={`Call us at ${contact.phone}`}
+                className="flex items-center gap-1.5 text-gray-300 hover:text-white transition-colors"
+              >
+                <Phone size={15} className="text-brand-400 shrink-0" />
+                <span className="hidden sm:inline text-sm font-medium tracking-wide">{contact.phone}</span>
+              </a>
+
               <Link
                 href="/contact"
                 className="hidden md:inline-flex items-center bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-sm hover:bg-brand-700 transition-colors tracking-wide shadow-lg shadow-brand-500/20"

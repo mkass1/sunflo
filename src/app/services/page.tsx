@@ -45,7 +45,7 @@ const breadcrumbJsonLd = {
 export const metadata: Metadata = {
   title: "Auto Detailing Services & Pricing in Oakland Park, FL",
   description:
-    "Explore Sunflo Detailing's full range of services — interior detailing, paint correction, ceramic coatings, PPF, tints, and wraps in Oakland Park, FL.",
+    "Professional auto detailing, ceramic coatings, paint correction, PPF, and window tinting in Oakland Park, FL. Serving South Florida since 2017. Packages from $120 — see full pricing.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Auto Detailing Services & Pricing | Sunflo Detailing",

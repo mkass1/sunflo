@@ -12,10 +12,9 @@ import type { ServiceItem } from "@/types";
 interface SpecialtyServiceCardProps {
   service: ServiceItem;
   index: number;
-  photoless?: boolean;
 }
 
-export default function SpecialtyServiceCard({ service, index, photoless = false }: SpecialtyServiceCardProps) {
+export default function SpecialtyServiceCard({ service, index }: SpecialtyServiceCardProps) {
   const [expanded, setExpanded] = useState(false);
   const hasExterior = service.exteriorServices.length > 0;
   const hasInterior = service.interiorServices.length > 0;
@@ -35,32 +34,24 @@ export default function SpecialtyServiceCard({ service, index, photoless = false
       <div className="absolute top-0 left-0 w-8 h-px bg-brand-500/70 z-10" />
       <div className="absolute top-0 left-0 w-px h-8 bg-brand-500/70 z-10" />
 
-      {!photoless && (
-        <div className="relative aspect-[16/10] overflow-hidden shrink-0">
-          <Image
-            src={service.image}
-            alt={`${service.name} — ${service.tagline}`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/40 to-transparent" />
-          {service.badge && (
-            <div className="absolute top-3 right-3 z-10 bg-dark-card/80 backdrop-blur-sm border border-brand-500/30 text-brand-400 text-[9px] font-bold px-2.5 py-1 rounded-sm tracking-[0.14em] uppercase">
-              {service.badge}
-            </div>
-          )}
-        </div>
-      )}
-
-      {photoless && service.badge && (
-        <div className="absolute top-3 right-3 z-10 bg-dark-card/80 backdrop-blur-sm border border-brand-500/30 text-brand-400 text-[9px] font-bold px-2.5 py-1 rounded-sm tracking-[0.14em] uppercase">
-          {service.badge}
-        </div>
-      )}
+      <div className="relative aspect-[16/10] overflow-hidden shrink-0">
+        <Image
+          src={service.image}
+          alt={`${service.name} — ${service.tagline}`}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/40 to-transparent" />
+        {service.badge && (
+          <div className="absolute top-3 right-3 z-10 bg-dark-card/80 backdrop-blur-sm border border-brand-500/30 text-brand-400 text-[9px] font-bold px-2.5 py-1 rounded-sm tracking-[0.14em] uppercase">
+            {service.badge}
+          </div>
+        )}
+      </div>
 
       {/* Content */}
-      <div className={cn("flex flex-col flex-1", photoless ? "p-6 pt-7" : "p-6")}>
+      <div className="flex flex-col flex-1 p-6">
         <h3
           className="text-lg font-bold text-white mb-1.5 leading-snug"
           style={{ fontFamily: "var(--font-heading)" }}

@@ -1,13 +1,22 @@
 # Sunflo Detailing — Owner Action Plan
 
-**Created:** 2026-04-18  
-**Complements:** `docs/seo-audit.md` (code-level fixes already applied)
+**Last updated:** 2026-04-21 (second full audit pass — all Phase 2 code fixes applied)  
+**Original:** 2026-04-18  
+**Complements:** `FULL-AUDIT-REPORT.md` and `ACTION-PLAN.md`
 
-The code side is done. Every technical SEO issue identified in the audit has been fixed — metadata, schemas, FAQ, service landing pages, contact form, llms.txt, and security headers are all in place. The work below is where your **remaining 80% of local search gains** live. None of it requires a developer.
+The code side is done. Every technical SEO issue from both audit passes has been fixed — metadata, schemas, FAQ, service landing pages, contact form, llms.txt, security headers, About page, and 5 city landing pages are all in place. The work below is where your **remaining 80% of local search gains** live. None of it requires a developer.
 
 ---
 
 ## This Week — Critical (1–2 hours total)
+
+### 0. Send your real Google Maps URL to the developer
+
+Open Google Maps in your browser, search for your GBP listing ("Sunflo Detailing Oakland Park"), click on it, and copy the full URL from the browser address bar — it should look like `https://www.google.com/maps/place/Sunflo+Detailing/@26.17...`. Send that URL to Matthew.
+
+This unlocks two things: the Maps embed on the website will show the correct pin (currently a placeholder), and you'll get a one-tap "Leave us a review" link for your QR code cards.
+
+---
 
 ### 1. Verify and fix your Google Business Profile category
 
@@ -146,7 +155,7 @@ The "18-day rule" (observed across hundreds of local businesses): going more tha
 - Say: "If you're happy with the work, a quick Google review makes a huge difference for us"
 - Target: **2–4 new reviews per month**
 
-**Your review link:** `https://www.google.com/search?kgmid=/g/11j37x7gnx` → scroll to Reviews → Write a review (get the direct share link from your GBP dashboard)
+**Your review link:** Log into [Google Business Profile](https://business.google.com) → Home → "Get more reviews" → Copy link. It will look like `https://g.page/r/C.../review`. That's the link to put in a QR code and hand to every client at pickup.
 
 ---
 
@@ -181,13 +190,13 @@ Photo uploads to your GBP profile are one of the highest-impact local signals �
 
 ### 14. Update review count monthly in the code
 
-The schema on your site shows `"120"` Google reviews. Keep this accurate:
+The schema on your site shows `120` Google reviews. Keep this accurate:
 
-1. Check your GBP dashboard for the current review count
-2. Open `src/app/layout.tsx`
-3. Find line that says `reviewCount: "120"` (comment above it says `update this value monthly`)
-4. Change the number to match your current GBP count
-5. Redeploy
+1. Check your GBP dashboard for the current review count and average star rating
+2. Message Matthew with both numbers (e.g. "143 reviews, 4.9 stars")
+3. He'll update `src/app/layout.tsx` in 2 minutes and redeploy
+
+Do this once a month. Stale review counts in schema look bad to Google.
 
 ---
 
@@ -235,16 +244,11 @@ I'll optimize the images, write keyword-rich alt text, and update the gallery pa
 
 ## Owner-Supplied Content That Unlocks Future Code Work
 
-Once you supply these, I'll build the corresponding pages:
+### 18. ✅ About page — DONE
 
-### 18. About page
+The `/about` page is live in the codebase. If you want to refine the copy (especially Jason's last name or any certifications), message Matthew and he'll update it in minutes.
 
-Send me:
-- A short bio (3–5 sentences): how you started Sunflo, years in the industry, what makes you different
-- 1–2 photos of yourself at work or with a finished vehicle
-- Any certifications or training (Gyeon, CarPro, Modesta, IDA, etc.)
-
-This becomes an About page with `Person` + `AboutPage` schema — improves E-E-A-T signals significantly.
+**One item still needed:** Jason's full last name, so we can strengthen Google's entity record for the business. Even first + last is enough — it helps Google know Jason at Sunflo is a distinct, real person, not just a first name.
 
 ---
 
@@ -259,7 +263,50 @@ A `/blog` section with 4–6 in-depth articles would capture long-tail searches.
 - "What to expect when getting paint correction"
 - "How often should I wash my car with a ceramic coating?"
 
-Send rough notes or just approve the topics and I'll write the full articles.
+Just approve the topics and Matthew will write the full articles.
+
+---
+
+### 20. Monthly photography drop
+
+The website gallery and GBP both benefit from consistent fresh photos. Each month, send a folder of images using this naming format:
+
+```
+YYYY-MM-DD_make-model_treatment.jpg
+```
+
+Examples:
+- `2026-05-03_bmw-m4_ceramic-coating.jpg`
+- `2026-05-07_ram-trx_paint-correction.jpg`
+
+Matthew will optimize, add keyword-rich alt text, and update the gallery. Target: 5–10 photos per month.
+
+---
+
+### 21. Three written case studies
+
+These are the single most powerful E-E-A-T signal a detailing shop can have online. Each case study is:
+
+- **Vehicle:** Make, model, year, color
+- **Problem:** What the customer came in with (swirls, oxidation, new car delivery, etc.)
+- **Solution:** What was done and why
+- **Result:** Client outcome (photos + their words if they'll share)
+- **Permission:** Customer name (first name + last initial is fine) or just "Fort Lauderdale client"
+
+Matthew will turn these into published blog posts or a dedicated "Work" section with `Review` schema. Google treats detailed case studies as strong authority signals.
+
+---
+
+### 22. City landing pages — already live
+
+Five city-specific pages are already on the website (linked from the footer):
+- `/locations/fort-lauderdale`
+- `/locations/wilton-manors`
+- `/locations/pompano-beach`
+- `/locations/deerfield-beach`
+- `/locations/lighthouse-point`
+
+If you have a photo that's specific to work done for a client from one of these cities, send it — we can add it to the relevant city page to make it even more locally relevant.
 
 ---
 

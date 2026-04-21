@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { contact } from "@/data/contact";
 
 export async function POST(request: Request) {
   let body: Record<string, string>;
@@ -17,7 +18,7 @@ export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     return NextResponse.json(
-      { error: "Contact form is not configured yet. Please call us at (954) 235-6882." },
+      { error: `Contact form is not configured yet. Please call us at ${contact.phone}.` },
       { status: 503 }
     );
   }
@@ -46,7 +47,7 @@ export async function POST(request: Request) {
   if (error) {
     console.error("Resend error:", error);
     return NextResponse.json(
-      { error: "Failed to send your message. Please call us at (954) 235-6882." },
+      { error: `Failed to send your message. Please call us at ${contact.phone}.` },
       { status: 500 }
     );
   }

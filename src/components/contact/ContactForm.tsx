@@ -157,9 +157,6 @@ export default function ContactForm() {
               {s.name}
             </option>
           ))}
-          <option value="ppf">Paint Protection Film (PPF)</option>
-          <option value="tint">Window Tinting</option>
-          <option value="wrap">Vinyl Wrap</option>
           <option value="other">Other / Not Sure</option>
         </select>
       </div>

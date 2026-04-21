@@ -33,7 +33,7 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Contact & Book",
+  title: "Book Auto Detailing in Oakland Park, FL",
   description:
     "Contact Sunflo Detailing to book your auto detailing appointment in Oakland Park, FL. Call or message us — appointment-only, Mon–Fri 8am–6pm.",
   alternates: { canonical: "/contact" },
@@ -166,6 +166,9 @@ export default function ContactPage() {
               </div>
 
               {/* Google Maps embed */}
+              {/* TODO(owner): Replace src with the real GBP embed URL from your Google Maps listing.
+                  Go to Maps → your listing → Share → Embed → copy iframe src.
+                  Current URL uses a placeholder CID (0x0) and won't show the verified GBP card. */}
               <div className="rounded-sm overflow-hidden border border-dark-border h-64">
                 <iframe
                   title="Sunflo Detailing Location"
@@ -181,7 +184,7 @@ export default function ContactPage() {
 
               <div className="bg-brand-500/10 border border-brand-500/20 rounded-sm p-5">
                 <p className="text-brand-300 text-sm leading-relaxed">
-                  <strong className="text-white">Established in 2017</strong> — serving South Florida&apos;s most discerning vehicle owners for over 7 years.
+                  <strong className="text-white">Established in 2017</strong> — serving South Florida&apos;s most discerning vehicle owners for over 9 years.
                 </p>
               </div>
             </div>

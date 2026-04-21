@@ -95,7 +95,7 @@ export const services: ServiceItem[] = [
     description:
       "A targeted interior refresh for cars that just need a pick-me-up. Vacuum, wipe-down, glass, and mats — perfect in between full interior details or before a weekend trip.",
     pricing: { small: 120, medium: 140, large: 160 },
-    image: "/images/services/sunflo-tech-interior.jpg",
+    image: "/images/services/mini-interior-bmw.jpg",
     category: "core",
     tier: "interior",
     badge: "Quick Service",
@@ -138,6 +138,27 @@ export const services: ServiceItem[] = [
   },
 
   // ============ PAINT CORRECTION & CERAMIC COATING ============
+  {
+    id: "ceramic-coating",
+    slug: "ceramic-coating",
+    name: "Ceramic Coating",
+    tagline: "Hydrophobic protection that lasts years, not months",
+    description:
+      "A professionally applied ceramic coating chemically bonds to your vehicle's clear coat, creating a semi-permanent hydrophobic barrier that repels water, blocks UV, and resists contaminants. Three package tiers starting at $800 — choose by paint condition and protection duration.",
+    image: "/images/services/bmw-hood-ceramic-reflection.jpg",
+    category: "core",
+    tier: "correction",
+    badge: "Most Requested",
+    featured: true,
+    exteriorServices: [
+      "Paint Decontamination & Iron Removal",
+      "Clay Bar Treatment",
+      "Machine Polish (package dependent)",
+      "Professional-Grade Nano-Ceramic Coating",
+      "1–5 Year Protection Depending on Package",
+    ],
+    interiorServices: [],
+  },
   {
     id: "gloss-enhancement",
     name: "Gloss Enhancement Package",

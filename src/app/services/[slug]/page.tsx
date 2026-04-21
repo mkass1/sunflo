@@ -65,10 +65,19 @@ export default async function ServiceDetailPage({
     "@context": "https://schema.org",
     "@type": "Service",
     name: page.h1,
+    serviceType: "Automotive Detailing",
     description: page.metaDescription,
     provider: { "@id": `${SITE_URL}#business` },
     areaServed: AREA_SERVED.map((name) => ({ "@type": "City", name })),
     url: `${SITE_URL}/services/${page.slug}`,
+    offers: {
+      "@type": "Offer",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        priceCurrency: "USD",
+        description: "Custom quote — price varies by vehicle size and condition",
+      },
+    },
   };
 
   const faqJsonLd = {

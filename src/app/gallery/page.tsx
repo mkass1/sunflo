@@ -16,13 +16,35 @@ import GalleryGrid from "@/components/gallery/GalleryGrid";
 import CTABanner from "@/components/layout/CTABanner";
 import { galleryImages } from "@/data/gallery";
 
+const SITE_URL = "https://sunflodetailing.com";
+
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://sunflodetailing.com/" },
-    { "@type": "ListItem", position: 2, name: "Gallery", item: "https://sunflodetailing.com/gallery" },
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+    { "@type": "ListItem", position: 2, name: "Gallery", item: `${SITE_URL}/gallery` },
   ],
+};
+
+const imageGalleryJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Sunflo Detailing — Work Portfolio",
+  description: "Gallery of auto detailing, ceramic coating, paint correction, and vehicle wrap work at Sunflo Detailing in Oakland Park, FL.",
+  itemListElement: galleryImages.map((img, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "ImageObject",
+      contentUrl: `${SITE_URL}${img.src}`,
+      name: img.alt,
+      description: img.alt,
+      creator: { "@id": `${SITE_URL}#business` },
+      width: img.width,
+      height: img.height,
+    },
+  })),
 };
 
 export const metadata: Metadata = {
@@ -43,6 +65,7 @@ export default function GalleryPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGalleryJsonLd) }} />
       {/* Page hero */}
       <section className="pt-40 pb-16 bg-dark-muted border-b border-dark-border">
         <Container>
@@ -52,6 +75,15 @@ export default function GalleryPage() {
             title="The Gallery"
             subtitle="Every vehicle tells a story. Browse our portfolio of transformations — from daily drivers to exotics."
           />
+        </Container>
+      </section>
+
+      {/* Gallery intro */}
+      <section className="py-12 bg-dark border-b border-dark-border">
+        <Container>
+          <p className="text-gray-400 max-w-3xl text-[15px] leading-relaxed">
+            Every vehicle in this gallery came through our Oakland Park, FL studio for a specific reason — swirls from a bad detail shop, a brand-new car that needed ceramic protection before the first rainstorm, or an exotic that needed a full multi-stage correction before a show. Each job is handled by the same small in-house team using professional-grade compounds, coatings, and protective films. Browse by category to see exterior details, paint corrections, ceramic coating results, and interior transformations.
+          </p>
         </Container>
       </section>
 

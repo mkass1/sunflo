@@ -1,5 +1,5 @@
 export const contact = {
-  phone: "954-235-6882",
+  phone: "(954) 235-6882",
   phoneHref: "tel:+19542356882",
   email: "sunflodetailing@gmail.com",
   emailHref: "mailto:sunflodetailing@gmail.com",

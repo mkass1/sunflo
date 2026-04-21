@@ -61,6 +61,20 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
         layout
         className="columns-2 md:columns-3 gap-4 space-y-4"
       >
+        {/* Pinned video — always first */}
+        <div className="break-inside-avoid relative overflow-hidden rounded-sm border border-dark-border">
+          <video
+            src="/videos/cinematic-reel-opt.mp4"
+            poster="/images/gallery/sunflo-team-lamborghini.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="w-full object-cover"
+          />
+        </div>
+
         <AnimatePresence>
           {filtered.map((image, i) => (
             <motion.div

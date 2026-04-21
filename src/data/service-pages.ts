@@ -64,17 +64,17 @@ export const servicePages: ServicePage[] = [
       { slug: "paint-protection-film", label: "Paint Protection Film" },
       { slug: "window-tinting", label: "Window Tinting" },
     ],
-    ogImage: "/images/services/paint-enhancement.jpg",
+    ogImage: "/images/services/bmw-hood-ceramic-reflection.jpg",
   },
   {
     slug: "paint-correction",
     eyebrow: "Paint Restoration",
     metaTitle: "Paint Correction in Oakland Park, FL | Sunflo Detailing",
     metaDescription:
-      "Expert multi-stage paint correction in Oakland Park, FL. Sunflo Detailing removes swirls, scratches, water spots, and oxidation — restoring your paint to a mirror finish. Prices from $2,000.",
+      "Expert multi-stage paint correction in Oakland Park, FL — serving Fort Lauderdale and all of Broward County. Sunflo Detailing removes swirls, scratches, water spots, and oxidation. Prices from $2,000.",
     h1: "Paint Correction in Oakland Park, FL",
     intro:
-      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Oakland Park, FL, removing up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
+      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Oakland Park, FL, serving Fort Lauderdale, Wilton Manors, and all of Broward County. We remove up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
     sections: [
       {
         heading: "What Paint Correction Fixes",
@@ -136,7 +136,7 @@ export const servicePages: ServicePage[] = [
     eyebrow: "Paint Protection",
     metaTitle: "Paint Protection Film (PPF) in Oakland Park, FL | Sunflo Detailing",
     metaDescription:
-      "Invisible paint protection film (PPF) installation in Oakland Park, FL. Shield your vehicle from rock chips, road debris, and UV damage with self-healing urethane film. Custom quotes available from Sunflo Detailing.",
+      "Invisible paint protection film (PPF) in Oakland Park, FL and South Florida. Shield your vehicle from rock chips, road debris, and UV damage. Front-clip packages typically from $1,500. Custom quotes from Sunflo Detailing.",
     h1: "Paint Protection Film (PPF) in Oakland Park, FL",
     intro:
       "Paint Protection Film — also called PPF, clear bra, or urethane film — is the only product that physically prevents rock chips and road debris from reaching your paint. Modern self-healing PPF uses heat-activated polyurethane technology: the film literally flows back to its original shape after light contact. At Sunflo Detailing in Oakland Park, we use precision computer-cut templates for a seamless, virtually invisible fit on any vehicle.",
@@ -201,10 +201,10 @@ export const servicePages: ServicePage[] = [
     eyebrow: "UV & Privacy",
     metaTitle: "Window Tinting in Oakland Park, FL | Sunflo Detailing",
     metaDescription:
-      "Professional window tinting in Oakland Park, FL. Sunflo Detailing installs premium window film that blocks up to 99% UV, reduces heat significantly, and is guaranteed Florida-legal. Custom quotes available.",
+      "Professional window tinting in Oakland Park & Fort Lauderdale, FL. Premium film blocking up to 99% UV, significant heat reduction, and guaranteed Florida-legal compliance. Custom quotes from Sunflo Detailing.",
     h1: "Window Tinting in Oakland Park, FL",
     intro:
-      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. At Sunflo Detailing in Oakland Park, we install premium-grade window film with a clean, bubble-free finish and back every installation with a warranty.",
+      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. For drivers in Oakland Park, Fort Lauderdale, and Pompano Beach, our shop on NE 11th Ave is the convenient choice for same-day tinting with a Florida-legal guarantee. We install premium-grade window film with a clean, bubble-free finish backed by warranty.",
     sections: [
       {
         heading: "Types of Window Film",

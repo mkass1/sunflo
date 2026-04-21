@@ -8,6 +8,7 @@ import ServicesHero from "./ServicesHero";
 import PackageShowcaseRow from "./PackageShowcaseRow";
 import CompactPackageCard from "./CompactPackageCard";
 import SpecialtyServiceCard from "./SpecialtyServiceCard";
+import AlaCarteCard from "./AlaCarteCard";
 import { PRICING_DISCLAIMER } from "@/data/services";
 import type { ServiceItem } from "@/types";
 
@@ -196,9 +197,9 @@ export default function ServicesContent({
             />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {alaCarteServices.map((service, i) => (
-              <SpecialtyServiceCard key={service.id} service={service} index={i} photoless />
+              <AlaCarteCard key={service.id} service={service} index={i} />
             ))}
           </div>
         </Container>

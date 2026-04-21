@@ -28,7 +28,7 @@ export default function HeroSection() {
         >
           <Image
             src="/images/hero/porsche-911.jpg"
-            alt=""
+            alt="Ceramic-coated Porsche 911 at Sunflo Detailing in Oakland Park, FL"
             fill
             className="object-cover object-center"
             priority
@@ -113,7 +113,7 @@ export default function HeroSection() {
           className="text-gray-300 max-w-[420px] text-[15px] sm:text-base leading-relaxed mb-10"
         >
           Interior &amp; exterior detailing, paint correction, ceramic coatings, PPF, vehicle wraps,
-          and window tinting — in-house or mobile across South Florida.
+          and window tinting — drop off at our Oakland Park studio or we come to you.
         </motion.p>
 
         {/* CTAs */}

@@ -21,7 +21,7 @@ export default function LocationMap() {
           >
             <iframe
               title="Sunflo Detailing Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.7!2d-80.1350!3d26.1725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9097db9bcaef3%3A0x0!2s4708+NE+11th+Ave%2C+Oakland+Park%2C+FL+33334!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3525503083524!2d-80.13513052466247!3d26.185207477088312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7071fb518fb%3A0x8db1839c761770d4!2sSunflo%20Detailing!5e0!3m2!1sen!2sus!4v1776789160519!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)", display: "block", minHeight: "280px" }}
@@ -65,10 +65,10 @@ export default function LocationMap() {
               <Car size={15} className="text-brand-400 shrink-0 mt-0.5" />
               <div>
                 <p className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-400 mb-1">
-                  Mobile Service Available
+                  Studio or Mobile
                 </p>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Can&apos;t make it to the shop? We come to you — mobile detailing across South Florida.
+                  Drop off at our Oakland Park studio, or we come to you. Same professional results either way — call to discuss which works best for your service.
                 </p>
               </div>
             </div>
