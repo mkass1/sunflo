@@ -6,6 +6,8 @@ import Footer from "@/components/layout/Footer";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -202,6 +204,8 @@ export default function RootLayout({
         <Navbar />
         <main id="main" className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
