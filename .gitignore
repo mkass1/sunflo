@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# large unoptimized video source files
+public/videos/cinematic-reel.mp4
+
+# claude lock files
+.claude/scheduled_tasks.lock
+
 # debug
 npm-debug.log*
 yarn-debug.log*
