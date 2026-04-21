@@ -11,6 +11,7 @@ interface FormData {
   vehicle: string;
   service: string;
   message: string;
+  website: string; // honeypot — must stay empty
 }
 
 const initial: FormData = {
@@ -20,6 +21,7 @@ const initial: FormData = {
   vehicle: "",
   service: "",
   message: "",
+  website: "",
 };
 
 export default function ContactForm() {
@@ -40,6 +42,8 @@ export default function ContactForm() {
     setLoading(true);
     setError(null);
     try {
+      if (form.website) return; // honeypot triggered — silently drop
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -83,6 +87,16 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+      {/* honeypot: hidden from real users, bots fill it in */}
+      <input
+        name="website"
+        value={form.website}
+        onChange={handleChange}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none" }}
+      />
       <div className="grid sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-xs text-gray-400 mb-2 tracking-wide uppercase">

@@ -9,7 +9,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  const { name, email, phone, vehicle, service, message } = body;
+  const { name, email, phone, vehicle, service, message, website } = body;
+
+  if (website) return NextResponse.json({ ok: true }); // honeypot — silently accept but discard
 
   if (!name?.trim() || !email?.trim()) {
     return NextResponse.json({ error: "Name and email are required." }, { status: 400 });
