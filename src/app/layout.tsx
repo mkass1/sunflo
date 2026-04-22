@@ -122,8 +122,8 @@ const localBusinessJsonLd = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 26.185207,
-    longitude: -80.135131,
+    latitude: 26.18520747708831,
+    longitude: -80.13513052466247,
   },
   openingHoursSpecification: [
     {

@@ -79,13 +79,31 @@ export default async function CityPage({
 
   const serviceJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: `Auto Detailing in ${page.city}, FL`,
-    serviceType: "Automotive Detailing",
-    description: page.metaDescription,
-    provider: { "@id": `${SITE_URL}#business` },
-    areaServed: { "@type": "City", name: page.city },
+    "@type": "AutomotiveBusiness",
+    "@id": `${SITE_URL}/locations/${page.slug}#business`,
+    name: `Sunflo Detailing — Auto Detailing in ${page.city}, FL`,
     url: `${SITE_URL}/locations/${page.slug}`,
+    telephone: "+19542356882",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "4708 NE 11th Ave",
+      addressLocality: "Oakland Park",
+      addressRegion: "FL",
+      postalCode: "33334",
+      addressCountry: "US",
+    },
+    branchOf: { "@id": `${SITE_URL}#business` },
+    areaServed: { "@type": "City", name: page.city, containedInPlace: { "@type": "State", name: "Florida" } },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Auto Detailing Services in ${page.city}, FL`,
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ceramic Coating" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Paint Correction" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Paint Protection Film" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Window Tinting" } },
+      ],
+    },
   };
 
   const breadcrumbJsonLd = {

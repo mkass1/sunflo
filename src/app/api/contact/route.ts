@@ -54,5 +54,13 @@ export async function POST(request: Request) {
     );
   }
 
+  const firstName = name.trim().split(" ")[0];
+  resend.emails.send({
+    from: "Sunflo Detailing <noreply@sunflodetailing.com>",
+    to: email,
+    subject: "We got your message — Sunflo Detailing",
+    text: `Hi ${firstName},\n\nWe got your message and we're on it. Expect to hear from us within 24 hours to discuss your project.\n\nGot questions in the meantime? Call or text us directly at ${contact.phone}.\n\n— Jason & the Sunflo Detailing team`,
+  }).catch((err) => console.error("Auto-reply error:", err));
+
   return NextResponse.json({ ok: true });
 }
