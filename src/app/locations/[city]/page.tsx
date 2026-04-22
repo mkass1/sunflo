@@ -56,6 +56,14 @@ export async function generateMetadata({
       title: page.metaTitle,
       description: page.metaDescription,
       url: `${SITE_URL}/locations/${page.slug}`,
+      images: [
+        {
+          url: page.ogImage ?? "/images/hero/porsche-911.jpg",
+          width: 1920,
+          height: 1080,
+          alt: `${page.h1} — Sunflo Detailing`,
+        },
+      ],
     },
   };
 }

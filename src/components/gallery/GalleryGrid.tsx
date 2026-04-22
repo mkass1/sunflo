@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
@@ -24,6 +24,24 @@ interface GalleryGridProps {
 export default function GalleryGrid({ images }: GalleryGridProps) {
   const [activeCategory, setActiveCategory] = useState<Category>("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const videoRef = useRef<HTMLDivElement>(null);
+  const [videoVisible, setVideoVisible] = useState(false);
+
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVideoVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   const filtered = activeCategory === "all"
     ? images
@@ -61,18 +79,28 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
         layout
         className="columns-2 md:columns-3 gap-4 space-y-4"
       >
-        {/* Pinned video — always first */}
-        <div className="break-inside-avoid relative overflow-hidden rounded-sm border border-dark-border">
-          <video
-            src="/videos/cinematic-reel-opt.mp4"
-            poster="/images/gallery/sunflo-team-lamborghini.jpg"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="w-full object-cover"
-          />
+        {/* Pinned video — mounts only after scrolled into view */}
+        <div ref={videoRef} className="break-inside-avoid relative overflow-hidden rounded-sm border border-dark-border">
+          {videoVisible ? (
+            <video
+              src="/videos/cinematic-reel-opt.mp4"
+              poster="/images/gallery/sunflo-team-lamborghini.jpg"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="w-full object-cover"
+            />
+          ) : (
+            <Image
+              src="/images/gallery/sunflo-team-lamborghini.jpg"
+              alt="Sunflo Detailing cinematic reel"
+              width={1280}
+              height={720}
+              className="w-full object-cover"
+            />
+          )}
         </div>
 
         <AnimatePresence>

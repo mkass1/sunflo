@@ -9,6 +9,7 @@ export interface CityPage {
   sections: Array<{ heading: string; body: string }>;
   driveTime: string;
   localHook: string;
+  ogImage?: string;
 }
 
 export const cityPages: CityPage[] = [
