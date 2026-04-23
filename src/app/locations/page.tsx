@@ -20,12 +20,12 @@ const breadcrumbJsonLd = {
 export const metadata: Metadata = {
   title: "Auto Detailing Service Areas — South Florida",
   description:
-    "Sunflo Detailing serves Fort Lauderdale, Wilton Manors, Pompano Beach, Deerfield Beach, Lighthouse Point, and all of South Florida. Studio in Oakland Park, FL.",
+    "Sunflo Detailing serves Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Fort Lauderdale, Wilton Manors, Pompano Beach, and all of South Florida. Studio in Oakland Park, FL.",
   alternates: { canonical: "/locations" },
   openGraph: {
     title: "Service Areas | Sunflo Detailing",
     description:
-      "Professional auto detailing serving Fort Lauderdale, Pompano Beach, Wilton Manors, and surrounding South Florida cities from our Oakland Park, FL studio.",
+      "Professional auto detailing serving Pembroke Pines, Weston, Davie, Fort Lauderdale, Pompano Beach, and surrounding South Florida cities from our Oakland Park, FL studio.",
     url: `${SITE_URL}/locations`,
     images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
   },

@@ -122,7 +122,7 @@ export const faqs: FAQ[] = [
     category: "location",
     question: "What areas of South Florida do you serve?",
     answer:
-      "Sunflo Detailing serves all of South Florida — including Fort Lauderdale, Pompano Beach, Wilton Manors, Lauderdale-by-the-Sea, Lighthouse Point, Deerfield Beach, Boca Raton, and Miami. You can drop off at our Oakland Park studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
+      "Sunflo Detailing serves all of South Florida — including Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Fort Lauderdale, Pompano Beach, Wilton Manors, Boca Raton, and Miami. You can drop off at our Oakland Park studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
   },
   {
     id: "17",

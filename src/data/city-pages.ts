@@ -110,67 +110,201 @@ export const cityPages: CityPage[] = [
       "Pompano Beach's marina community and Intracoastal exposure mean vehicles there deal with some of the most intense salt-air corrosion in Broward County.",
   },
   {
-    city: "Deerfield Beach",
-    slug: "deerfield-beach",
-    metaTitle: "Auto Detailing in Deerfield Beach, FL | Sunflo Detailing",
+    city: "Pembroke Pines",
+    slug: "pembroke-pines",
+    metaTitle: "Auto Detailing in Pembroke Pines, FL | Sunflo Detailing",
     metaDescription:
-      "Professional auto detailing for Deerfield Beach vehicles — ceramic coating, paint decontamination, window tinting, and coastal paint protection. Studio in Oakland Park, FL.",
-    h1: "Auto Detailing in Deerfield Beach, FL",
-    eyebrow: "Serving Deerfield Beach · ~18–20 min from Oakland Park",
+      "Professional auto detailing in Pembroke Pines — ceramic coating, paint correction, window tinting, and interior details. Mobile-friendly drop-off at our studio in Oakland Park, FL.",
+    h1: "Auto Detailing in Pembroke Pines, FL",
+    eyebrow: "Serving Pembroke Pines · ~25–30 min from Oakland Park",
     intro:
-      "Deerfield Beach marks the northern edge of Sunflo's regular service corridor — and it is one of the areas where the effects of coastal exposure on unprotected vehicles are most visible. The proximity to the Atlantic means salt air is a constant presence, and many vehicles parked near Hillsboro Beach or the Deerfield Beach pier show premature oxidation and paint etching that surprises owners who have not lived near the coast before. Sunflo serves a steady mix of Deerfield Beach clients — retirees with sedans they want to keep in excellent condition, families with SUVs and pickup trucks, and newer residents who want to start protecting their vehicles before the damage accumulates.",
+      "Pembroke Pines is one of the largest cities in Broward County and one of the most vehicle-dense — master-planned communities from Chapel Trail to Silver Lakes to Pembroke Falls mean long commutes on I-75 and Pines Boulevard are a daily reality for most residents. That kind of drive accumulates stone chips, swirl marks, and UV oxidation faster than most owners realize. Sunflo serves a growing number of Pembroke Pines clients who have made the drive up to Oakland Park and found that the quality of work is worth every minute of it. For a city where vehicles are this central to daily life, professional paint protection is one of the smartest investments available.",
     sections: [
       {
-        heading: "Why Coastal Vehicles in Deerfield Beach Oxidize Faster",
-        body: "Oxidation in vehicle paint is driven primarily by two factors: UV exposure and chemical contamination. In Deerfield Beach, both are significantly elevated compared to inland cities. The UV index in South Florida routinely exceeds 10 — a level that accelerates clear coat breakdown at twice the rate of states north of the Carolinas. Combine that with the salt air from the Atlantic, which deposits sodium chloride and other minerals on paint surfaces daily, and the chemistry of clear coat degradation accelerates dramatically. Vehicles parked outside within a few miles of the coast in Deerfield Beach can show visible oxidation — that chalky, faded appearance — within three to four years without any protective coating. A professional ceramic coating dramatically slows this process by creating a chemical barrier between the clear coat and the environment.",
+        heading: "I-75 and Pines Blvd Take a Toll on Paint",
+        body: "Pembroke Pines residents who commute north on I-75 toward Fort Lauderdale or east on Pines Boulevard toward US-1 are dealing with one of the most debris-heavy highway corridors in South Florida. Construction activity along I-75, commercial truck traffic, and the sheer volume of vehicles on Pines Boulevard generate constant road debris that impacts hoods, bumpers, and mirrors. Stone chips that look minor individually accumulate into a pattern of paint film loss that allows rust initiation on steel panels and permanent etching on aluminum ones. XPEL paint protection film on the front end of a vehicle driven daily on this corridor is the only way to physically stop that damage — ceramic coating and wax provide chemical resistance, but only film absorbs impact.",
       },
       {
-        heading: "Paint Decontamination Before Any Coating",
-        body: "One of the most common mistakes Deerfield Beach vehicle owners make is applying a wax or sealant over a surface that has not been properly decontaminated. Salt deposits, brake dust, and industrial fallout embed into clear coat at a level that washing alone cannot remove — the surface looks clean but is chemically contaminated underneath. Any protective product applied over contaminated paint bonds to the contamination rather than the paint, and the protection lifespan is dramatically reduced. Sunflo's decontamination process — iron fallout remover to dissolve embedded metallic particles, followed by a clay bar pass to mechanically remove bonded surface contamination — prepares the paint correctly before any coating, wax, or sealant is applied. For Deerfield Beach vehicles with heavy salt exposure, this step can take 30 to 60 minutes per vehicle and is worth every minute of it.",
+        heading: "Ceramic Coating for HOA-Conscious Communities",
+        body: "Pembroke Pines is defined by its HOA communities — and in those neighborhoods, the condition of your vehicle is as visible as the condition of your lawn. A ceramic-coated vehicle stays cleaner between washes, resists the kind of water spot staining that makes dark paint look perpetually dusty, and holds its gloss through the summer rain season in a way that waxed or unprotected paint simply cannot. For residents in gated communities and planned neighborhoods who take visible pride in their properties, a professionally detailed and ceramic-coated vehicle is a natural extension of that standard. Sunflo serves Pembroke Pines clients who want their vehicles to reflect the same care they put into everything else.",
       },
       {
-        heading: "Window Tinting in Deerfield Beach",
-        body: "Deerfield Beach's retirement-age population includes a significant number of vehicle owners who spend time in their cars during the hottest parts of the day — making window tinting one of the most practical quality-of-life improvements available. Quality 3M window film blocks nearly all incoming UV radiation and reduces infrared heat penetration, which translates directly to a cooler cabin and less wear on leather and plastics from UV-driven fading. For vehicles that park outside frequently — whether at the beach, near Hillsboro Boulevard commercial strips, or in open lots — the interior degradation from sun exposure is measurable. Film that costs a few hundred dollars today prevents leather cracking, dashboard fading, and electronic component overheating that would otherwise require significantly more expensive repairs in three to five years.",
+        heading: "Interior Detailing for Busy Families",
+        body: "Pembroke Pines has one of the highest concentrations of families with children in Broward County, and family vehicles accumulate the kind of interior wear that standard car washes are completely unequipped to handle. Ground-in food, juice and coffee stains on carpet and upholstery, crayon on door panels, dog hair embedded in rear seat fabric, and the general grime of a vehicle in daily family use require professional extraction equipment and detailing chemistry to remove properly. Sunflo's interior detail service covers deep extraction of all fabric surfaces, leather cleaning and conditioning, headliner care, full glass cleaning inside and out, and deodorizing treatment for vehicles with persistent odor. A vehicle that has been through a proper interior detail does not just look better — it smells different from the moment the door opens.",
       },
       {
-        heading: "How Long Does Ceramic Coating Last in a Coastal Climate?",
-        body: "This is the most common question from Deerfield Beach clients who have never had a professional ceramic coating applied. The honest answer depends on the product tier, application quality, and maintenance habits — but a correctly applied professional-grade ceramic coating from Sunflo holds its hydrophobic properties and UV protection for three to five years in South Florida conditions with basic maintenance. That means regular hand washing every two to three weeks, avoiding harsh detergents, and an annual inspection and detail at the studio to confirm the coating is still performing. Cheaper consumer-grade coatings sold in spray bottles are not the same product — they last months, not years. Professional coatings applied in a climate-controlled environment with proper surface preparation are a fundamentally different category of protection.",
+        heading: "Worth the Drive from Pembroke Pines",
+        body: "The Oakland Park studio is roughly 25 to 30 minutes north of Pembroke Pines — far enough that clients make a deliberate choice to come here rather than stopping at a local quick-detail shop. Most of them arrive because someone else told them to. Sunflo's Pembroke Pines clients typically find us through referrals from neighbors, coworkers, or social groups, and after the first visit they understand why the drive is worth it. We are not competing with same-day $99 details. We do thorough, precise work that holds up over time — the kind of detail where you can tell the difference six months later. Drop off in the morning, pick up by afternoon for most services. Book by phone, text, or the contact form.",
       },
     ],
-    driveTime: "~18–20 minutes",
+    driveTime: "~25–30 minutes",
     localHook:
-      "Deerfield Beach vehicles parked outdoors near the coast show oxidation and salt-air etching faster than almost any other location in Broward County — making early protection essential.",
+      "Pembroke Pines' heavy I-75 commuter traffic and master-planned communities create high demand for vehicle protection that keeps up with an active family lifestyle.",
+    ogImage: "/images/og/cities/pembroke-pines.jpg",
   },
   {
-    city: "Lighthouse Point",
-    slug: "lighthouse-point",
-    metaTitle: "Auto Detailing in Lighthouse Point, FL | Sunflo Detailing",
+    city: "Weston",
+    slug: "weston",
+    metaTitle: "Auto Detailing in Weston, FL | Sunflo Detailing",
     metaDescription:
-      "White-glove auto detailing for Lighthouse Point — XPEL PPF for exotics, ceramic coating, and marine-environment paint protection. Studio in Oakland Park, FL.",
-    h1: "Auto Detailing in Lighthouse Point, FL",
-    eyebrow: "Serving Lighthouse Point · ~15–18 min from Oakland Park",
+      "White-glove auto detailing for Weston, FL — ceramic coating, PPF, paint correction, and window tinting. Premium vehicle care for an affluent South Florida community.",
+    h1: "Auto Detailing in Weston, FL",
+    eyebrow: "Serving Weston · ~30–35 min from Oakland Park",
     intro:
-      "Lighthouse Point is one of the most affluent waterfront communities in South Florida — a city built on canals, marine access, and a culture where the vehicles parked in the driveway are taken as seriously as the boats docked behind the house. Clients from Lighthouse Point expect a level of work that matches their standards: thorough, precise, and delivered without shortcuts. Sunflo serves Lighthouse Point clients with the same protocol applied to every vehicle, from a two-stage paint correction on a daily driver to a full-body XPEL PPF install on a six-figure exotic — the preparation, the products, and the attention to detail are identical regardless of vehicle value.",
+      "Weston is one of the most affluent master-planned communities in South Florida — a city where luxury vehicles are common, car culture runs deep, and the standard for vehicle appearance is genuinely high. The mix of European exotics, luxury SUVs, and well-maintained performance cars in Weston's driveways reflects a community that takes pride in its vehicles and understands the value of professional care. Sunflo serves Weston clients who expect precision, thoroughness, and products that are matched to the quality of the vehicles they own — not the baseline services available at a strip-mall detail shop.",
     sections: [
       {
-        heading: "High-Expectation Detailing for Lighthouse Point",
-        body: "Lighthouse Point clients tend to know their vehicles well — many have had professional detailing done before, and they recognize the difference between a thorough job and one that looks good in the parking lot but falls apart in a month. Sunflo's process is built around that expectation. Every vehicle that comes into the studio receives a full paint depth measurement on every panel before any correction work begins, a complete decontamination before any protection product touches the surface, and a final inspection under high-CRI raking lights that reveal any defect a normal overhead light would miss. There are no shortcuts in the process because there are no acceptable shortcuts in quality work. Lighthouse Point clients who have been through one detail at Sunflo typically become annual clients.",
+        heading: "Luxury Vehicle Protection for Weston's Car Culture",
+        body: "Weston's vehicle mix skews heavily toward luxury and near-luxury — BMW, Mercedes-Benz, Porsche, Range Rover, and exotic brands are far more common here than in most Broward cities. These vehicles represent significant investments, and their owners understand that protecting that investment requires more than a regular car wash. XPEL paint protection film and professional ceramic coatings are the industry standards for luxury vehicle protection, and both are available at Sunflo in Oakland Park. For a new Porsche Cayenne or a BMW M5 that will be driven daily on I-75 and Weston Road, a full-front PPF package paired with a ceramic coating on the remaining panels is the most effective comprehensive protection available — physical film where the chips happen, chemical coating everywhere else.",
       },
       {
-        heading: "XPEL PPF for Exotics and Collectibles",
-        body: "Lighthouse Point's vehicle mix includes a higher concentration of exotics, collectibles, and ultra-luxury vehicles than most Broward County cities. For these vehicles, XPEL Ultimate Plus paint protection film is the first line of defense against the road damage that is unavoidable in daily or occasional use. PPF provides physical impact protection that no ceramic coating can replicate — a stone chip that would penetrate bare clear coat is stopped by the film, which then self-heals with heat and returns to optical clarity. For the front-end of a McLaren 720S, a Ferrari Roma, or a Porsche Taycan, full-front PPF is the minimum protection that makes practical sense. Full-body PPF coverage is increasingly common for clients who want comprehensive protection without sacrificing aesthetics. All XPEL installs at Sunflo are performed in-house by our own team — no outsourced film work.",
+        heading: "Paint Correction Before Every Coating",
+        body: "Many Weston clients arrive with vehicles that look good at first glance but show swirl marks and micro-scratches under a proper raking light inspection. This is extremely common in vehicles that have been washed at automatic facilities — even touchless washes can introduce fine scratches through high-pressure water carrying abrasive particles. Applying a ceramic coating over swirl-marked paint locks those defects under the coating and makes them permanent. Sunflo's standard process includes a full paint depth measurement on every panel and a pre-coating paint correction pass to remove swirl marks and minor scratches before any protective product is applied. For Weston clients investing in a premium coating on a premium vehicle, skipping this step is not an option we offer.",
       },
       {
-        heading: "Marine Environment and Paint Protection",
-        body: "Living on the canals in Lighthouse Point means vehicles are exposed to marine-quality salt air around the clock. The tidal movement of water through the canal system keeps the air salt-laden year-round, and vehicles that sit in open driveways — particularly those that back up to the canal — accumulate salt deposits on every horizontal and vertical surface. This is a different category of exposure from driving near the ocean occasionally. For Lighthouse Point vehicles, a professional ceramic coating is a maintenance baseline, not an optional upgrade. The coating reduces the surface area where salt can bond and accumulates contamination that rinses off rather than etching into the paint. Annual decontamination details — an iron fallout removal, clay bar, and coating maintenance product — are the correct maintenance cadence for vehicles in this environment.",
+        heading: "Window Tinting for Weston Homes and HOA Communities",
+        body: "Weston's neighborhoods are built around outdoor living — open lots, wide streets, and homes with significant driveway exposure mean vehicles parked outside bake in the South Florida sun for most of the day. Quality window film dramatically reduces the heat and UV radiation that enters the cabin, protecting leather, dashboard materials, and electronics from the accelerated degradation that direct sun exposure causes. 3M Crystalline series film is the premium choice for Weston clients who want maximum UV and heat rejection without visible tint darkness — it performs at near-limo-tint heat rejection levels while maintaining factory-clear aesthetics. For a luxury SUV with premium leather interior, this is one of the highest-return protective investments available.",
       },
       {
-        heading: "Ceramic Coating for Cars That Sit Near the Water",
-        body: "Vehicles parked near the water in Lighthouse Point face threats beyond just salt air: bird droppings from waterfront species are more caustic than standard bird waste due to diet, and the combination of heat, humidity, and organic material on unprotected paint creates etching that can damage clear coat within hours in summer temperatures. Dock-adjacent vehicles also accumulate standing water in panel gaps and lower surfaces after afternoon rain, which accelerates corrosion on unprotected components. A properly applied ceramic coating creates a hydrophobic surface that dramatically reduces the time contaminants can dwell on paint — water, bird droppings, and organic debris sheet off the coating rather than sitting and reacting with the clear coat underneath. For vehicles that cannot avoid waterfront conditions, the coating is not a luxury — it is the difference between a car that looks excellent in three years and one that needs a respray.",
+        heading: "A Studio Worth Driving To",
+        body: "Weston is 30 to 35 minutes from our Oakland Park studio via I-75 — a deliberate trip, not a convenient stop. Clients who make that drive have typically done their research and understand what they are looking for: a shop that does thorough preparation, uses professional-grade products, and delivers results that hold up. Sunflo's Weston clients are among our most discerning, and they return because the work is consistent. There are no shortcuts in how we prep a vehicle, no cutting corners on decontamination, and no applying premium products over mediocre surface preparation. Book a consultation by phone or through the contact form — we will give you a realistic timeline and a clear quote before any work begins.",
       },
     ],
-    driveTime: "~15–18 minutes",
+    driveTime: "~30–35 minutes",
     localHook:
-      "Lighthouse Point's canal-front properties surround vehicles with constant marine-quality salt air — a level of exposure that makes professional-grade paint protection essential, not optional.",
+      "Weston's concentration of luxury and exotic vehicles — and a community that expects excellence — makes professional-grade paint protection the standard, not the exception.",
+    ogImage: "/images/og/cities/weston.jpg",
+  },
+  {
+    city: "Davie",
+    slug: "davie",
+    metaTitle: "Auto Detailing in Davie, FL | Sunflo Detailing",
+    metaDescription:
+      "Auto detailing in Davie, FL — ceramic coating, paint correction, truck and SUV protection, and window tinting. Professional studio in Oakland Park. Serving equestrian country and suburban Davie.",
+    h1: "Auto Detailing in Davie, FL",
+    eyebrow: "Serving Davie · ~20–25 min from Oakland Park",
+    intro:
+      "Davie is a uniquely South Florida city — part equestrian community, part university suburb, part residential sprawl — and its vehicles reflect that mix. You will find lifted trucks and ranch work rigs alongside Nova Southeastern University faculty sedans and family SUVs that do double duty as school transport and weekend trail vehicles. What they have in common is exposure: road dust from unpaved equestrian corridors, construction debris from constant development along I-595, and relentless UV in a town with wide-open lots and minimal shade. Sunflo serves Davie clients who need protection built for real-world use, not just show cars.",
+    sections: [
+      {
+        heading: "Truck and SUV Detailing for Davie's Working Vehicles",
+        body: "Davie has a higher concentration of trucks and heavy SUVs than most Broward cities — and many of them are genuinely used, not just for appearances. Ranch owners, contractors, tradespeople, and horse-property residents run their trucks through conditions that accumulate agricultural dust, mud, trailer hitch grime, and road debris at a rate that standard maintenance washing cannot keep up with. A proper decontamination detail — iron fallout removal, full clay bar decontamination, extract and steam-clean wheel wells — gets these vehicles back to a state of actual cleanliness rather than surface appearance. Ceramic coating on a truck that gets used in Davie is a practical investment: the hydrophobic surface sheds mud and dust during rain, and the next wash is dramatically faster.",
+      },
+      {
+        heading: "Road Dust and Paint Contamination",
+        body: "Davie still has a significant number of unpaved roads and equestrian paths — fine particulate dust that settles on paint surfaces and, when wet, acts as a mild abrasive every time it is wiped off. Vehicles that live near equestrian areas or travel on unpaved ranch roads accumulate fine dust contamination in the clear coat at a rate that is hard to see until the paint is inspected under proper lighting. A clay bar decontamination removes this bonded particulate layer before it causes permanent damage, and a ceramic coating applied afterward dramatically reduces how much dust sticks to the surface in the first place. For Davie vehicle owners, this is not an exotic edge case — it is the reality of the roads.",
+      },
+      {
+        heading: "I-595 and University Drive Commuters",
+        body: "Davie's position at the intersection of I-595 and US-441/University Drive means residents have some of the busiest commuter corridors in Broward County running through their backyard. I-595 is a major east-west freight route, and University Drive handles heavy commercial and residential traffic year-round. Stone chip accumulation from this volume of highway use is measurable within the first year of ownership on most vehicles — front bumpers and hood leading edges show the impact patterns clearly. For Davie clients with newer vehicles or recent paint correction work, a paint protection film package on the front end is the only way to physically stop that damage from accumulating again.",
+      },
+      {
+        heading: "Scheduling From Davie",
+        body: "The drive from Davie to Sunflo's Oakland Park studio takes roughly 20 to 25 minutes on I-95 north or via I-595 east to US-1. Most services — from a full interior detail to a single-stage paint correction — are completed same-day, so a morning drop-off and afternoon pickup works for the majority of clients. Multi-day services like full-body PPF installs or two-stage correction followed by ceramic coating are scheduled with a clear timeline provided upfront. We do not do walk-in work for correction and coating services — book by phone or through the contact form so we can set aside the bay time your vehicle needs.",
+      },
+    ],
+    driveTime: "~20–25 minutes",
+    localHook:
+      "Davie's equestrian roads, active construction corridors, and working vehicle culture mean paint contamination and surface damage accumulate faster here than in most suburban cities.",
+    ogImage: "/images/og/cities/davie.jpg",
+  },
+  {
+    city: "Cooper City",
+    slug: "cooper-city",
+    metaTitle: "Auto Detailing in Cooper City, FL | Sunflo Detailing",
+    metaDescription:
+      "Premium auto detailing for Cooper City, FL — ceramic coating, paint correction, interior details, and window tinting. Professional studio in Oakland Park serving south Broward.",
+    h1: "Auto Detailing in Cooper City, FL",
+    eyebrow: "Serving Cooper City · ~25–30 min from Oakland Park",
+    intro:
+      "Cooper City is one of the most sought-after residential communities in south Broward — a compact, family-oriented city with high household incomes, excellent schools, and neighborhoods where vehicle condition genuinely matters. Residents in Rock Creek, Embassy Lakes, and Monterra keep well-maintained vehicles and take long-term ownership seriously. Sunflo serves Cooper City clients who want paint protection that holds up through years of daily use, not just a detail that looks good for a few weeks. The standards here are high, and the results we deliver match them.",
+    sections: [
+      {
+        heading: "Protecting Vehicles in a High-Income Residential Community",
+        body: "Cooper City's residential character means vehicles are not just transportation — they are a visible part of a well-maintained household. In neighborhoods like Rock Creek and Embassy Lakes, a well-detailed car is simply expected. But beyond appearance, ceramic coating is a financial decision: a vehicle that has been properly protected depreciates slower, commands a higher trade-in or private-sale value, and requires less corrective work over its ownership life. Sunflo applies professional-grade ceramic coatings in a climate-controlled studio with correct surface preparation — the same process whether the vehicle is a daily family SUV or a weekend sports car. The protection is designed to last years, not weeks.",
+      },
+      {
+        heading: "Paint Correction for Previously Neglected Paint",
+        body: "Most vehicles that arrive at Sunflo from Cooper City have been through years of drive-through washes or have been cleaned at home with improper technique — both of which introduce swirl marks and micro-scratches that accumulate invisibly over time. When these vehicles are inspected under a raking LED light before a correction service, owners are often surprised at the extent of the swirl damage on paint they considered to be in good condition. A professional paint correction removes this damage systematically — compounding to cut the defects, polishing to refine the finish — and restores a depth of gloss that the paint has not had since it left the factory. For Cooper City owners getting ready to coat a vehicle or simply wanting to restore its appearance, correction is the right first step.",
+      },
+      {
+        heading: "Window Tinting for Florida Families",
+        body: "For Cooper City families who spend significant time in vehicles — school pickups, sports practices, weekend activities — quality window tinting is one of the most practical upgrades available. 3M FX and Crystalline series films dramatically reduce cabin heat and block nearly all UV radiation, protecting both occupants and interior surfaces from the damage that direct Florida sun causes. Children in rear seats are especially exposed in vehicles without quality tint — rear-side and rear window film is the most effective protection for that concern. Tint also reduces glare during afternoon westbound drives, which is a real safety consideration on I-75 and Pines Boulevard at 3 PM during school pickup. Our installs are bubble-free and carry a manufacturer warranty.",
+      },
+      {
+        heading: "From Cooper City to Oakland Park",
+        body: "The Oakland Park studio is about 25 to 30 minutes north from Cooper City — a straight shot up I-95 or US-441. Most single-day services are scheduled for morning drop-off and afternoon pickup, so the commute fits naturally around a work day or weekend errand. Cooper City clients find us primarily through referrals from neighbors or from Pembroke Pines and Davie clients who have already been through the studio. We do not do rushed work or oversell services — the consultation process is straightforward, the quote is clear, and the timeline is honest. Reach out by phone, text, or the contact form to get started.",
+      },
+    ],
+    driveTime: "~25–30 minutes",
+    localHook:
+      "Cooper City's tight-knit residential communities and high ownership standards mean vehicles here are kept longer and maintained more carefully — making professional protection a natural investment.",
+    ogImage: "/images/og/cities/cooper-city.jpg",
+  },
+  {
+    city: "Hollywood",
+    slug: "hollywood",
+    metaTitle: "Auto Detailing in Hollywood, FL | Sunflo Detailing",
+    metaDescription:
+      "Auto detailing in Hollywood, FL — ceramic coating, paint correction, PPF, and window tinting. Professional studio in Oakland Park serving Hollywood Hills, Emerald Hills, and all of Hollywood.",
+    h1: "Auto Detailing in Hollywood, FL",
+    eyebrow: "Serving Hollywood · ~15–20 min from Oakland Park",
+    intro:
+      "Hollywood sits between Sunflo's Oakland Park studio and the south Broward client cluster — close enough to make it one of the most convenient service areas in Broward County, and diverse enough to generate every category of vehicle care. The oceanfront and the Intracoastal bring the coastal paint degradation that defines South Florida detailing, while the affluent Emerald Hills and Hollywood Hills neighborhoods bring a demand for high-end protection that matches the vehicles. Sunflo serves Hollywood clients ranging from beach-adjacent daily drivers that need marine-environment protection to well-maintained luxury vehicles that simply deserve better than a drive-through wash.",
+    sections: [
+      {
+        heading: "Coastal Exposure Along Hollywood Beach",
+        body: "Vehicles that spend time near the Hollywood Beach broadwalk and the Hollywood Intracoastal are in one of the most salt-intensive environments in Broward County. The proximity to the ocean means salt air is not a seasonal concern — it is a year-round constant that deposits chloride compounds on every exposed surface daily. For vehicles parked outdoors within a few miles of the beach, unprotected clear coat begins showing water spot etching and early oxidation within two to three years. A properly applied ceramic coating dramatically slows this process by creating a hydrophobic barrier that prevents mineral deposits from bonding to the paint surface. Hollywood Beach vehicles that get a ceramic coating as part of initial ownership rather than as a corrective measure after damage has set in protect their finish for the full ownership cycle.",
+      },
+      {
+        heading: "Emerald Hills and Hollywood Hills: Luxury Vehicle Care",
+        body: "Emerald Hills and Hollywood Hills are among the most affluent residential neighborhoods in Hollywood — areas where luxury SUVs, performance sedans, and weekend exotics are common, and where owners take the condition of their vehicles seriously. For these clients, the standard of work that Sunflo provides — full paint depth measurement, multi-stage decontamination, correction before coating, in-house XPEL film installation — is exactly what the vehicles deserve. A paint protection film package on the front end of a BMW 7-series or a Lexus LX600 driven daily from Hollywood to Brickell or Fort Lauderdale stops the stone chip accumulation that would otherwise degrade a premium repaint in a few years. The investment in proper protection at the front end of ownership is a fraction of the corrective cost later.",
+      },
+      {
+        heading: "Window Tinting for Hollywood's Diverse Vehicle Mix",
+        body: "Hollywood's vehicle mix is genuinely diverse — pickup trucks, family minivans, luxury SUVs, delivery vehicles, and collector cars all share the same roads. What they all have in common is Florida's extreme UV index and summer heat. 3M window film at the appropriate tint level for the vehicle's use reduces cabin temperature meaningfully, blocks virtually all UV radiation, and extends the life of leather, fabric, and plastic interior components that degrade visibly over time without protection. For the large rear windows common in trucks and SUVs, window film is also one of the most cost-effective privacy upgrades available. Sunflo's window tinting service covers all vehicle types and uses film from 3M's professional product line — no cheap off-brand film that hazes or bubbles within a year.",
+      },
+      {
+        heading: "A Convenient Location Between Shop and South Broward",
+        body: "For Hollywood residents, Sunflo's Oakland Park studio is a 15 to 20 minute drive north on I-95 — one of the shortest trips in the south Broward service area. Most services are drop-off in the morning, pick up in the afternoon or following morning depending on scope. Multi-day services like full-body PPF installs or two-stage correction with ceramic coating are scheduled with clear timelines provided before the vehicle comes in. Hollywood clients find us through referrals from south Broward neighbors in Pembroke Pines, Davie, and Cooper City who have already been through the studio. If you are looking for a clear quote and honest turnaround time before committing, reach out by phone or through the contact form.",
+      },
+    ],
+    driveTime: "~15–20 minutes",
+    localHook:
+      "Hollywood's oceanfront exposure and inland luxury neighborhoods create a full spectrum of detailing demand — from marine-environment paint protection to high-end PPF installs.",
+    ogImage: "/images/og/cities/hollywood.jpg",
+  },
+  {
+    city: "Plantation",
+    slug: "plantation",
+    metaTitle: "Auto Detailing in Plantation, FL | Sunflo Detailing",
+    metaDescription:
+      "Auto detailing in Plantation, FL — ceramic coating, paint correction, window tinting, and PPF. Serving Plantation's corporate and residential communities from our studio in Oakland Park.",
+    h1: "Auto Detailing in Plantation, FL",
+    eyebrow: "Serving Plantation · ~20–25 min from Oakland Park",
+    intro:
+      "Plantation is one of west Broward's most established cities — a mix of corporate campuses, affluent residential neighborhoods, and a daily commuter population that spends real time on I-595 and Sunrise Boulevard every week. The vehicle mix here skews toward newer and leased luxury cars, company vehicles, and well-maintained daily drivers owned by professionals who appreciate quality work and expect honest, upfront service. Sunflo serves Plantation clients who want their vehicles protected properly from day one of ownership — not corrected after years of neglect.",
+    sections: [
+      {
+        heading: "Ceramic Coating for Leased and New Vehicles",
+        body: "Plantation's corporate employment base — major companies maintain significant office presences along University Drive and Broward Boulevard — generates a steady population of leased luxury vehicles. For a leased vehicle, ceramic coating is one of the smartest investments available: the coating protects the paint from swirl marks, water spot etching, and UV oxidation throughout the lease term, and when the vehicle goes back at lease-end, the paint condition directly affects what the lessee is charged for reconditioning. A vehicle returned with paint in excellent condition avoids hundreds to thousands of dollars in end-of-lease paint charges. For Plantation executives and professionals with leased BMWs, Audis, or Lexus vehicles, a ceramic coating at the start of the lease is a cost-effective insurance policy.",
+      },
+      {
+        heading: "I-595 Commuter Paint Damage",
+        body: "I-595 is one of the most heavily traveled corridors in Broward County — a dual-direction highway carrying freight traffic and daily commuters between the western suburbs and I-95 year-round. Plantation residents who commute east on 595 toward downtown Fort Lauderdale or the airport deal with stone chip exposure, construction debris, and tire fragment impact that accumulates on front ends and hoods faster than most owners account for. By the time a two-year-old vehicle has done daily I-595 commutes, the leading edges of the hood and front bumper show a stone chip pattern that becomes rust-initiation points on steel panels if left unprotected. XPEL paint protection film on the front end addresses this at the source — physical film absorbs impact that no coating or wax can stop.",
+      },
+      {
+        heading: "Pine Island Ridge and Plantation Acres: Residential Vehicle Care",
+        body: "Away from the commercial corridors, Plantation's residential neighborhoods — Pine Island Ridge, Plantation Acres, Jacaranda — are home to long-term residents with well-maintained vehicles who take ownership seriously. These are clients who hold their cars for five to seven years and want to know their investment is protected throughout that ownership period. A professional ceramic coating from Sunflo applied correctly and maintained annually holds its hydrophobic properties and UV resistance for the full ownership cycle in South Florida conditions. For a vehicle purchased new and kept through a full ownership term in Plantation's climate, the coating pays for itself in reduced corrective detailing costs and preserved resale value.",
+      },
+      {
+        heading: "Getting to Sunflo from Plantation",
+        body: "From Plantation, the Oakland Park studio is approximately 20 to 25 minutes east via Sunrise Boulevard or I-595 east to I-95 north — a straightforward drive that most clients fold into a regular workday. Drop-off in the morning, most single-day services completed by afternoon. For multi-stage correction and coating jobs that require two days, we schedule a clear timeline before the vehicle arrives so there are no surprises. Plantation clients tend to find us through professional networks and referrals from other west Broward clients in Weston, Davie, and Cooper City. Reach out through the contact form or by phone for a quote and availability.",
+      },
+    ],
+    driveTime: "~20–25 minutes",
+    localHook:
+      "Plantation's professional commuter population and high concentration of leased luxury vehicles make ceramic coating and PPF among the most cost-effective vehicle investments available.",
+    ogImage: "/images/og/cities/plantation.jpg",
   },
 ];

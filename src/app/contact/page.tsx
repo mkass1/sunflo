@@ -103,37 +103,41 @@ export default function ContactPage() {
                       </a>
                     </div>
                   </li>
-                  <li className="flex items-start gap-4">
-                    <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
-                      <InstagramIcon size={16} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Instagram</p>
-                      <a
-                        href="https://instagram.com/sunflodetailing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-300 text-sm hover:text-brand-400 transition-colors"
-                      >
-                        @sunflodetailing
-                      </a>
-                    </div>
+                  <li>
+                    <a
+                      href="https://instagram.com/sunflodetailing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-4 group"
+                    >
+                      <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
+                        <InstagramIcon size={16} />
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Instagram</p>
+                        <span className="text-gray-300 text-sm group-hover:text-brand-400 transition-colors">
+                          @sunflodetailing
+                        </span>
+                      </div>
+                    </a>
                   </li>
-                  <li className="flex items-start gap-4">
-                    <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
-                      <FacebookIcon size={16} />
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Facebook</p>
-                      <a
-                        href="https://www.facebook.com/Sunflodetailing/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-300 text-sm hover:text-brand-400 transition-colors"
-                      >
-                        Sunflodetailing
-                      </a>
-                    </div>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Sunflodetailing/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start gap-4 group"
+                    >
+                      <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">
+                        <FacebookIcon size={16} />
+                      </div>
+                      <div>
+                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Facebook</p>
+                        <span className="text-gray-300 text-sm group-hover:text-brand-400 transition-colors">
+                          Sunflodetailing
+                        </span>
+                      </div>
+                    </a>
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="w-9 h-9 rounded-sm bg-brand-500/10 flex items-center justify-center shrink-0">

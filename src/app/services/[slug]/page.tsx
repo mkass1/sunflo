@@ -15,9 +15,12 @@ const AREA_SERVED = [
   "Fort Lauderdale",
   "Wilton Manors",
   "Pompano Beach",
-  "Lighthouse Point",
-  "Lauderdale-by-the-Sea",
-  "Deerfield Beach",
+  "Pembroke Pines",
+  "Weston",
+  "Davie",
+  "Cooper City",
+  "Hollywood",
+  "Plantation",
 ];
 
 export function generateStaticParams() {

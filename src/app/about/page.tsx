@@ -112,19 +112,31 @@ const serviceArea = [
   },
   {
     city: "Pompano Beach",
-    note: "Clients from Pompano Beach often drive in for larger jobs — PPF installs, vinyl wraps, and ceramic coating packages — and the drive time is under 15 minutes.",
+    note: "Clients from Pompano Beach often drive in for larger jobs — PPF installs, ceramic coating packages — and the drive time is under 15 minutes.",
   },
   {
-    city: "Lighthouse Point",
-    note: "Lighthouse Point's marina community means we see boats, RVs, and marine vehicles alongside the typical cars and trucks — marine-grade detailing experience comes with the territory here in South Florida.",
+    city: "Pembroke Pines",
+    note: "One of our most active south Broward markets. Families, daily drivers, and a strong referral network bring a steady volume of clients up from the Pines for ceramic coatings and interior work.",
   },
   {
-    city: "Lauderdale-by-the-Sea",
-    note: "Salt air corrosion is a serious concern right on the coast. Clients from Lauderdale-by-the-Sea typically need more aggressive decontamination before coatings due to the constant salt-air exposure.",
+    city: "Weston",
+    note: "Weston clients often arrive with luxury and exotic vehicles looking for paint correction and PPF — an affluent community with high standards for vehicle appearance.",
   },
   {
-    city: "Deerfield Beach",
-    note: "Deerfield Beach is at the northern edge of our regular service corridor. We see a mix of luxury vehicles and SUVs from that area for annual detailing and protection work.",
+    city: "Davie",
+    note: "Davie's mix of trucks, equestrian vehicles, and daily drivers keeps a diverse range of work coming through — decontamination details, ceramic coatings, and tint installs.",
+  },
+  {
+    city: "Cooper City",
+    note: "Cooper City residents tend to be long-term vehicle owners who want protection that holds up. A tight-knit community that takes detail quality seriously.",
+  },
+  {
+    city: "Hollywood",
+    note: "Hollywood clients range from beachside vehicles needing heavy decontamination to Emerald Hills luxury cars coming in for PPF and high-end ceramic coatings.",
+  },
+  {
+    city: "Plantation",
+    note: "Plantation's professional commuter population brings in leased luxury vehicles for ceramic coating and new vehicle protection — one of our fastest-growing service areas.",
   },
 ];
 

@@ -29,7 +29,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         heading: "Ceramic Coating in South Florida: What's Different",
-        body: "Oakland Park's subtropical climate — intense UV, salt-laden air from the coast, frequent afternoon rain, and tree sap from local foliage — is one of the most demanding environments for automotive paint. A standard wax breaks down in weeks here. Professional ceramic coating is engineered for exactly these conditions: the hydrophobic surface sheds the frequent rain rather than allowing water spots to etch into the clear coat, and UV blockers in the formula prevent the oxidation that turns paint chalky in the Florida sun. For clients in Oakland Park, Fort Lauderdale, Wilton Manors, and Pompano Beach, ceramic coating isn't a luxury — it's the practical choice.",
+        body: "Oakland Park's subtropical climate — intense UV, salt-laden air from the coast, frequent afternoon rain, and tree sap from local foliage — is one of the most demanding environments for automotive paint. A standard wax breaks down in weeks here. Professional ceramic coating is engineered for exactly these conditions: the hydrophobic surface sheds the frequent rain rather than allowing water spots to etch into the clear coat, and UV blockers in the formula prevent the oxidation that turns paint chalky in the Florida sun. For clients in Oakland Park, Fort Lauderdale, Pembroke Pines, Weston, and across South Florida, ceramic coating isn't a luxury — it's the practical choice.",
       },
     ],
     faqs: [
@@ -74,7 +74,7 @@ export const servicePages: ServicePage[] = [
       "Expert multi-stage paint correction in Oakland Park, FL — serving Fort Lauderdale and all of Broward County. Sunflo Detailing removes swirls, scratches, water spots, and oxidation. Prices from $2,000.",
     h1: "Paint Correction in Oakland Park, FL",
     intro:
-      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Oakland Park, FL, serving Fort Lauderdale, Wilton Manors, and all of Broward County. We remove up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
+      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Oakland Park, FL, serving Fort Lauderdale, Pembroke Pines, Weston, Davie, and all of Broward County. We remove up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
     sections: [
       {
         heading: "What Paint Correction Fixes",
@@ -204,7 +204,7 @@ export const servicePages: ServicePage[] = [
       "Professional window tinting in Oakland Park & Fort Lauderdale, FL. Premium film blocking up to 99% UV, significant heat reduction, and guaranteed Florida-legal compliance. Custom quotes from Sunflo Detailing.",
     h1: "Window Tinting in Oakland Park, FL",
     intro:
-      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. For drivers in Oakland Park, Fort Lauderdale, and Pompano Beach, our shop on NE 11th Ave is the convenient choice for same-day tinting with a Florida-legal guarantee. We install premium-grade window film with a clean, bubble-free finish backed by warranty.",
+      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. For drivers in Oakland Park, Fort Lauderdale, Pembroke Pines, and across South Broward, our shop on NE 11th Ave is the convenient choice for same-day tinting with a Florida-legal guarantee. We install premium-grade window film with a clean, bubble-free finish backed by warranty.",
     sections: [
       {
         heading: "Types of Window Film",

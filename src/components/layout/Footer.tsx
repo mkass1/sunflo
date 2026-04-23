@@ -168,25 +168,25 @@ export default function Footer() {
                   {contact.email}
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <InstagramIcon size={15} />
+              <li>
                 <a
                   href={contact.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors duration-150"
+                  className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors duration-150"
                 >
+                  <InstagramIcon size={15} />
                   {contact.instagramHandle}
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <FacebookIcon size={15} />
+              <li>
                 <a
                   href={contact.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors duration-150"
+                  className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors duration-150"
                 >
+                  <FacebookIcon size={15} />
                   {contact.facebookHandle}
                 </a>
               </li>
@@ -219,7 +219,7 @@ export default function Footer() {
               <FacebookIcon size={16} />
             </a>
           </div>
-          <p className="text-xs text-gray-400">Oakland Park · Fort Lauderdale · Wilton Manors · Pompano Beach · South Florida</p>
+          <p className="text-xs text-gray-400">Oakland Park · Fort Lauderdale · Pembroke Pines · Weston · Davie · South Florida</p>
         </div>
       </div>
     </footer>

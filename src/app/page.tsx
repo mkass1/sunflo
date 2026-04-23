@@ -9,9 +9,9 @@ import CTABanner from "@/components/layout/CTABanner";
 import LocationMap from "@/components/home/LocationMap";
 
 export const metadata: Metadata = {
-  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Oakland Park & Fort Lauderdale, FL",
+  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Oakland Park, FL | Sunflo Detailing",
   description:
-    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL. Serving Fort Lauderdale and South Florida since 2017.",
+    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL. Serving Pembroke Pines, Weston, Davie, Fort Lauderdale, and South Florida since 2017.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",

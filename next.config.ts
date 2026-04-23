@@ -28,6 +28,20 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
   },
+  async redirects() {
+    return [
+      {
+        source: "/locations/deerfield-beach",
+        destination: "/locations/pompano-beach",
+        permanent: true,
+      },
+      {
+        source: "/locations/lighthouse-point",
+        destination: "/locations/pompano-beach",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

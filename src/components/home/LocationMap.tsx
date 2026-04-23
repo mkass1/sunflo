@@ -77,7 +77,7 @@ export default function LocationMap() {
                 Areas Served
               </p>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Oakland Park · Fort Lauderdale · Wilton Manors · Pompano Beach · Lighthouse Point · Lauderdale-by-the-Sea · South Florida
+                Oakland Park · Fort Lauderdale · Pompano Beach · Pembroke Pines · Weston · Davie · Cooper City · Hollywood · Plantation · South Florida
               </p>
             </div>
           </motion.div>
