@@ -44,10 +44,10 @@ export const metadata: Metadata = {
       "Professional auto detailing, ceramic coatings, paint correction, and more in Oakland Park, Florida. Est. 2017.",
     images: [
       {
-        url: "/images/hero/porsche-911.jpg",
-        width: 1920,
-        height: 1080,
-        alt: "Sunflo Detailing — Oakland Park, FL",
+        url: "/images/og/sunflo-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sunflo Detailing — Premium Auto Detailing in Oakland Park, FL",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sunflo Detailing | Premium Auto Detailing",
     description: "Professional auto detailing in Oakland Park, FL. Est. 2017.",
-    images: ["/images/hero/porsche-911.jpg"],
+    images: ["/images/og/sunflo-og.jpg"],
   },
   robots: {
     index: true,
