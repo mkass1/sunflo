@@ -75,10 +75,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
       </div>
 
       {/* Image grid */}
-      <motion.div
-        layout
-        className="columns-2 md:columns-3 gap-4 space-y-4"
-      >
+      <motion.div layout className="columns-2 md:columns-3 gap-4 space-y-4">
         {/* Pinned video — mounts only after scrolled into view */}
         <div ref={videoRef} className="break-inside-avoid relative overflow-hidden rounded-sm border border-dark-border">
           {videoVisible ? (
@@ -149,7 +146,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
             >
               <X size={28} />
             </button>
-
             <button
               onClick={(e) => { e.stopPropagation(); prev(); }}
               className="absolute left-4 text-white hover:text-brand-400 transition-colors p-2"
@@ -157,7 +153,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
             >
               <ChevronLeft size={36} />
             </button>
-
             <motion.div
               key={lightboxIndex}
               initial={{ opacity: 0, scale: 0.95 }}
@@ -177,7 +172,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                 {filtered[lightboxIndex].alt}
               </p>
             </motion.div>
-
             <button
               onClick={(e) => { e.stopPropagation(); next(); }}
               className="absolute right-4 text-white hover:text-brand-400 transition-colors p-2"

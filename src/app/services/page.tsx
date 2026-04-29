@@ -4,7 +4,7 @@ import { services } from "@/data/services";
 
 const SITE_URL = "https://www.sunflodetailing.com";
 
-const autoDetailServices = services.filter((s) => s.tier === "auto-detail");
+const autoDetailServices = services.filter((s) => s.tier === "auto-detail" && s.id !== "auto-detail-packages");
 const interiorServices = services.filter((s) => s.tier === "interior");
 const correctionServices = services.filter((s) => s.tier === "correction");
 const specialtyServices = services.filter((s) => s.category === "specialty");

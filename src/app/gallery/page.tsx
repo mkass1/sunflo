@@ -13,6 +13,7 @@ function InstagramIcon({ size = 36 }: { size?: number }) {
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
+import BeforeAfterSlider from "@/components/gallery/BeforeAfterSlider";
 import CTABanner from "@/components/layout/CTABanner";
 import { galleryImages } from "@/data/gallery";
 
@@ -82,6 +83,17 @@ export default function GalleryPage() {
       <section className="py-20 bg-dark">
         <Container>
           <GalleryGrid images={galleryImages} />
+        </Container>
+      </section>
+
+      {/* Before / After */}
+      <section className="py-16 bg-dark border-t border-dark-border">
+        <Container>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand-400 mb-5 text-center">Before & After</p>
+            <BeforeAfterSlider />
+            <p className="text-center text-xs text-gray-600 mt-3 tracking-wide">Wheel & brake detail — Oakland Park, FL</p>
+          </div>
         </Container>
       </section>
 

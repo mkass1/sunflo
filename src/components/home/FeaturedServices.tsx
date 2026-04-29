@@ -11,9 +11,10 @@ import { formatPrice } from "@/lib/utils";
 import { useIsDesktop } from "@/hooks/useIsDesktop";
 
 const OBJECT_POSITIONS: Record<string, string> = {
+  "auto-detail-packages": "center 50%",
   "complete-interior": "center 85%",
   "gloss-enhancement": "center 30%",
-  "paint-enhancement": "center center",
+  "paint-enhancement": "center 30%",
   "paint-correction": "center center",
 };
 

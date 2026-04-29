@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isDev = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "SAMEORIGIN" },
@@ -12,7 +14,8 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // 'unsafe-inline' required for Next.js hydration scripts and JSON-LD dangerouslySetInnerHTML blocks
-      "script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com",
+      // 'unsafe-eval' required by React dev mode only — never present in production builds
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://va.vercel-scripts.com`,
       // 'unsafe-inline' required for Framer Motion inline styles and Tailwind
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob: https:",

@@ -4,6 +4,22 @@ export const PRICING_DISCLAIMER = "All prices are subject to change upon final i
 
 export const services: ServiceItem[] = [
   // ============ AUTO DETAILING PACKAGES (Level 1/2/3) ============
+  // Home page summary card — filtered out of the services page auto detail list
+  {
+    id: "auto-detail-packages",
+    name: "Full Auto Detailing",
+    tagline: "Complete inside-and-out care, three levels of protection",
+    description:
+      "A full inside-and-out detail finished with a paint protection treatment — choose the level that matches how long you want the protection to last, from a spray sealant up to a 6-month machine-applied paint sealant.",
+    pricing: { small: 200, medium: 225, large: 250 },
+    image: "/images/services/auto-detail-foam-wash.jpg",
+    category: "core",
+    tier: "auto-detail",
+    hasTiers: true,
+    featured: true,
+    exteriorServices: [],
+    interiorServices: [],
+  },
   {
     id: "auto-detail-level-1",
     name: "Level 1 Auto Detailing",
@@ -145,6 +161,7 @@ export const services: ServiceItem[] = [
     tagline: "Hydrophobic protection that lasts years, not months",
     description:
       "A professionally applied ceramic coating chemically bonds to your vehicle's clear coat, creating a semi-permanent hydrophobic barrier that repels water, blocks UV, and resists contaminants. Three package tiers starting at $800 — choose by paint condition and protection duration.",
+    pricing: { small: 800, medium: 900, large: 1000 },
     image: "/images/services/bmw-hood-ceramic-reflection.jpg",
     category: "core",
     tier: "correction",
@@ -195,7 +212,7 @@ export const services: ServiceItem[] = [
     description:
       "Removes light swirls, scratches, and some below-surface defects. The result is a super glossy, deep finish topped with a professional-grade ceramic coating — the ideal balance of correction and protection.",
     pricing: { small: 1600, medium: 1800, large: 2000 },
-    image: "/images/services/bmw-hood-ceramic-reflection.jpg",
+    image: "/images/services/paint-enhancement.jpg",
     category: "core",
     tier: "correction",
     exteriorServices: [

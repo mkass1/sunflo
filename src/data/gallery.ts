@@ -161,4 +161,12 @@ export const galleryImages: GalleryImage[] = [
     width: 768,
     height: 1024,
   },
+  {
+    id: "g-porsche-gt3-silver-side",
+    src: "/images/gallery/porsche-gt3-silver-side.jpg",
+    alt: "Silver Porsche GT3 on the brick driveway after a full wheel and exterior detail — polished spokes, red calipers",
+    category: "exterior",
+    width: 4032,
+    height: 3024,
+  },
 ];
