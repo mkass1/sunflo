@@ -37,7 +37,7 @@ export default function BeforeAfterSlider() {
 
   return (
     <div className="break-inside-avoid relative overflow-hidden rounded-sm border border-dark-border select-none cursor-col-resize"
-      style={{ aspectRatio: "4 / 3" }}
+      style={{ aspectRatio: "3 / 4" }}
       ref={containerRef}
       onMouseDown={(e) => { e.preventDefault(); setDragging(true); clamp(e.clientX); }}
       onTouchStart={(e) => { setDragging(true); clamp(e.touches[0].clientX); }}
