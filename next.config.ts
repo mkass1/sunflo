@@ -33,6 +33,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Old city pages removed during south Broward realignment
       {
         source: "/locations/deerfield-beach",
         destination: "/locations/pompano-beach",
@@ -43,6 +44,15 @@ const nextConfig: NextConfig = {
         destination: "/locations/pompano-beach",
         permanent: true,
       },
+      // Old WordPress site URLs with clear equivalents on new site
+      { source: "/about-us", destination: "/about", permanent: true },
+      { source: "/about-us/", destination: "/about", permanent: true },
+      { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/contact-us/", destination: "/contact", permanent: true },
+      { source: "/gallery/", destination: "/gallery", permanent: true },
+      { source: "/faq/", destination: "/faq", permanent: true },
+      { source: "/ceramic-coatings", destination: "/services/ceramic-coating", permanent: true },
+      { source: "/ceramic-coatings/", destination: "/services/ceramic-coating", permanent: true },
     ];
   },
   async headers() {
