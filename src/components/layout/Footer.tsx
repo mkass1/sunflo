@@ -152,6 +152,7 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-4">
+              <li className="text-sm font-medium text-white">Sunflo Detailing</li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <MapPin size={15} className="text-brand-500 mt-0.5 shrink-0" />
                 <span>{contact.address}</span>
@@ -168,6 +169,7 @@ export default function Footer() {
                   {contact.email}
                 </a>
               </li>
+              <li className="text-sm text-gray-400">By appointment only</li>
               <li>
                 <a
                   href={contact.instagram}

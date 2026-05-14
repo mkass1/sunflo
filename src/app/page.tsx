@@ -9,9 +9,9 @@ import CTABanner from "@/components/layout/CTABanner";
 import LocationMap from "@/components/home/LocationMap";
 
 export const metadata: Metadata = {
-  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Fort Lauderdale, FL | Sunflo Detailing",
+  title: "Sunflo Detailing | Auto Detailing, Ceramic Coating & Paint Correction in Fort Lauderdale, FL",
   description:
-    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Fort Lauderdale, FL. Serving Pembroke Pines, Weston, Davie, Oakland Park, and South Florida since 2017.",
+    "Sunflo Detailing is an appointment-only auto detailing studio in Fort Lauderdale, FL offering ceramic coatings, paint correction, PPF, window tinting, vinyl wraps, and full interior/exterior detailing for Broward County drivers.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Sunflo Detailing | Premium Auto Detailing in Fort Lauderdale, FL",

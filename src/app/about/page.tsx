@@ -104,7 +104,7 @@ const serviceArea = [
   },
   {
     city: "Oakland Park",
-    note: "We served Oakland Park clients for years out of our original NE 11th Ave shop, and they still account for a large share of our repeat business — a short drive from the new studio.",
+    note: "A short drive north of the studio. Oakland Park clients account for a large share of our repeat business — many are regulars from years of work in the area.",
   },
   {
     city: "Wilton Manors",
