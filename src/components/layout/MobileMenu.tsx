@@ -68,7 +68,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           Book Your Service
         </Link>
         <div className="mt-6 text-center text-gray-500 text-sm">
-          <p>4708 NE 11th Ave, Oakland Park, FL</p>
+          <p>837 NW 8th Ave, Fort Lauderdale, FL</p>
           <p className="mt-1">Est. 2017</p>
         </div>
       </div>

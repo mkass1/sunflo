@@ -10,8 +10,7 @@ import CTABanner from "@/components/layout/CTABanner";
 
 const SITE_URL = "https://www.sunflodetailing.com";
 
-const MAPS_URL =
-  "https://maps.google.com/?q=4708+NE+11th+Ave,+Oakland+Park,+FL+33334";
+const MAPS_URL = contact.mapsUrl;
 
 const serviceCards = [
   {
@@ -86,10 +85,10 @@ export default async function CityPage({
     telephone: "+19542356882",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "4708 NE 11th Ave",
-      addressLocality: "Oakland Park",
-      addressRegion: "FL",
-      postalCode: "33334",
+      streetAddress: contact.addressStreet,
+      addressLocality: contact.addressCity,
+      addressRegion: contact.addressState,
+      postalCode: contact.addressZip,
       addressCountry: "US",
     },
     branchOf: { "@id": `${SITE_URL}#business` },
@@ -181,7 +180,9 @@ export default async function CityPage({
             <SectionHeading
               label="What We Offer"
               title={`Services We Offer in ${page.city}`}
-              subtitle={`All services performed in-house at our Oakland Park studio — ${page.driveTime} from ${page.city}.`}
+              subtitle={page.slug === "fort-lauderdale"
+                ? "All services performed in-house at our Fort Lauderdale studio — right here, at 837 NW 8th Ave."
+                : `All services performed in-house at our Fort Lauderdale studio — ${page.driveTime} from ${page.city}.`}
             />
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -223,7 +224,9 @@ export default async function CityPage({
                 className="text-xl font-bold text-white"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
-                About {page.driveTime} from Oakland Park
+                {page.slug === "fort-lauderdale"
+                  ? "Right here in Fort Lauderdale"
+                  : `About ${page.driveTime} from Fort Lauderdale`}
               </p>
             </div>
 
@@ -260,7 +263,7 @@ export default async function CityPage({
               {/* Map CTA */}
               <div className="p-6 border border-dark-border rounded-sm bg-dark-muted/40 flex flex-col justify-between">
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Drop off at our Oakland Park studio, or book a mobile appointment
+                  Drop off at our Fort Lauderdale studio, or book a mobile appointment
                   and we come to you anywhere in South Florida. Call to discuss
                   which option works best for your service.
                 </p>
@@ -289,7 +292,9 @@ export default async function CityPage({
       {/* ── CTA Banner ──────────────────────────────────────────────────── */}
       <CTABanner
         title={`Ready to Protect Your ${page.city} Vehicle?`}
-        subtitle={`Drop off at our Oakland Park studio — ${page.driveTime} from ${page.city}. We will evaluate your paint and recommend the right protection for your vehicle and budget.`}
+        subtitle={page.slug === "fort-lauderdale"
+          ? "Drop off at our Fort Lauderdale studio at 837 NW 8th Ave. We will evaluate your paint and recommend the right protection for your vehicle and budget."
+          : `Drop off at our Fort Lauderdale studio — ${page.driveTime} from ${page.city}. We will evaluate your paint and recommend the right protection for your vehicle and budget.`}
         buttonText="Book Your Service"
         buttonHref="/contact"
       />

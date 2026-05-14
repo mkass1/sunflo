@@ -21,7 +21,7 @@ const securityHeaders = [
       "img-src 'self' data: blob: https:",
       "font-src 'self'",
       "media-src 'self'",
-      "frame-src https://www.google.com",
+      "frame-src https://www.google.com https://maps.google.com",
       "connect-src 'self' https://vitals.vercel-insights.com https://va.vercel-scripts.com",
     ].join("; "),
   },
@@ -33,6 +33,9 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Location move (Oakland Park → Fort Lauderdale, 2026-05-13) — catch any links
+      // pointing at the old city slug from citations or external directories.
+      { source: "/locations/oakland-park", destination: "/locations/fort-lauderdale", permanent: true },
       // Old city pages removed during south Broward realignment
       {
         source: "/locations/deerfield-beach",

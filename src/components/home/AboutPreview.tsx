@@ -11,7 +11,7 @@ const pillars = [
   {
     num: "01",
     title: "In-House Work",
-    body: "Every detail done by our own team in Oakland Park. No rotating subcontractors, no outsourced coatings.",
+    body: "Every detail done by our own team in Fort Lauderdale. No rotating subcontractors, no outsourced coatings.",
   },
   {
     num: "02",
@@ -71,7 +71,7 @@ export default function AboutPreview() {
               <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm border border-brand-500/30 bg-brand-500/10 backdrop-blur-sm">
                 <MapPin size={11} className="text-brand-400 shrink-0" />
                 <span className="text-brand-400 text-[11px] font-medium tracking-wide">
-                  Oakland Park · South Florida
+                  Fort Lauderdale · South Florida
                 </span>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function AboutPreview() {
               transition={{ duration: 0.5, delay: 0.05 }}
               className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500 mb-4"
             >
-              Est. 2017 · Oakland Park, FL
+              Est. 2017 · Fort Lauderdale, FL
             </motion.p>
 
             <motion.h2
@@ -107,12 +107,12 @@ export default function AboutPreview() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="text-gray-300 text-base leading-relaxed max-w-lg mb-4"
             >
-              Started by Jason in Oakland Park in 2017, Sunflo Detailing was built around one principle: do
+              Started by Jason in Fort Lauderdale in 2017, Sunflo Detailing was built around one principle: do
               the work properly or don&apos;t do it at all. South Florida&apos;s sun, salt air, and UV
               intensity demand more from paint protection than the rest of the country — and that&apos;s
               the environment we&apos;ve been working in for nine years. We serve Oakland Park, Fort
               Lauderdale, Wilton Manors, Pompano Beach, and surrounding Broward County from our shop
-              at 4708 NE 11th Ave.
+              at 837 NW 8th Ave.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 12 }}

@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-const chips = ["Fixed & Custom Pricing", "Oakland Park, FL", "Custom Quotes Available"];
+const chips = ["Fixed & Custom Pricing", "Fort Lauderdale, FL", "Custom Quotes Available"];
 
 export default function ServicesHero() {
   const sectionRef = useRef<HTMLElement>(null);

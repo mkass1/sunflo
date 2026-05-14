@@ -20,14 +20,14 @@ const breadcrumbJsonLd = {
 export const metadata: Metadata = {
   title: "Auto Detailing Service Areas — South Florida",
   description:
-    "Sunflo Detailing serves Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Fort Lauderdale, Wilton Manors, Pompano Beach, and all of South Florida. Studio in Oakland Park, FL.",
+    "Sunflo Detailing serves Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Fort Lauderdale, Wilton Manors, Pompano Beach, and all of South Florida. Studio in Fort Lauderdale, FL.",
   alternates: { canonical: "/locations" },
   openGraph: {
     title: "Service Areas | Sunflo Detailing",
     description:
-      "Professional auto detailing serving Pembroke Pines, Weston, Davie, Fort Lauderdale, Pompano Beach, and surrounding South Florida cities from our Oakland Park, FL studio.",
+      "Professional auto detailing serving Pembroke Pines, Weston, Davie, Fort Lauderdale, Pompano Beach, and surrounding South Florida cities from our Fort Lauderdale, FL studio.",
     url: `${SITE_URL}/locations`,
-    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Fort Lauderdale, FL" }],
   },
 };
 
@@ -42,7 +42,7 @@ export default function LocationsPage() {
             as="h1"
             label="Service Areas"
             title="Serving South Florida"
-            subtitle="Drop off at our Oakland Park studio or book a mobile appointment. We serve all of Broward County and beyond."
+            subtitle="Drop off at our Fort Lauderdale studio or book a mobile appointment. We serve all of Broward County and beyond."
           />
         </Container>
       </section>
@@ -87,7 +87,7 @@ export default function LocationsPage() {
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               We serve all of South Florida including Boca Raton, Miami, Lauderdale-by-the-Sea, and more.
-              Drop off at our studio in Oakland Park or contact us to arrange a mobile appointment.
+              Drop off at our studio in Fort Lauderdale or contact us to arrange a mobile appointment.
             </p>
             <Link
               href="/contact"

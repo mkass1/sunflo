@@ -9,16 +9,16 @@ import CTABanner from "@/components/layout/CTABanner";
 import LocationMap from "@/components/home/LocationMap";
 
 export const metadata: Metadata = {
-  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Oakland Park, FL | Sunflo Detailing",
+  title: "Auto Detailing, Ceramic Coatings & Paint Correction — Fort Lauderdale, FL | Sunflo Detailing",
   description:
-    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL. Serving Pembroke Pines, Weston, Davie, Fort Lauderdale, and South Florida since 2017.",
+    "Sunflo Detailing — professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Fort Lauderdale, FL. Serving Pembroke Pines, Weston, Davie, Oakland Park, and South Florida since 2017.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",
+    title: "Sunflo Detailing | Premium Auto Detailing in Fort Lauderdale, FL",
     description:
-      "Professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, Florida. Est. 2017.",
+      "Professional auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Fort Lauderdale, Florida. Est. 2017.",
     url: "https://www.sunflodetailing.com",
-    images: [{ url: "/images/og/sunflo-og.jpg", width: 1200, height: 630, alt: "Sunflo Detailing — Oakland Park, FL" }],
+    images: [{ url: "/images/og/sunflo-og.jpg", width: 1200, height: 630, alt: "Sunflo Detailing — Fort Lauderdale, FL" }],
   },
 };
 

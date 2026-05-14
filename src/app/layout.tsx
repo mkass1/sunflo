@@ -3,6 +3,7 @@ import { Sora, Big_Shoulders, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import MovedAnnouncement from "@/components/layout/MovedAnnouncement";
 import { contact } from "@/data/contact";
 import { testimonials } from "@/data/testimonials";
 import { cn } from "@/lib/utils";
@@ -29,32 +30,32 @@ const SITE_URL = "https://www.sunflodetailing.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",
+    default: "Sunflo Detailing | Premium Auto Detailing in Fort Lauderdale, FL",
     template: "%s | Sunflo Detailing",
   },
   description:
-    "Professional auto detailing, ceramic coatings, paint correction, wraps, tints, and PPF in Oakland Park, Florida. Serving South Florida since 2017.",
+    "Professional auto detailing, ceramic coatings, paint correction, wraps, tints, and PPF in Fort Lauderdale, Florida. Serving South Florida since 2017.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
     siteName: "Sunflo Detailing",
-    title: "Sunflo Detailing | Premium Auto Detailing in Oakland Park, FL",
+    title: "Sunflo Detailing | Premium Auto Detailing in Fort Lauderdale, FL",
     description:
-      "Professional auto detailing, ceramic coatings, paint correction, and more in Oakland Park, Florida. Est. 2017.",
+      "Professional auto detailing, ceramic coatings, paint correction, and more in Fort Lauderdale, Florida. Est. 2017.",
     images: [
       {
         url: "/images/og/sunflo-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Sunflo Detailing — Premium Auto Detailing in Oakland Park, FL",
+        alt: "Sunflo Detailing — Premium Auto Detailing in Fort Lauderdale, FL",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sunflo Detailing | Premium Auto Detailing",
-    description: "Professional auto detailing in Oakland Park, FL. Est. 2017.",
+    description: "Professional auto detailing in Fort Lauderdale, FL. Est. 2017.",
     images: ["/images/og/sunflo-og.jpg"],
   },
   robots: {
@@ -82,7 +83,7 @@ const websiteJsonLd = {
   url: SITE_URL,
   name: "Sunflo Detailing",
   description:
-    "Premium auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Oakland Park, FL.",
+    "Premium auto detailing, ceramic coatings, paint correction, PPF, vehicle wraps, and window tinting in Fort Lauderdale, FL.",
   publisher: { "@id": `${SITE_URL}#business` },
 };
 
@@ -104,7 +105,7 @@ const localBusinessJsonLd = {
   name: "Sunflo Detailing",
   alternateName: "Sunflo Car Detailing",
   description:
-    "Premium auto detailing, ceramic coatings, paint correction, paint protection film, vehicle wraps, and window tinting in Oakland Park, South Florida.",
+    "Premium auto detailing, ceramic coatings, paint correction, paint protection film, vehicle wraps, and window tinting in Fort Lauderdale, South Florida.",
   url: SITE_URL,
   telephone: contact.phoneHref.replace("tel:", ""),
   email: contact.email,
@@ -114,17 +115,19 @@ const localBusinessJsonLd = {
   foundingDate: "2017",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "4708 NE 11th Ave",
-    addressLocality: "Oakland Park",
-    addressRegion: "FL",
-    postalCode: "33334",
+    streetAddress: contact.addressStreet,
+    addressLocality: contact.addressCity,
+    addressRegion: contact.addressState,
+    postalCode: contact.addressZip,
     addressCountry: "US",
   },
+  // Geocoded via OpenStreetMap Nominatim for 837 NW 8th Ave, Fort Lauderdale, FL 33311.
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 26.18520747708831,
-    longitude: -80.13513052466247,
+    latitude: 26.1337,
+    longitude: -80.1529,
   },
+  hasMap: contact.mapsUrl,
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -134,8 +137,8 @@ const localBusinessJsonLd = {
     },
   ],
   areaServed: [
-    { "@type": "City", name: "Oakland Park" },
     { "@type": "City", name: "Fort Lauderdale" },
+    { "@type": "City", name: "Oakland Park" },
     { "@type": "City", name: "Wilton Manors" },
     { "@type": "City", name: "Pompano Beach" },
     { "@type": "City", name: "Pembroke Pines" },
@@ -207,6 +210,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main" className="flex-1">{children}</main>
         <Footer />
+        <MovedAnnouncement />
         <Analytics />
         <SpeedInsights />
       </body>

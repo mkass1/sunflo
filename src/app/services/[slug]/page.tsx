@@ -11,8 +11,8 @@ import CTABanner from "@/components/layout/CTABanner";
 const SITE_URL = "https://www.sunflodetailing.com";
 
 const AREA_SERVED = [
-  "Oakland Park",
   "Fort Lauderdale",
+  "Oakland Park",
   "Wilton Manors",
   "Pompano Beach",
   "Pembroke Pines",

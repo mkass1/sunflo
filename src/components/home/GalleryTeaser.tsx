@@ -20,7 +20,7 @@ export default function GalleryTeaser() {
           <SectionHeading
             label="Our Work"
             title="Recent Work"
-            subtitle="Real cars, real results — straight out of our Oakland Park shop."
+            subtitle="Real cars, real results — straight out of our Fort Lauderdale shop."
           />
           <Link
             href="/gallery"

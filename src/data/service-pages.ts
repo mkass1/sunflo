@@ -4,12 +4,12 @@ export const servicePages: ServicePage[] = [
   {
     slug: "ceramic-coating",
     eyebrow: "Paint Protection",
-    metaTitle: "Ceramic Coating in Oakland Park, FL | Sunflo Detailing",
+    metaTitle: "Ceramic Coating in Fort Lauderdale, FL",
     metaDescription:
-      "Professional ceramic coating services in Oakland Park, FL. Sunflo Detailing applies nano-ceramic coatings that bond to your clear coat, repelling water, blocking UV, and protecting your paint for years. Starting at $800.",
-    h1: "Ceramic Coating in Oakland Park, FL",
+      "Professional ceramic coating services in Fort Lauderdale, FL. Sunflo Detailing applies nano-ceramic coatings that bond to your clear coat, repelling water, blocking UV, and protecting your paint for years. Starting at $800.",
+    h1: "Ceramic Coating in Fort Lauderdale, FL",
     intro:
-      "A professionally applied ceramic coating chemically bonds to your vehicle's clear coat, creating a hydrophobic barrier that repels water, blocks UV rays, and resists contaminants for years. At Sunflo Detailing in Oakland Park, every ceramic package uses professional-grade formulas applied by hand — not the over-the-counter spray coatings you'll find at auto parts stores.",
+      "A professionally applied ceramic coating chemically bonds to your vehicle's clear coat, creating a hydrophobic barrier that repels water, blocks UV rays, and resists contaminants for years. At Sunflo Detailing in Fort Lauderdale, every ceramic package uses professional-grade formulas applied by hand — not the over-the-counter spray coatings you'll find at auto parts stores.",
     sections: [
       {
         heading: "What Is a Ceramic Coating?",
@@ -29,7 +29,7 @@ export const servicePages: ServicePage[] = [
       },
       {
         heading: "Ceramic Coating in South Florida: What's Different",
-        body: "Oakland Park's subtropical climate — intense UV, salt-laden air from the coast, frequent afternoon rain, and tree sap from local foliage — is one of the most demanding environments for automotive paint. A standard wax breaks down in weeks here. Professional ceramic coating is engineered for exactly these conditions: the hydrophobic surface sheds the frequent rain rather than allowing water spots to etch into the clear coat, and UV blockers in the formula prevent the oxidation that turns paint chalky in the Florida sun. For clients in Oakland Park, Fort Lauderdale, Pembroke Pines, Weston, and across South Florida, ceramic coating isn't a luxury — it's the practical choice.",
+        body: "Fort Lauderdale's subtropical climate — intense UV, salt-laden air from the coast, frequent afternoon rain, and tree sap from local foliage — is one of the most demanding environments for automotive paint. A standard wax breaks down in weeks here. Professional ceramic coating is engineered for exactly these conditions: the hydrophobic surface sheds the frequent rain rather than allowing water spots to etch into the clear coat, and UV blockers in the formula prevent the oxidation that turns paint chalky in the Florida sun. For clients in Fort Lauderdale, Fort Lauderdale, Pembroke Pines, Weston, and across South Florida, ceramic coating isn't a luxury — it's the practical choice.",
       },
     ],
     faqs: [
@@ -54,7 +54,7 @@ export const servicePages: ServicePage[] = [
           "No. Ceramic coating adds hardness and scratch resistance but it does not absorb impact. For protection against rock chips and road debris, Paint Protection Film (PPF) is the correct solution — and the two products are fully compatible. Many clients combine full-front PPF with a ceramic coating over the rest of the vehicle for comprehensive protection.",
       },
       {
-        question: "How much does ceramic coating cost in Oakland Park?",
+        question: "How much does ceramic coating cost in Fort Lauderdale?",
         answer:
           "At Sunflo Detailing, ceramic coating is included in three packages: Gloss Enhancement starts at $800 (small vehicles), Paint Enhancement starts at $1,600, and Paint Correction starts at $2,000. Pricing scales with vehicle size. Call or message us for a quote specific to your vehicle.",
       },
@@ -69,12 +69,12 @@ export const servicePages: ServicePage[] = [
   {
     slug: "paint-correction",
     eyebrow: "Paint Restoration",
-    metaTitle: "Paint Correction in Oakland Park, FL | Sunflo Detailing",
+    metaTitle: "Paint Correction in Fort Lauderdale, FL",
     metaDescription:
-      "Expert multi-stage paint correction in Oakland Park, FL — serving Fort Lauderdale and all of Broward County. Sunflo Detailing removes swirls, scratches, water spots, and oxidation. Prices from $2,000.",
-    h1: "Paint Correction in Oakland Park, FL",
+      "Expert multi-stage paint correction in Fort Lauderdale, FL — serving Fort Lauderdale and all of Broward County. Sunflo Detailing removes swirls, scratches, water spots, and oxidation. Prices from $2,000.",
+    h1: "Paint Correction in Fort Lauderdale, FL",
     intro:
-      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Oakland Park, FL, serving Fort Lauderdale, Pembroke Pines, Weston, Davie, and all of Broward County. We remove up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
+      "Paint correction is the process of mechanically removing surface defects from your vehicle's clear coat using machine polishers and progressively finer abrasive compounds. The result — when done correctly — is paint that looks like liquid glass. Sunflo Detailing performs multi-stage paint correction in Fort Lauderdale, FL, serving Fort Lauderdale, Pembroke Pines, Weston, Davie, and all of Broward County. We remove up to 95% of above and below-surface defects before finishing with two layers of professional-grade ceramic coating.",
     sections: [
       {
         heading: "What Paint Correction Fixes",
@@ -134,12 +134,12 @@ export const servicePages: ServicePage[] = [
   {
     slug: "paint-protection-film",
     eyebrow: "Paint Protection",
-    metaTitle: "Paint Protection Film (PPF) in Oakland Park, FL | Sunflo Detailing",
+    metaTitle: "Paint Protection Film (PPF) in Fort Lauderdale, FL",
     metaDescription:
-      "Invisible paint protection film (PPF) in Oakland Park, FL and South Florida. Shield your vehicle from rock chips, road debris, and UV damage. Front-clip packages typically from $1,500. Custom quotes from Sunflo Detailing.",
-    h1: "Paint Protection Film (PPF) in Oakland Park, FL",
+      "Invisible paint protection film (PPF) in Fort Lauderdale, FL and South Florida. Shield your vehicle from rock chips, road debris, and UV damage. Front-clip packages typically from $1,500. Custom quotes from Sunflo Detailing.",
+    h1: "Paint Protection Film (PPF) in Fort Lauderdale, FL",
     intro:
-      "Paint Protection Film — also called PPF, clear bra, or urethane film — is the only product that physically prevents rock chips and road debris from reaching your paint. Modern self-healing PPF uses heat-activated polyurethane technology: the film literally flows back to its original shape after light contact. At Sunflo Detailing in Oakland Park, we use precision computer-cut templates for a seamless, virtually invisible fit on any vehicle.",
+      "Paint Protection Film — also called PPF, clear bra, or urethane film — is the only product that physically prevents rock chips and road debris from reaching your paint. Modern self-healing PPF uses heat-activated polyurethane technology: the film literally flows back to its original shape after light contact. At Sunflo Detailing in Fort Lauderdale, we use precision computer-cut templates for a seamless, virtually invisible fit on any vehicle.",
     sections: [
       {
         heading: "What PPF Protects Against",
@@ -179,7 +179,7 @@ export const servicePages: ServicePage[] = [
           "Early-generation PPF had significant yellowing issues. Modern premium films — formulated with optical-grade urethane and UV stabilizers — maintain clarity throughout their rated life. Yellowing is still possible with off-brand films or improper installation that traps moisture at the edge. The films we use carry manufacturer warranties specifically covering discoloration for 10 years.",
       },
       {
-        question: "How much does PPF cost in Oakland Park?",
+        question: "How much does PPF cost in Fort Lauderdale?",
         answer:
           "PPF is custom-quoted by vehicle because the complexity of a front clip installation varies significantly between a compact sedan and a large SUV or exotic with complex panel geometry. Common front-clip installations (hood, bumper, fenders, mirrors) typically range from $1,500–$3,500 depending on vehicle size and panel complexity. Full-vehicle installations are significantly higher. Contact us for a quote specific to your vehicle.",
       },
@@ -199,12 +199,12 @@ export const servicePages: ServicePage[] = [
   {
     slug: "window-tinting",
     eyebrow: "UV & Privacy",
-    metaTitle: "Window Tinting in Oakland Park, FL | Sunflo Detailing",
+    metaTitle: "Window Tinting in Fort Lauderdale, FL",
     metaDescription:
-      "Professional window tinting in Oakland Park & Fort Lauderdale, FL. Premium film blocking up to 99% UV, significant heat reduction, and guaranteed Florida-legal compliance. Custom quotes from Sunflo Detailing.",
-    h1: "Window Tinting in Oakland Park, FL",
+      "Professional window tinting in Fort Lauderdale & Fort Lauderdale, FL. Premium film blocking up to 99% UV, significant heat reduction, and guaranteed Florida-legal compliance. Custom quotes from Sunflo Detailing.",
+    h1: "Window Tinting in Fort Lauderdale, FL",
     intro:
-      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. For drivers in Oakland Park, Fort Lauderdale, Pembroke Pines, and across South Broward, our shop on NE 11th Ave is the convenient choice for same-day tinting with a Florida-legal guarantee. We install premium-grade window film with a clean, bubble-free finish backed by warranty.",
+      "South Florida's combination of year-round sun, intense UV radiation, and cabin heat makes window tinting one of the highest-value upgrades for any vehicle driven here. Professional window film blocks up to 99% of UV rays — protecting your skin on every drive and preventing interior fading — while significantly reducing cabin heat buildup. For drivers in Fort Lauderdale, Fort Lauderdale, Pembroke Pines, and across South Broward, our shop on NW 8th Ave is the convenient choice for same-day tinting with a Florida-legal guarantee. We install premium-grade window film with a clean, bubble-free finish backed by warranty.",
     sections: [
       {
         heading: "Types of Window Film",
@@ -249,7 +249,7 @@ export const servicePages: ServicePage[] = [
           "Yes, significantly. Carbon film blocks roughly 35–45% of total solar energy; ceramic film blocks 50–70%. The key difference is infrared rejection — ceramic nano-particles block the near-infrared wavelengths that carry most of the heat without blocking visible light. This means you can install a lighter-shade ceramic film (higher VLT, more light, legal for front windows) and still get more heat rejection than a darker dyed film. Ceramic film also doesn't interfere with GPS, satellite radio, cell signals, or TPMS sensors.",
       },
       {
-        question: "How much does window tinting cost in Oakland Park?",
+        question: "How much does window tinting cost in Fort Lauderdale?",
         answer:
           "Window tinting at Sunflo Detailing is custom-quoted by vehicle. Pricing depends on the film tier selected (carbon vs ceramic), the number of windows, and the vehicle's glass complexity. Contact us to discuss your vehicle and film preferences for an accurate quote.",
       },

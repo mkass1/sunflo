@@ -39,7 +39,7 @@ export default function CTABanner({
               transition={{ duration: 0.5 }}
               className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-500 mb-6"
             >
-              Oakland Park, FL · Est. 2017
+              Fort Lauderdale, FL · Est. 2017
             </motion.p>
 
             <motion.h2

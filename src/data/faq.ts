@@ -115,27 +115,27 @@ export const faqs: FAQ[] = [
     category: "location",
     question: "Where are you located?",
     answer:
-      "We are located at 4708 NE 11th Ave, Oakland Park, Florida 33334. Our shop is just minutes from Fort Lauderdale and easily accessible from I-95. Ample parking is available on-site — simply drop off your vehicle and we'll take it from there.",
+      "We are located at 837 NW 8th Ave, Fort Lauderdale, Florida 33311. Our shop is easily accessible from I-95 and central to all of Broward County. Ample parking is available on-site — simply drop off your vehicle and we'll take it from there.",
   },
   {
     id: "16",
     category: "location",
     question: "What areas of South Florida do you serve?",
     answer:
-      "Sunflo Detailing serves all of South Florida — including Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Fort Lauderdale, Pompano Beach, Wilton Manors, Boca Raton, and Miami. You can drop off at our Oakland Park studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
+      "Sunflo Detailing serves all of South Florida — including Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Oakland Park, Pompano Beach, Wilton Manors, Boca Raton, and Miami. You can drop off at our Fort Lauderdale studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
   },
   {
     id: "17",
     category: "location",
     question: "Do you offer mobile detailing?",
     answer:
-      "Yes — Sunflo Detailing offers both studio and mobile appointments. Drop off at our Oakland Park studio at 4708 NE 11th Ave, or we can come to your home, office, or wherever your vehicle is located across South Florida. Some services — like multi-stage paint correction and ceramic coating applications — deliver better results in our climate-controlled studio environment, but we offer mobile for a wide range of detailing work. Call or message us and we&apos;ll recommend the right setup for your job.",
+      "Yes — Sunflo Detailing offers both studio and mobile appointments. Drop off at our Fort Lauderdale studio at 837 NW 8th Ave, or we can come to your home, office, or wherever your vehicle is located across South Florida. Some services — like multi-stage paint correction and ceramic coating applications — deliver better results in our climate-controlled studio environment, but we offer mobile for a wide range of detailing work. Call or message us and we&apos;ll recommend the right setup for your job.",
   },
   {
     id: "18",
     category: "location",
     question: "How long has Sunflo Detailing been in business?",
     answer:
-      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 9 years of experience and more than 2,000 vehicles serviced across Oakland Park, Fort Lauderdale, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
+      "Sunflo Detailing has been serving South Florida vehicle owners since 2017. With over 9 years of experience and more than 2,000 vehicles serviced across Fort Lauderdale, Oakland Park, and the greater Broward County area, we've built a reputation for premium results and meticulous attention to detail.",
   },
 ];

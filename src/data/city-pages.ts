@@ -16,13 +16,13 @@ export const cityPages: CityPage[] = [
   {
     city: "Fort Lauderdale",
     slug: "fort-lauderdale",
-    metaTitle: "Auto Detailing in Fort Lauderdale, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Fort Lauderdale, FL",
     metaDescription:
-      "Professional auto detailing in Fort Lauderdale — ceramic coating, paint correction, PPF, and window tinting. Studio in nearby Oakland Park, FL. Serving yachts, exotics, and daily drivers.",
+      "Professional auto detailing in Fort Lauderdale, FL — ceramic coating, paint correction, PPF, and window tinting. Our studio is right here in Fort Lauderdale at 837 NW 8th Ave. Serving yachts, exotics, and daily drivers.",
     h1: "Auto Detailing in Fort Lauderdale, FL",
-    eyebrow: "Serving Fort Lauderdale · ~10–15 min from Oakland Park",
+    eyebrow: "Our studio · 837 NW 8th Ave, Fort Lauderdale, FL 33311",
     intro:
-      "Fort Lauderdale sits at the center of Sunflo's service area — a city where luxury vehicles, convertibles, and daily commuters all deal with the same relentless South Florida conditions. The salt air off the Intracoastal and Atlantic accelerates paint degradation on anything left unprotected. Add the stone chip exposure from I-95 and the dense traffic around Las Olas Boulevard, and the case for professional paint protection becomes obvious. We have serviced more vehicles from Fort Lauderdale than any other city in Broward County.",
+      "Fort Lauderdale is home base. Our studio sits in the heart of the city at 837 NW 8th Ave — a climate-controlled, professional-grade detailing bay that serves luxury vehicles, convertibles, and daily commuters dealing with the same relentless South Florida conditions. Salt air off the Intracoastal and Atlantic accelerates paint degradation on anything left unprotected. Add stone-chip exposure from I-95 and the dense traffic around Las Olas Boulevard, and the case for professional paint protection becomes obvious. We have serviced more vehicles from Fort Lauderdale than any other city in Broward County — because they are right next door.",
     sections: [
       {
         heading: "Why Fort Lauderdale Vehicles Need Ceramic Coating",
@@ -37,28 +37,28 @@ export const cityPages: CityPage[] = [
         body: "Fort Lauderdale has one of the highest concentrations of convertibles and exotic vehicles per capita in Florida — driven by the climate, the wealth concentration, and the yacht culture centered on the Intracoastal. XPEL paint protection film is the right choice for these vehicles because it provides physical impact protection that ceramic coating simply cannot match. A stone chip that would destroy a ceramic coating in one hit is absorbed and self-healed by a PPF film with heat. For the front-end of a Porsche 911, a Ferrari California, or a Lamborghini Huracán that gets driven regularly, full-front PPF is the most cost-effective insurance available. We cut and install XPEL Ultimate Plus in-house using precision plotters — no subcontracted installs, no off-site film work.",
       },
       {
-        heading: "Drop Off on Your Way to Work",
-        body: "One of the practical advantages of Sunflo's Oakland Park location for Fort Lauderdale clients is the drop-off logistics. The studio at 4708 NE 11th Ave is positioned just off NE 11th Avenue — easy to reach from I-95 or Federal Highway without fighting downtown Fort Lauderdale traffic. Most of our Fort Lauderdale clients drop off in the morning on their way to Las Olas, downtown, or the airport, and pick up in the afternoon or the following morning depending on the service. For multi-day jobs like full-body PPF installs or multi-layer ceramic coatings, we can arrange an estimated timeline before the vehicle comes in so there are no surprises. Call or text to schedule.",
+        heading: "Visit the Studio",
+        body: "The Sunflo studio is at 837 NW 8th Ave in Fort Lauderdale, FL 33311 — easy to reach from I-95, Sistrunk Boulevard, Sunrise Boulevard, or Federal Highway. Most Fort Lauderdale clients drop off in the morning on their way to Las Olas, downtown, or the airport, and pick up in the afternoon or the following morning depending on the service. The bay is climate-controlled with purpose-built lighting rigs for paint correction work and humidity control for ceramic coating cure. On-site parking, no appointment-only barriers for consultations — walk through anytime during business hours and we will evaluate your vehicle and discuss the right protection package. For multi-day jobs like full-body PPF installs or multi-layer ceramic coatings, we will give you an estimated timeline before the vehicle comes in so there are no surprises. Call or text to schedule.",
       },
     ],
-    driveTime: "~10–15 minutes",
+    driveTime: "in-town",
     localHook:
-      "Salt air from the Intracoastal Waterway and Atlantic combined with daily I-95 stone chip exposure makes Fort Lauderdale one of the most paint-hostile environments in South Florida.",
+      "Salt air from the Intracoastal Waterway and Atlantic combined with daily I-95 stone chip exposure makes Fort Lauderdale one of the most paint-hostile environments in South Florida — and our studio is right in the middle of it.",
   },
   {
     city: "Wilton Manors",
     slug: "wilton-manors",
-    metaTitle: "Auto Detailing in Wilton Manors, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Wilton Manors, FL",
     metaDescription:
-      "Auto detailing studio minutes from Wilton Manors — ceramic coating, paint correction, interior refreshes, and more. Professional results in Oakland Park, FL.",
+      "Auto detailing studio minutes from Wilton Manors — ceramic coating, paint correction, interior refreshes, and more. Professional results in Fort Lauderdale, FL.",
     h1: "Auto Detailing in Wilton Manors, FL",
-    eyebrow: "Serving Wilton Manors · ~5–8 min from Oakland Park",
+    eyebrow: "Serving Wilton Manors · ~5–8 min from Fort Lauderdale",
     intro:
-      "Wilton Manors is one of the closest cities to Sunflo's Oakland Park studio — a short drive that makes dropping off for service genuinely convenient. The city is densely residential and vehicle-focused, with a mix of well-maintained luxury cars and daily drivers that reflect a community where curb appeal matters. Word travels fast in a compact city like Wilton Manors, and a significant portion of our clients from there arrive through neighbor or friend referrals. Whether it is a long-overdue interior deep clean, a first ceramic coating, or a recurring maintenance detail, Wilton Manors residents know where to go.",
+      "Wilton Manors is one of the closest cities to Sunflo's Fort Lauderdale studio — a short drive that makes dropping off for service genuinely convenient. The city is densely residential and vehicle-focused, with a mix of well-maintained luxury cars and daily drivers that reflect a community where curb appeal matters. Word travels fast in a compact city like Wilton Manors, and a significant portion of our clients from there arrive through neighbor or friend referrals. Whether it is a long-overdue interior deep clean, a first ceramic coating, or a recurring maintenance detail, Wilton Manors residents know where to go.",
     sections: [
       {
         heading: "Detailing in Wilton Manors",
-        body: "Wilton Manors sits directly adjacent to Oakland Park, which means Sunflo is effectively a neighborhood shop for residents there. The proximity is practical: drop off in under ten minutes, pick up when the job is done. But the short drive is only part of the story. Because Wilton Manors is a tightly networked community, reputation travels quickly. Most of our Wilton Manors clients arrive already knowing what to expect — they have seen the work on a neighbor's car, talked to someone at a local event, or seen a referral on a neighborhood group. We do not advertise heavily in Wilton Manors because we do not need to. The quality of the work is the marketing.",
+        body: "Wilton Manors sits directly adjacent to Fort Lauderdale, which means Sunflo is effectively a neighborhood shop for residents there. The proximity is practical: drop off in under ten minutes, pick up when the job is done. But the short drive is only part of the story. Because Wilton Manors is a tightly networked community, reputation travels quickly. Most of our Wilton Manors clients arrive already knowing what to expect — they have seen the work on a neighbor's car, talked to someone at a local event, or seen a referral on a neighborhood group. We do not advertise heavily in Wilton Manors because we do not need to. The quality of the work is the marketing.",
       },
       {
         heading: "The Difference Between a Pro Detail and a Drive-Through Wash",
@@ -80,11 +80,11 @@ export const cityPages: CityPage[] = [
   {
     city: "Pompano Beach",
     slug: "pompano-beach",
-    metaTitle: "Auto Detailing in Pompano Beach, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Pompano Beach, FL",
     metaDescription:
-      "Auto detailing for Pompano Beach vehicles — ceramic coating, paint correction, window tinting, and marine-environment protection. Studio in Oakland Park, FL.",
+      "Auto detailing for Pompano Beach vehicles — ceramic coating, paint correction, window tinting, and marine-environment protection. Studio in Fort Lauderdale, FL.",
     h1: "Auto Detailing in Pompano Beach, FL",
-    eyebrow: "Serving Pompano Beach · ~12–15 min from Oakland Park",
+    eyebrow: "Serving Pompano Beach · ~15–20 min from Fort Lauderdale",
     intro:
       "Pompano Beach is a working waterfront city with a marina community, a stretch of Atlantic coastline, and a vehicle mix that ranges from lifted trucks and contractor work vans to sport boats and weekend exotics. The marine environment here is among the most aggressive in South Florida — salt air, humidity, and road debris from I-95 and Sample Road work together to degrade paint and clear coat faster than owners realize. Sunflo serves Pompano Beach clients who understand that their vehicles take more punishment than most, and who want protection that is engineered for that reality.",
     sections: [
@@ -105,20 +105,20 @@ export const cityPages: CityPage[] = [
         body: "For Pompano Beach vehicle owners — whether driving a daily pickup, a boat trailer rig, or a weekend sports car — ceramic coating is the most durable paint protection available outside of physical film. A professionally applied ceramic coating in a climate-controlled bay creates a nano-level bond to the clear coat that resists salt air, UV radiation, and chemical contamination for several years with proper maintenance. Unlike wax or spray sealants that wash off in the Pompano Beach summer rain season, a ceramic coating stays bonded to the surface. The hydrophobic properties mean salt water, bird droppings, and road grime sheet off the surface rather than sitting and etching into the paint. For a vehicle that lives close to the ocean, the protection math is simple: the cost of coating is a fraction of the cost of paint correction or a respray three years from now.",
       },
     ],
-    driveTime: "~12–15 minutes",
+    driveTime: "~15–20 minutes",
     localHook:
       "Pompano Beach's marina community and Intracoastal exposure mean vehicles there deal with some of the most intense salt-air corrosion in Broward County.",
   },
   {
     city: "Pembroke Pines",
     slug: "pembroke-pines",
-    metaTitle: "Auto Detailing in Pembroke Pines, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Pembroke Pines, FL",
     metaDescription:
-      "Professional auto detailing in Pembroke Pines — ceramic coating, paint correction, window tinting, and interior details. Mobile-friendly drop-off at our studio in Oakland Park, FL.",
+      "Professional auto detailing in Pembroke Pines — ceramic coating, paint correction, window tinting, and interior details. Mobile-friendly drop-off at our studio in Fort Lauderdale, FL.",
     h1: "Auto Detailing in Pembroke Pines, FL",
-    eyebrow: "Serving Pembroke Pines · ~25–30 min from Oakland Park",
+    eyebrow: "Serving Pembroke Pines · ~25–30 min from Fort Lauderdale",
     intro:
-      "Pembroke Pines is one of the largest cities in Broward County and one of the most vehicle-dense — master-planned communities from Chapel Trail to Silver Lakes to Pembroke Falls mean long commutes on I-75 and Pines Boulevard are a daily reality for most residents. That kind of drive accumulates stone chips, swirl marks, and UV oxidation faster than most owners realize. Sunflo serves a growing number of Pembroke Pines clients who have made the drive up to Oakland Park and found that the quality of work is worth every minute of it. For a city where vehicles are this central to daily life, professional paint protection is one of the smartest investments available.",
+      "Pembroke Pines is one of the largest cities in Broward County and one of the most vehicle-dense — master-planned communities from Chapel Trail to Silver Lakes to Pembroke Falls mean long commutes on I-75 and Pines Boulevard are a daily reality for most residents. That kind of drive accumulates stone chips, swirl marks, and UV oxidation faster than most owners realize. Sunflo serves a growing number of Pembroke Pines clients who have made the drive up to Fort Lauderdale and found that the quality of work is worth every minute of it. For a city where vehicles are this central to daily life, professional paint protection is one of the smartest investments available.",
     sections: [
       {
         heading: "I-75 and Pines Blvd Take a Toll on Paint",
@@ -134,7 +134,7 @@ export const cityPages: CityPage[] = [
       },
       {
         heading: "Worth the Drive from Pembroke Pines",
-        body: "The Oakland Park studio is roughly 25 to 30 minutes north of Pembroke Pines — far enough that clients make a deliberate choice to come here rather than stopping at a local quick-detail shop. Most of them arrive because someone else told them to. Sunflo's Pembroke Pines clients typically find us through referrals from neighbors, coworkers, or social groups, and after the first visit they understand why the drive is worth it. We are not competing with same-day $99 details. We do thorough, precise work that holds up over time — the kind of detail where you can tell the difference six months later. Drop off in the morning, pick up by afternoon for most services. Book by phone, text, or the contact form.",
+        body: "The Fort Lauderdale studio is roughly 25 to 30 minutes north of Pembroke Pines — far enough that clients make a deliberate choice to come here rather than stopping at a local quick-detail shop. Most of them arrive because someone else told them to. Sunflo's Pembroke Pines clients typically find us through referrals from neighbors, coworkers, or social groups, and after the first visit they understand why the drive is worth it. We are not competing with same-day $99 details. We do thorough, precise work that holds up over time — the kind of detail where you can tell the difference six months later. Drop off in the morning, pick up by afternoon for most services. Book by phone, text, or the contact form.",
       },
     ],
     driveTime: "~25–30 minutes",
@@ -145,17 +145,17 @@ export const cityPages: CityPage[] = [
   {
     city: "Weston",
     slug: "weston",
-    metaTitle: "Auto Detailing in Weston, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Weston, FL",
     metaDescription:
       "White-glove auto detailing for Weston, FL — ceramic coating, PPF, paint correction, and window tinting. Premium vehicle care for an affluent South Florida community.",
     h1: "Auto Detailing in Weston, FL",
-    eyebrow: "Serving Weston · ~30–35 min from Oakland Park",
+    eyebrow: "Serving Weston · ~30–35 min from Fort Lauderdale",
     intro:
       "Weston is one of the most affluent master-planned communities in South Florida — a city where luxury vehicles are common, car culture runs deep, and the standard for vehicle appearance is genuinely high. The mix of European exotics, luxury SUVs, and well-maintained performance cars in Weston's driveways reflects a community that takes pride in its vehicles and understands the value of professional care. Sunflo serves Weston clients who expect precision, thoroughness, and products that are matched to the quality of the vehicles they own — not the baseline services available at a strip-mall detail shop.",
     sections: [
       {
         heading: "Luxury Vehicle Protection for Weston's Car Culture",
-        body: "Weston's vehicle mix skews heavily toward luxury and near-luxury — BMW, Mercedes-Benz, Porsche, Range Rover, and exotic brands are far more common here than in most Broward cities. These vehicles represent significant investments, and their owners understand that protecting that investment requires more than a regular car wash. XPEL paint protection film and professional ceramic coatings are the industry standards for luxury vehicle protection, and both are available at Sunflo in Oakland Park. For a new Porsche Cayenne or a BMW M5 that will be driven daily on I-75 and Weston Road, a full-front PPF package paired with a ceramic coating on the remaining panels is the most effective comprehensive protection available — physical film where the chips happen, chemical coating everywhere else.",
+        body: "Weston's vehicle mix skews heavily toward luxury and near-luxury — BMW, Mercedes-Benz, Porsche, Range Rover, and exotic brands are far more common here than in most Broward cities. These vehicles represent significant investments, and their owners understand that protecting that investment requires more than a regular car wash. XPEL paint protection film and professional ceramic coatings are the industry standards for luxury vehicle protection, and both are available at Sunflo in Fort Lauderdale. For a new Porsche Cayenne or a BMW M5 that will be driven daily on I-75 and Weston Road, a full-front PPF package paired with a ceramic coating on the remaining panels is the most effective comprehensive protection available — physical film where the chips happen, chemical coating everywhere else.",
       },
       {
         heading: "Paint Correction Before Every Coating",
@@ -167,7 +167,7 @@ export const cityPages: CityPage[] = [
       },
       {
         heading: "A Studio Worth Driving To",
-        body: "Weston is 30 to 35 minutes from our Oakland Park studio via I-75 — a deliberate trip, not a convenient stop. Clients who make that drive have typically done their research and understand what they are looking for: a shop that does thorough preparation, uses professional-grade products, and delivers results that hold up. Sunflo's Weston clients are among our most discerning, and they return because the work is consistent. There are no shortcuts in how we prep a vehicle, no cutting corners on decontamination, and no applying premium products over mediocre surface preparation. Book a consultation by phone or through the contact form — we will give you a realistic timeline and a clear quote before any work begins.",
+        body: "Weston is 30 to 35 minutes from our Fort Lauderdale studio via I-75 — a deliberate trip, not a convenient stop. Clients who make that drive have typically done their research and understand what they are looking for: a shop that does thorough preparation, uses professional-grade products, and delivers results that hold up. Sunflo's Weston clients are among our most discerning, and they return because the work is consistent. There are no shortcuts in how we prep a vehicle, no cutting corners on decontamination, and no applying premium products over mediocre surface preparation. Book a consultation by phone or through the contact form — we will give you a realistic timeline and a clear quote before any work begins.",
       },
     ],
     driveTime: "~30–35 minutes",
@@ -178,11 +178,11 @@ export const cityPages: CityPage[] = [
   {
     city: "Davie",
     slug: "davie",
-    metaTitle: "Auto Detailing in Davie, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Davie, FL",
     metaDescription:
-      "Auto detailing in Davie, FL — ceramic coating, paint correction, truck and SUV protection, and window tinting. Professional studio in Oakland Park. Serving equestrian country and suburban Davie.",
+      "Auto detailing in Davie, FL — ceramic coating, paint correction, truck and SUV protection, and window tinting. Professional studio in Fort Lauderdale. Serving equestrian country and suburban Davie.",
     h1: "Auto Detailing in Davie, FL",
-    eyebrow: "Serving Davie · ~20–25 min from Oakland Park",
+    eyebrow: "Serving Davie · ~15–20 min from Fort Lauderdale",
     intro:
       "Davie is a uniquely South Florida city — part equestrian community, part university suburb, part residential sprawl — and its vehicles reflect that mix. You will find lifted trucks and ranch work rigs alongside Nova Southeastern University faculty sedans and family SUVs that do double duty as school transport and weekend trail vehicles. What they have in common is exposure: road dust from unpaved equestrian corridors, construction debris from constant development along I-595, and relentless UV in a town with wide-open lots and minimal shade. Sunflo serves Davie clients who need protection built for real-world use, not just show cars.",
     sections: [
@@ -200,10 +200,10 @@ export const cityPages: CityPage[] = [
       },
       {
         heading: "Scheduling From Davie",
-        body: "The drive from Davie to Sunflo's Oakland Park studio takes roughly 20 to 25 minutes on I-95 north or via I-595 east to US-1. Most services — from a full interior detail to a single-stage paint correction — are completed same-day, so a morning drop-off and afternoon pickup works for the majority of clients. Multi-day services like full-body PPF installs or two-stage correction followed by ceramic coating are scheduled with a clear timeline provided upfront. We do not do walk-in work for correction and coating services — book by phone or through the contact form so we can set aside the bay time your vehicle needs.",
+        body: "The drive from Davie to Sunflo's Fort Lauderdale studio takes roughly 15 to 20 minutes on I-95 north or via I-595 east to US-1. Most services — from a full interior detail to a single-stage paint correction — are completed same-day, so a morning drop-off and afternoon pickup works for the majority of clients. Multi-day services like full-body PPF installs or two-stage correction followed by ceramic coating are scheduled with a clear timeline provided upfront. We do not do walk-in work for correction and coating services — book by phone or through the contact form so we can set aside the bay time your vehicle needs.",
       },
     ],
-    driveTime: "~20–25 minutes",
+    driveTime: "~15–20 minutes",
     localHook:
       "Davie's equestrian roads, active construction corridors, and working vehicle culture mean paint contamination and surface damage accumulate faster here than in most suburban cities.",
     ogImage: "/images/og/cities/davie.jpg",
@@ -211,11 +211,11 @@ export const cityPages: CityPage[] = [
   {
     city: "Cooper City",
     slug: "cooper-city",
-    metaTitle: "Auto Detailing in Cooper City, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Cooper City, FL",
     metaDescription:
-      "Premium auto detailing for Cooper City, FL — ceramic coating, paint correction, interior details, and window tinting. Professional studio in Oakland Park serving south Broward.",
+      "Premium auto detailing for Cooper City, FL — ceramic coating, paint correction, interior details, and window tinting. Professional studio in Fort Lauderdale serving south Broward.",
     h1: "Auto Detailing in Cooper City, FL",
-    eyebrow: "Serving Cooper City · ~25–30 min from Oakland Park",
+    eyebrow: "Serving Cooper City · ~20–25 min from Fort Lauderdale",
     intro:
       "Cooper City is one of the most sought-after residential communities in south Broward — a compact, family-oriented city with high household incomes, excellent schools, and neighborhoods where vehicle condition genuinely matters. Residents in Rock Creek, Embassy Lakes, and Monterra keep well-maintained vehicles and take long-term ownership seriously. Sunflo serves Cooper City clients who want paint protection that holds up through years of daily use, not just a detail that looks good for a few weeks. The standards here are high, and the results we deliver match them.",
     sections: [
@@ -232,11 +232,11 @@ export const cityPages: CityPage[] = [
         body: "For Cooper City families who spend significant time in vehicles — school pickups, sports practices, weekend activities — quality window tinting is one of the most practical upgrades available. 3M FX and Crystalline series films dramatically reduce cabin heat and block nearly all UV radiation, protecting both occupants and interior surfaces from the damage that direct Florida sun causes. Children in rear seats are especially exposed in vehicles without quality tint — rear-side and rear window film is the most effective protection for that concern. Tint also reduces glare during afternoon westbound drives, which is a real safety consideration on I-75 and Pines Boulevard at 3 PM during school pickup. Our installs are bubble-free and carry a manufacturer warranty.",
       },
       {
-        heading: "From Cooper City to Oakland Park",
-        body: "The Oakland Park studio is about 25 to 30 minutes north from Cooper City — a straight shot up I-95 or US-441. Most single-day services are scheduled for morning drop-off and afternoon pickup, so the commute fits naturally around a work day or weekend errand. Cooper City clients find us primarily through referrals from neighbors or from Pembroke Pines and Davie clients who have already been through the studio. We do not do rushed work or oversell services — the consultation process is straightforward, the quote is clear, and the timeline is honest. Reach out by phone, text, or the contact form to get started.",
+        heading: "From Cooper City to Fort Lauderdale",
+        body: "The Fort Lauderdale studio is about 20 to 25 minutes north from Cooper City — a straight shot up I-95 or US-441. Most single-day services are scheduled for morning drop-off and afternoon pickup, so the commute fits naturally around a work day or weekend errand. Cooper City clients find us primarily through referrals from neighbors or from Pembroke Pines and Davie clients who have already been through the studio. We do not do rushed work or oversell services — the consultation process is straightforward, the quote is clear, and the timeline is honest. Reach out by phone, text, or the contact form to get started.",
       },
     ],
-    driveTime: "~25–30 minutes",
+    driveTime: "~20–25 minutes",
     localHook:
       "Cooper City's tight-knit residential communities and high ownership standards mean vehicles here are kept longer and maintained more carefully — making professional protection a natural investment.",
     ogImage: "/images/og/cities/cooper-city.jpg",
@@ -244,13 +244,13 @@ export const cityPages: CityPage[] = [
   {
     city: "Hollywood",
     slug: "hollywood",
-    metaTitle: "Auto Detailing in Hollywood, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Hollywood, FL",
     metaDescription:
-      "Auto detailing in Hollywood, FL — ceramic coating, paint correction, PPF, and window tinting. Professional studio in Oakland Park serving Hollywood Hills, Emerald Hills, and all of Hollywood.",
+      "Auto detailing in Hollywood, FL — ceramic coating, paint correction, PPF, and window tinting. Professional studio in Fort Lauderdale serving Hollywood Hills, Emerald Hills, and all of Hollywood.",
     h1: "Auto Detailing in Hollywood, FL",
-    eyebrow: "Serving Hollywood · ~15–20 min from Oakland Park",
+    eyebrow: "Serving Hollywood · ~15–20 min from Fort Lauderdale",
     intro:
-      "Hollywood sits between Sunflo's Oakland Park studio and the south Broward client cluster — close enough to make it one of the most convenient service areas in Broward County, and diverse enough to generate every category of vehicle care. The oceanfront and the Intracoastal bring the coastal paint degradation that defines South Florida detailing, while the affluent Emerald Hills and Hollywood Hills neighborhoods bring a demand for high-end protection that matches the vehicles. Sunflo serves Hollywood clients ranging from beach-adjacent daily drivers that need marine-environment protection to well-maintained luxury vehicles that simply deserve better than a drive-through wash.",
+      "Hollywood sits between Sunflo's Fort Lauderdale studio and the south Broward client cluster — close enough to make it one of the most convenient service areas in Broward County, and diverse enough to generate every category of vehicle care. The oceanfront and the Intracoastal bring the coastal paint degradation that defines South Florida detailing, while the affluent Emerald Hills and Hollywood Hills neighborhoods bring a demand for high-end protection that matches the vehicles. Sunflo serves Hollywood clients ranging from beach-adjacent daily drivers that need marine-environment protection to well-maintained luxury vehicles that simply deserve better than a drive-through wash.",
     sections: [
       {
         heading: "Coastal Exposure Along Hollywood Beach",
@@ -266,7 +266,7 @@ export const cityPages: CityPage[] = [
       },
       {
         heading: "A Convenient Location Between Shop and South Broward",
-        body: "For Hollywood residents, Sunflo's Oakland Park studio is a 15 to 20 minute drive north on I-95 — one of the shortest trips in the south Broward service area. Most services are drop-off in the morning, pick up in the afternoon or following morning depending on scope. Multi-day services like full-body PPF installs or two-stage correction with ceramic coating are scheduled with clear timelines provided before the vehicle comes in. Hollywood clients find us through referrals from south Broward neighbors in Pembroke Pines, Davie, and Cooper City who have already been through the studio. If you are looking for a clear quote and honest turnaround time before committing, reach out by phone or through the contact form.",
+        body: "For Hollywood residents, Sunflo's Fort Lauderdale studio is a 15 to 20 minute drive north on I-95 — one of the shortest trips in the south Broward service area. Most services are drop-off in the morning, pick up in the afternoon or following morning depending on scope. Multi-day services like full-body PPF installs or two-stage correction with ceramic coating are scheduled with clear timelines provided before the vehicle comes in. Hollywood clients find us through referrals from south Broward neighbors in Pembroke Pines, Davie, and Cooper City who have already been through the studio. If you are looking for a clear quote and honest turnaround time before committing, reach out by phone or through the contact form.",
       },
     ],
     driveTime: "~15–20 minutes",
@@ -277,11 +277,11 @@ export const cityPages: CityPage[] = [
   {
     city: "Plantation",
     slug: "plantation",
-    metaTitle: "Auto Detailing in Plantation, FL | Sunflo Detailing",
+    metaTitle: "Auto Detailing in Plantation, FL",
     metaDescription:
-      "Auto detailing in Plantation, FL — ceramic coating, paint correction, window tinting, and PPF. Serving Plantation's corporate and residential communities from our studio in Oakland Park.",
+      "Auto detailing in Plantation, FL — ceramic coating, paint correction, window tinting, and PPF. Serving Plantation's corporate and residential communities from our studio in Fort Lauderdale.",
     h1: "Auto Detailing in Plantation, FL",
-    eyebrow: "Serving Plantation · ~20–25 min from Oakland Park",
+    eyebrow: "Serving Plantation · ~15–20 min from Fort Lauderdale",
     intro:
       "Plantation is one of west Broward's most established cities — a mix of corporate campuses, affluent residential neighborhoods, and a daily commuter population that spends real time on I-595 and Sunrise Boulevard every week. The vehicle mix here skews toward newer and leased luxury cars, company vehicles, and well-maintained daily drivers owned by professionals who appreciate quality work and expect honest, upfront service. Sunflo serves Plantation clients who want their vehicles protected properly from day one of ownership — not corrected after years of neglect.",
     sections: [
@@ -299,10 +299,10 @@ export const cityPages: CityPage[] = [
       },
       {
         heading: "Getting to Sunflo from Plantation",
-        body: "From Plantation, the Oakland Park studio is approximately 20 to 25 minutes east via Sunrise Boulevard or I-595 east to I-95 north — a straightforward drive that most clients fold into a regular workday. Drop-off in the morning, most single-day services completed by afternoon. For multi-stage correction and coating jobs that require two days, we schedule a clear timeline before the vehicle arrives so there are no surprises. Plantation clients tend to find us through professional networks and referrals from other west Broward clients in Weston, Davie, and Cooper City. Reach out through the contact form or by phone for a quote and availability.",
+        body: "From Plantation, the Fort Lauderdale studio is approximately 15 to 20 minutes east via Sunrise Boulevard or I-595 east to I-95 north — a straightforward drive that most clients fold into a regular workday. Drop-off in the morning, most single-day services completed by afternoon. For multi-stage correction and coating jobs that require two days, we schedule a clear timeline before the vehicle arrives so there are no surprises. Plantation clients tend to find us through professional networks and referrals from other west Broward clients in Weston, Davie, and Cooper City. Reach out through the contact form or by phone for a quote and availability.",
       },
     ],
-    driveTime: "~20–25 minutes",
+    driveTime: "~15–20 minutes",
     localHook:
       "Plantation's professional commuter population and high concentration of leased luxury vehicles make ceramic coating and PPF among the most cost-effective vehicle investments available.",
     ogImage: "/images/og/cities/plantation.jpg",

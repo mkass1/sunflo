@@ -32,7 +32,7 @@ const imageGalleryJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Sunflo Detailing — Work Portfolio",
-  description: "Gallery of auto detailing, ceramic coating, paint correction, and vehicle wrap work at Sunflo Detailing in Oakland Park, FL.",
+  description: "Gallery of auto detailing, ceramic coating, paint correction, and vehicle wrap work at Sunflo Detailing in Fort Lauderdale, FL.",
   itemListElement: galleryImages.map((img, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -49,9 +49,9 @@ const imageGalleryJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Auto Detailing Gallery — Oakland Park, FL",
+  title: "Auto Detailing Gallery — Fort Lauderdale, FL",
   description:
-    "Browse Sunflo Detailing's portfolio — paint corrections, ceramic coatings, interior details, and vehicle wraps. Premium auto detailing in Oakland Park, FL.",
+    "Browse Sunflo Detailing's portfolio — paint corrections, ceramic coatings, interior details, and vehicle wraps. Premium auto detailing in Fort Lauderdale, FL.",
   alternates: { canonical: "/gallery" },
   openGraph: {
     title: "Gallery | Sunflo Detailing",
@@ -92,7 +92,7 @@ export default function GalleryPage() {
           <div className="max-w-2xl mx-auto">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-brand-400 mb-5 text-center">Before & After</p>
             <BeforeAfterSlider />
-            <p className="text-center text-xs text-gray-600 mt-3 tracking-wide">Wheel & brake detail — Oakland Park, FL</p>
+            <p className="text-center text-xs text-gray-600 mt-3 tracking-wide">Wheel & brake detail — Fort Lauderdale, FL</p>
           </div>
         </Container>
       </section>
@@ -101,7 +101,7 @@ export default function GalleryPage() {
       <section className="py-12 bg-dark border-t border-dark-border">
         <Container>
           <p className="text-gray-500 max-w-3xl text-sm leading-relaxed">
-            Every vehicle in this gallery came through our Oakland Park, FL studio for a specific reason — swirls from a bad detail shop, a brand-new car that needed ceramic protection before the first rainstorm, or an exotic that needed a full multi-stage correction before a show. Each job is handled by the same small in-house team using professional-grade compounds, coatings, and protective films. Browse by category to see exterior details, paint corrections, ceramic coating results, and interior transformations.
+            Every vehicle in this gallery came through our Fort Lauderdale, FL studio for a specific reason — swirls from a bad detail shop, a brand-new car that needed ceramic protection before the first rainstorm, or an exotic that needed a full multi-stage correction before a show. Each job is handled by the same small in-house team using professional-grade compounds, coatings, and protective films. Browse by category to see exterior details, paint corrections, ceramic coating results, and interior transformations.
           </p>
         </Container>
       </section>

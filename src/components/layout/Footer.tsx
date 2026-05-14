@@ -135,12 +135,12 @@ export default function Footer() {
                     className="text-sm text-gray-400 hover:text-white transition-colors duration-150"
                   >
                     {c.city}
+                    {c.slug === "fort-lauderdale" && (
+                      <span className="text-brand-500 ml-1.5">(home base)</span>
+                    )}
                   </Link>
                 </li>
               ))}
-              <li className="pt-3 mt-1 border-t border-white/[0.04]">
-                <span className="text-sm text-gray-600">Oakland Park <span className="text-brand-500">(home base)</span></span>
-              </li>
             </ul>
           </div>
 
@@ -219,7 +219,7 @@ export default function Footer() {
               <FacebookIcon size={16} />
             </a>
           </div>
-          <p className="text-xs text-gray-400">Oakland Park · Fort Lauderdale · Pembroke Pines · Weston · Davie · South Florida</p>
+          <p className="text-xs text-gray-400">Fort Lauderdale · Oakland Park · Pembroke Pines · Weston · Davie · South Florida</p>
         </div>
       </div>
     </footer>

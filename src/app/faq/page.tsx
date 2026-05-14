@@ -29,16 +29,16 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Auto Detailing FAQ — Ceramic Coatings, PPF & Pricing in Oakland Park, FL",
+  title: "Auto Detailing FAQ — Ceramic Coatings, PPF & Pricing in Fort Lauderdale, FL",
   description:
-    "Answers to the most common questions about auto detailing, ceramic coatings, PPF, paint correction, and pricing at Sunflo Detailing in Oakland Park, FL.",
+    "Answers to the most common questions about auto detailing, ceramic coatings, PPF, paint correction, and pricing at Sunflo Detailing in Fort Lauderdale, FL.",
   alternates: { canonical: "/faq" },
   openGraph: {
     title: "Auto Detailing FAQ | Sunflo Detailing",
     description:
-      "Everything you need to know about ceramic coatings, PPF, paint correction, and pricing — answered by Sunflo Detailing in Oakland Park, FL.",
+      "Everything you need to know about ceramic coatings, PPF, paint correction, and pricing — answered by Sunflo Detailing in Fort Lauderdale, FL.",
     url: `${SITE_URL}/faq`,
-    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing FAQ — Oakland Park, FL" }],
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing FAQ — Fort Lauderdale, FL" }],
   },
 };
 
@@ -54,7 +54,7 @@ export default function FAQPage() {
           <SectionHeading
             as="h1"
             label="FAQ & Reviews"
-            title="Auto Detailing FAQ: Oakland Park, FL"
+            title="Auto Detailing FAQ: Fort Lauderdale, FL"
             subtitle="Everything you need to know about ceramic coatings, PPF, paint correction, and pricing at Sunflo Detailing."
           />
         </Container>

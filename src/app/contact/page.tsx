@@ -33,16 +33,16 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Book Auto Detailing in Oakland Park, FL",
+  title: "Book Auto Detailing in Fort Lauderdale, FL",
   description:
-    "Contact Sunflo Detailing to book your auto detailing appointment in Oakland Park, FL. Call or message us — appointment-only, Mon–Fri 8am–6pm.",
+    "Contact Sunflo Detailing to book your auto detailing appointment in Fort Lauderdale, FL. Call or message us — appointment-only, Mon–Fri 8am–6pm.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact & Book | Sunflo Detailing",
     description:
-      "Book your auto detailing appointment at our Oakland Park, FL studio. Ceramic coatings, paint correction, PPF, and more.",
+      "Book your auto detailing appointment at our Fort Lauderdale, FL studio. Ceramic coatings, paint correction, PPF, and more.",
     url: "https://www.sunflodetailing.com/contact",
-    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Oakland Park, FL" }],
+    images: [{ url: "/images/hero/porsche-911.jpg", width: 1920, height: 1080, alt: "Sunflo Detailing — Fort Lauderdale, FL" }],
   },
 };
 
@@ -94,12 +94,12 @@ export default function ContactPage() {
                     <div>
                       <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Location</p>
                       <a
-                        href="https://maps.google.com/?q=4708+NE+11th+Ave+Oakland+Park+Florida"
+                        href={contact.mapsUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 text-sm hover:text-white transition-colors"
                       >
-                        4708 NE 11th Ave<br />Oakland Park, FL 33334
+                        {contact.addressStreet}<br />{contact.addressCity}, {contact.addressState} {contact.addressZip}
                       </a>
                     </div>
                   </li>
@@ -173,7 +173,7 @@ export default function ContactPage() {
               <div className="rounded-sm overflow-hidden border border-dark-border h-64">
                 <iframe
                   title="Sunflo Detailing Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3525503083524!2d-80.13513052466247!3d26.185207477088312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7071fb518fb%3A0x8db1839c761770d4!2sSunflo%20Detailing!5e0!3m2!1sen!2sus!4v1776789160519!5m2!1sen!2sus"
+                  src="https://maps.google.com/maps?q=837%20NW%208th%20Ave%20Fort%20Lauderdale%20FL%2033311&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)" }}

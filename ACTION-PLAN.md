@@ -1,170 +1,120 @@
-# Sunflo Detailing — Manager Action Plan (Web / SEO)
+# Sunflo Detailing — Post-Move Action Plan
 
-**Updated:** 2026-04-21 (post-launch live pass)  
-**Scope:** Code + SEO manager tasks only. Owner tasks are in `docs/seo-owner-actions.md`.
-
-See `FULL-AUDIT-REPORT.md` for the full post-launch findings and updated score (86/100).
-
----
-
-## Resolved — Post-Launch Pass (2026-04-21 evening)
-
-| Item | Resolution |
-|---|---|
-| ~~C1. Wire the real Google Maps CID~~ | ✅ Real CID `0x88d9a7071fb518fb:0x8db1839c761770d4` added to both `LocationMap.tsx` and `contact/page.tsx` |
-| ~~C2. Compress the cinematic reel video~~ | ✅ Original 18.8 MB file deleted; `cinematic-reel-opt.mp4` (3 MB) is the only version |
-| ~~C4. Verify and deploy~~ | ✅ Site is live at https://www.sunflodetailing.com |
-| ~~H2. Add Jason's last name to Person schema~~ | ✅ `about/page.tsx` body copy updated; schema was already correct |
-| ~~H6. Set up Vercel Analytics~~ | ✅ Analytics + SpeedInsights deployed |
-| www/non-www canonical mismatch | ✅ All 10 SITE_URL instances updated to www |
-| GeoCoordinates 1.4 km off | ✅ Fixed to 26.185207 / -80.135131 |
-| Review schema type errors | ✅ ratingValue/bestRating/worstRating are numbers |
-| Phone hidden on mobile | ✅ Removed `hidden sm:inline` from Navbar |
-| FAQ #9 CashApp missing | ✅ Added to payment methods |
-| FAQ #18 "hundreds" inconsistency | ✅ Updated to "more than 2,000 vehicles" |
-| llms.txt non-www URLs | ✅ All 9 URLs updated to www |
-| /locations 404 on breadcrumb | ✅ `/locations/page.tsx` created |
-| Hardcoded non-www OG urls (services, gallery) | ✅ Fixed to use SITE_URL const |
+**Updated:** 2026-05-14
+**Driver:** Oakland Park → Fort Lauderdale studio move (2026-05-13)
+**Pairs with:** `FULL-AUDIT-REPORT.md`
 
 ---
 
-## Critical (Fix Now)
+## Critical (do before deploying the move)
 
-### C1. Add CSP header
-**File:** `next.config.ts` (securityHeaders array)  
-**Effort:** 45–60 minutes
+### 1. Fix duplicated brand in title tags — 13 URLs
 
-Only remaining security header gap. Start with:
-```
-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; frame-src https://www.google.com; connect-src 'self' https://api.resend.com https://vitals.vercel-insights.com;
-```
-Test carefully — Framer Motion uses inline styles. Run Lighthouse after adding to verify no breakage.
+`src/data/city-pages.ts` and `src/data/service-pages.ts` end every `metaTitle` with `| Sunflo Detailing`, and `src/app/layout.tsx` already appends it via `title.template`. Result: `"X | Sunflo Detailing | Sunflo Detailing"`.
 
-### C2. Sync aggregateRating with live GBP
-**File:** `src/app/layout.tsx` (line ~154)  
-**When:** Owner confirms current GBP review count + average star rating  
-**Effort:** 2 minutes
+**Cheapest fix:** strip ` | Sunflo Detailing` from every `metaTitle` field in both data files. The layout template will add it back exactly once.
 
-The comment reads "Verified 2026-04-21 — update reviewCount monthly to match live GBP." Get the actual live count from the owner and update `reviewCount: 120` to the real number.
+**Files:** `src/data/city-pages.ts` (9 entries), `src/data/service-pages.ts` (4 entries). One sed sweep.
+
+### 2. Verify and pin the JSON-LD geo coordinates
+
+`src/app/layout.tsx` currently has `latitude: 26.1382, longitude: -80.1546` as an approximation. Open the address in Google Maps, right-click → copy decimal lat/long → paste in. Off-by-100m coordinates undermine the address signal.
 
 ---
 
-## High (This Week)
+## High (within 1 week of deploy)
 
-### H1. Run image optimization script
-**File:** `public/images/gallery/*`, `public/images/services/*`  
-**Effort:** 20 minutes
+### 3. Update Google Business Profile (owner action)
 
-```bash
-node scripts/optimize-images.mjs
-```
+In the GBP dashboard:
+- Address: `837 NW 8th Ave, Fort Lauderdale, FL 33311`
+- Service area: keep Broward cities (Fort Lauderdale, Oakland Park, Wilton Manors, Pompano Beach, Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation)
+- Re-verify the pin location (Google may ask for a postcard or video verification at the new address)
+- Update business hours if anything changed
+- Add at least 3 new photos taken at the new studio (exterior, interior bay, signage)
+- Post a Google Update announcing the move (Google "Posts" feature)
 
-Sharp is installed. Pre-optimizing source files reduces the initial WebP conversion delay on first page load.
+### 4. Citation sweep — fix NAP everywhere
 
-### H2. Add Yelp + Apple Maps URLs to sameAs
-**File:** `src/app/layout.tsx` (AutomotiveBusiness sameAs array)  
-**When:** Owner claims listings (see owner plan items 5 & 6)  
-**Effort:** 5 minutes per listing
+Update the address on each of these (use the exact string `837 NW 8th Ave, Fort Lauderdale, FL 33311` — no abbreviation drift):
 
-Once the owner shares the URLs, add them to the `sameAs` array alongside the existing Instagram, Facebook, and kgmid URLs.
+- [ ] Yelp
+- [ ] Apple Maps Connect
+- [ ] Bing Places for Business
+- [ ] Facebook Page → About → Address
+- [ ] Instagram bio location (link to Google Maps)
+- [ ] BBB profile (if listed)
+- [ ] Foursquare / Tripadvisor (if listed)
+- [ ] Local chambers / directories the owner is a member of
 
-### H3. Add IntersectionObserver lazy-mount for video
-**File:** `src/components/gallery/GalleryGrid.tsx`  
-**Effort:** 20 minutes
+Use a tool like Whitespark or Moz Local for a one-time scan to find listings the owner forgot about.
 
-The video currently uses `preload="metadata"`. Add `useRef` + `IntersectionObserver` so the `<video>` element only renders when scrolled into view. The component is already "use client".
+### 5. Re-submit sitemap in Google Search Console
 
-### H4. Submit sitemap to GSC + Bing
-**When:** Owner confirms GSC is set up  
-**Effort:** 10 minutes
+After production deploy: GSC → Sitemaps → re-submit `https://www.sunflodetailing.com/sitemap.xml`. Forces recrawl of the updated city pages.
 
-Ensure `https://www.sunflodetailing.com/sitemap.xml` is submitted. The sitemap currently has 16 URLs (added `/locations` this pass). Also request indexing for homepage, `/services/ceramic-coating`, `/about`, `/locations/fort-lauderdale` via URL Inspection.
+### 6. Push 5+ new Google reviews under the new location
 
----
-
-## Medium (Within 30 Days)
-
-### M1. Gallery photo refresh
-**When:** Owner supplies 12–20 new before/after photos  
-**Effort:** 30 minutes per batch
-
-Add to `public/images/gallery/`, update `src/data/gallery.ts` with alt text. Run the image optimizer after each batch.
-
-### M2. Service OG images (4 needed)
-**Effort:** 2 hours
-
-Each service detail page falls back to `porsche-911.jpg` for OpenGraph. Create or commission 4 unique 1200×630 images and add them to `src/data/service-pages.ts` as `ogImage`.
-
-### M3. City page OG images (5 needed)
-**Effort:** 1 hour
-
-City landing pages have no `openGraph.images`. Add a shared brand image or city-specific photo to `generateMetadata` in `locations/[city]/page.tsx`.
-
-### M4. Add Review schema datePublished + reviewUrl
-**File:** `src/app/layout.tsx` (review array), `src/data/testimonials.ts`  
-**Effort:** 30 minutes
-
-Add `datePublished` to all testimonial items missing a `date` field. Add `reviewUrl` to any item with a known Google review URL.
-
-### M5. Structured data for individual service Offer prices
-**Files:** `src/data/service-pages.ts`, `src/app/services/[slug]/page.tsx`  
-**Effort:** 1 hour
-
-The Services schema currently uses `priceRange`. Add explicit `Offer` items per vehicle tier (Small/Medium/Large) to enable SERP pricing rich results.
-
-### M6. Blog pillar + spoke build-out
-**Effort:** 3–4 hours per article
-
-Create `src/app/blog/page.tsx` and `src/app/blog/[slug]/page.tsx`. Highest-demand topics for this market:
-1. "How to maintain a ceramic coating in South Florida" → links to `/services/ceramic-coating`
-2. "Florida tint laws 2026: what's actually legal on each window" → links to `/services/window-tinting`
-3. "PPF vs ceramic coating: which one for your car?" → links to both
-4. "How much does ceramic coating cost in Fort Lauderdale?" → links to `/services/ceramic-coating`
-5. "What to expect from a paint correction appointment"
-
-Add `Article` + `BreadcrumbList` schema per post.
+Move-period reviews mentioning "Fort Lauderdale" help Google associate the GBP with the new address signal. Owner should text repeat clients with a Google review link and a brief "we moved" mention.
 
 ---
 
-## Low (Backlog)
+## Medium (within 1 month)
 
-### L1. Favicon audit
-Verify `public/favicon.ico` and `public/favicon.png` dimensions. Consider migrating to Next.js 15+ `app/favicon.ico` + `app/apple-icon.png`.
+### 7. Update drive-time copy on city pages
 
-### L2. Search action in WebSite schema
-If internal search is ever added, add `potentialAction: { "@type": "SearchAction" }` to WebSite schema in `layout.tsx`.
+`src/data/city-pages.ts` — review each city eyebrow and intro/section body for stale "20–25 min from Oakland Park"-era estimates. Likely revisions:
+- Davie: 20-25 → 15-20 min
+- Cooper City: 25-30 → 20-25 min
+- Plantation: 20-25 → 15-20 min
 
-### L3. Remove `.DS_Store` from public/
-Add `public/**/.DS_Store` to `.gitignore`.
+Body copy in each section that references specific minutes should also be sanity-checked against Google Maps from 837 NW 8th Ave.
 
----
+### 8. Add `hasMap` to LocalBusiness schema
 
-## Ongoing (Monthly)
+In `src/app/layout.tsx`, alongside `geo`:
 
-1. Sync `aggregateRating.reviewCount` in `layout.tsx` with live GBP count (owner sends number on 1st of month)
-2. Run `node scripts/optimize-images.mjs` after any new images land in `public/`
-3. Add new Yelp/Apple Maps/Bing Places URLs to `sameAs` as owner claims each listing
-4. Check GSC for new keyword impressions — update city/service page copy to target emerging terms
-
----
-
-## Verification Commands
-
-```bash
-# www canonical serving correctly (should return 200 and www canonical)
-curl -I https://www.sunflodetailing.com/
-
-# non-www redirects to www with 308 or 301 (not 307)
-curl -I https://sunflodetailing.com/
-
-# sitemap has 16 URLs
-curl https://www.sunflodetailing.com/sitemap.xml | grep -c '<url>'
-
-# robots.txt AI crawler rules present
-curl https://www.sunflodetailing.com/robots.txt
+```ts
+hasMap: contact.mapsUrl,
 ```
 
+### 9. Announce the move with an indexable artifact
+
+Add either a short blog post or a press-release-style page at `/news/we-moved` (or similar). Gives Google a dated, indexable record of the move and a natural target for backlinks.
+
+### 10. Update OG image (optional)
+
+The current `/images/og/sunflo-og.jpg` is brand-only — no city text, so it doesn't require regen. If the owner wants a move-specific share card for social ("New Fort Lauderdale studio — 837 NW 8th Ave"), that's a one-off design task.
+
 ---
 
-*Action plan maintained by Matthew Kass. Last updated 2026-04-21 (post-launch live pass).*  
-*See `FULL-AUDIT-REPORT.md` for full findings context.*
+## Low / Backlog
+
+### 11. Verify Knowledge Graph kgmid after Google re-indexes
+
+The `sameAs` entry in `layout.tsx` points to `kgmid=/g/11j37x7gnx`. Once Google updates the listing's KG node to the new address, confirm the kgmid still resolves and the cid (`10210086538245009620`) still points to the same business entity. If the kgmid changes after the move (rare but possible), update both `sameAs` entries.
+
+### 12. Bump `aggregateRating.reviewCount`
+
+`layout.tsx` says 120 reviews, last verified 2026-04-21. Set a recurring monthly reminder to read the count off the live GBP and update the value. After the move + a review push (action #6), this will likely climb.
+
+### 13. Consider Maps Platform embed for `LocationMap.tsx`
+
+Once GBP is updated, switch the home + contact map iframes from the unauthenticated `maps.google.com/maps?q=...&output=embed` URL to the official "Embed map" URL from the GBP "Share" panel — gives a verified pin instead of a query-resolved one.
+
+---
+
+## Already done (this PR)
+
+- ✅ Single source of truth in `src/data/contact.ts` (new fields: `addressStreet`, `addressCity`, `addressState`, `addressZip`, `mapsUrl`).
+- ✅ Address swept across 26 files (app pages, components, data, llms.txt).
+- ✅ JSON-LD `address` and `geo` updated in `layout.tsx` and `locations/[city]/page.tsx`.
+- ✅ `areaServed` reordered (Fort Lauderdale first, Oakland Park kept as served city).
+- ✅ `/locations/fort-lauderdale` rewritten as home-base page with "Visit the Studio" section and template branching.
+- ✅ `/locations/oakland-park` 301 → `/locations/fort-lauderdale`.
+- ✅ "We've moved" popup with versioned localStorage dismissal (`sunflo:moved-banner-dismissed:v1`).
+- ✅ Footer `(home base)` pill moved to Fort Lauderdale, inline next to the city link.
+- ✅ Sitemap auto-bumps `lastModified` at build.
+- ✅ Pompano Beach drive time updated (further from new origin).
+- ✅ Contact-page Google Maps iframe re-targeted to new address; home page LocationMap iframe re-targeted.
+- ✅ CSP `frame-src` extended to allow `maps.google.com` (for new iframe pattern).

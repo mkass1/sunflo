@@ -21,7 +21,7 @@ export default function LocationMap() {
           >
             <iframe
               title="Sunflo Detailing Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3525503083524!2d-80.13513052466247!3d26.185207477088312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a7071fb518fb%3A0x8db1839c761770d4!2sSunflo%20Detailing!5e0!3m2!1sen!2sus!4v1776789160519!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=837%20NW%208th%20Ave%20Fort%20Lauderdale%20FL%2033311&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg)", display: "block", minHeight: "280px" }}
@@ -50,7 +50,7 @@ export default function LocationMap() {
             </div>
 
             <a
-              href="https://maps.google.com/?q=4708+NE+11th+Ave+Oakland+Park+Florida"
+              href={contact.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 border border-brand-500/40 text-brand-400 text-sm font-semibold px-5 py-3 rounded-sm hover:bg-brand-500/10 hover:border-brand-500/70 hover:text-brand-300 transition-all duration-200 tracking-wide group w-fit"
@@ -68,7 +68,7 @@ export default function LocationMap() {
                   Studio or Mobile
                 </p>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Drop off at our Oakland Park studio, or we come to you. Same professional results either way — call to discuss which works best for your service.
+                  Drop off at our Fort Lauderdale studio, or we come to you. Same professional results either way — call to discuss which works best for your service.
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function LocationMap() {
                 Areas Served
               </p>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Oakland Park · Fort Lauderdale · Pompano Beach · Pembroke Pines · Weston · Davie · Cooper City · Hollywood · Plantation · South Florida
+                Fort Lauderdale · Oakland Park · Wilton Manors · Pompano Beach · Pembroke Pines · Weston · Davie · Cooper City · Hollywood · Plantation · South Florida
               </p>
             </div>
           </motion.div>

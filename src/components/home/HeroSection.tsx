@@ -28,7 +28,7 @@ export default function HeroSection() {
         >
           <Image
             src="/images/hero/porsche-911.jpg"
-            alt="Ceramic-coated Porsche 911 at Sunflo Detailing in Oakland Park, FL"
+            alt="Ceramic-coated Porsche 911 at Sunflo Detailing in Fort Lauderdale, FL"
             fill
             className="object-cover object-center"
             priority
@@ -70,7 +70,7 @@ export default function HeroSection() {
         >
           <span className="w-7 h-px bg-brand-500 shrink-0" />
           <span className="text-[11px] font-medium tracking-[0.15em] text-brand-400 uppercase">
-            Oakland Park, FL&nbsp;&nbsp;·&nbsp;&nbsp;Est. 2017
+            Fort Lauderdale, FL&nbsp;&nbsp;·&nbsp;&nbsp;Est. 2017
           </span>
         </motion.div>
 
@@ -113,7 +113,7 @@ export default function HeroSection() {
           className="text-gray-300 max-w-[420px] text-[15px] sm:text-base leading-relaxed mb-10"
         >
           Interior &amp; exterior detailing, paint correction, ceramic coatings, PPF, vehicle wraps,
-          and window tinting — drop off at our Oakland Park studio or we come to you.
+          and window tinting — drop off at our Fort Lauderdale studio or we come to you.
         </motion.p>
 
         {/* CTAs */}

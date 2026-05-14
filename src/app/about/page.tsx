@@ -9,21 +9,21 @@ import CTABanner from "@/components/layout/CTABanner";
 const SITE_URL = "https://www.sunflodetailing.com";
 
 export const metadata: Metadata = {
-  title: "About Sunflo Detailing — Oakland Park, FL Auto Detailing Studio",
+  title: "About Sunflo Detailing — Fort Lauderdale, FL Auto Detailing Studio",
   description:
-    "Learn about Sunflo Detailing — a professional auto detailing studio in Oakland Park, FL founded in 2017. Meet the owner and team behind 2,000+ ceramic coatings, paint corrections, and detail jobs across South Florida.",
+    "Learn about Sunflo Detailing — a professional auto detailing studio in Fort Lauderdale, FL founded in 2017. Meet the owner and team behind 2,000+ ceramic coatings, paint corrections, and detail jobs across South Florida.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About Sunflo Detailing — Oakland Park, FL Auto Detailing Studio",
+    title: "About Sunflo Detailing — Fort Lauderdale, FL Auto Detailing Studio",
     description:
-      "Learn about Sunflo Detailing — a professional auto detailing studio in Oakland Park, FL founded in 2017. Meet the owner behind 2,000+ ceramic coatings, paint corrections, and detail jobs across South Florida.",
+      "Learn about Sunflo Detailing — a professional auto detailing studio in Fort Lauderdale, FL founded in 2017. Meet the owner behind 2,000+ ceramic coatings, paint corrections, and detail jobs across South Florida.",
     url: `${SITE_URL}/about`,
     images: [
       {
         url: "/images/about/founder.jpg",
         width: 1200,
         height: 800,
-        alt: "Jason — Owner & Lead Detailer at Sunflo Detailing in Oakland Park, FL",
+        alt: "Jason — Owner & Lead Detailer at Sunflo Detailing in Fort Lauderdale, FL",
       },
     ],
   },
@@ -99,12 +99,12 @@ const services = [
 
 const serviceArea = [
   {
-    city: "Oakland Park",
-    note: "Our home base. Most of our repeat clientele are Oakland Park residents who drop in monthly for maintenance washes and annual coating inspections.",
+    city: "Fort Lauderdale",
+    note: "Our home base. The studio at 837 NW 8th Ave handles everything from daily drivers to exotics — most Fort Lauderdale clients drop off on their way into Las Olas, downtown, or the airport.",
   },
   {
-    city: "Fort Lauderdale",
-    note: "Fort Lauderdale clients account for a large share of our ceramic coating and PPF work — many drop off before heading to Las Olas or their office downtown.",
+    city: "Oakland Park",
+    note: "We served Oakland Park clients for years out of our original NE 11th Ave shop, and they still account for a large share of our repeat business — a short drive from the new studio.",
   },
   {
     city: "Wilton Manors",
@@ -161,9 +161,9 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             as="h1"
-            label="Oakland Park, FL — Est. 2017"
+            label="Fort Lauderdale, FL — Est. 2017"
             title="About Sunflo Detailing"
-            subtitle="Sunflo Detailing is a professional auto detailing studio in Oakland Park, Florida, serving South Florida since 2017. From daily drivers to exotics, we handle ceramic coatings, paint correction, PPF, window tinting, vinyl wraps, and full detail packages — all in-house, by the same hands, every time."
+            subtitle="Sunflo Detailing is a professional auto detailing studio in Fort Lauderdale, Florida, serving South Florida since 2017. From daily drivers to exotics, we handle ceramic coatings, paint correction, PPF, window tinting, vinyl wraps, and full detail packages — all in-house, by the same hands, every time."
           />
         </Container>
       </section>
@@ -178,7 +178,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-dark-border">
                 <Image
                   src="/images/about/founder.jpg"
-                  alt="Jason — Owner & Lead Detailer at Sunflo Detailing, Oakland Park FL"
+                  alt="Jason — Owner & Lead Detailer at Sunflo Detailing, Fort Lauderdale FL"
                   fill
                   className="object-cover object-[center_15%]"
                   sizes="(max-width: 1024px) 100vw, 42vw"
@@ -195,7 +195,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-sm border border-brand-500/30 bg-brand-500/10 backdrop-blur-sm">
                   <MapPin size={11} className="text-brand-400 shrink-0" />
                   <span className="text-brand-400 text-[11px] font-medium tracking-wide">
-                    Oakland Park · South Florida
+                    Fort Lauderdale · South Florida
                   </span>
                 </div>
               </div>
@@ -215,14 +215,14 @@ export default function AboutPage() {
 
               <div className="space-y-5 text-gray-300 text-base leading-relaxed">
                 <p>
-                  Jason Girasol started Sunflo Detailing in Oakland Park in 2017 with a straightforward philosophy:
+                  Jason Girasol started Sunflo Detailing in 2017 with a straightforward philosophy:
                   if you&apos;re going to protect someone&apos;s vehicle, do it correctly — or don&apos;t do
                   it at all. He had been detailing cars for several years before opening the studio, working
                   through every mistake and learning curve in private before building the business around
                   what he knew worked. That foundation shows in the consistency of the work today.
                 </p>
                 <p>
-                  The studio at 4708 NE 11th Ave is a climate-controlled, professional-grade detailing bay
+                  The studio at 837 NW 8th Ave in Fort Lauderdale is a climate-controlled, professional-grade detailing bay
                   with purpose-built lighting rigs. That setup is not incidental — it is central to the
                   quality of the output. Paint defects that are invisible under a cloudy sky show up
                   immediately under a high-CRI raking light. Humidity control during ceramic coating cure
@@ -272,7 +272,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex sm:justify-end items-center gap-2 text-gray-400 text-sm">
                   <MapPin size={13} className="text-brand-400 shrink-0" />
-                  <span>4708 NE 11th Ave, Oakland Park, FL 33334</span>
+                  <span>837 NW 8th Ave, Fort Lauderdale, FL 33311</span>
                 </div>
               </div>
             </div>
@@ -481,7 +481,7 @@ export default function AboutPage() {
             <SectionHeading
               label="Where We Serve"
               title="South Florida Service Area"
-              subtitle="Sunflo Detailing serves Oakland Park and surrounding Broward County cities. Drop off at our studio at 4708 NE 11th Ave, or book a mobile appointment and we come to you."
+              subtitle="Sunflo Detailing serves Fort Lauderdale and surrounding Broward County cities. Drop off at our studio at 837 NW 8th Ave, or book a mobile appointment and we come to you."
             />
           </div>
 
@@ -538,7 +538,7 @@ export default function AboutPage() {
       {/* ── Section 7: CTA ──────────────────────────────────────────────── */}
       <CTABanner
         title="Ready to Protect Your Vehicle?"
-        subtitle="Schedule a consultation or drop off at our Oakland Park studio. We'll evaluate your paint and recommend the right service for your vehicle and budget."
+        subtitle="Schedule a consultation or drop off at our Fort Lauderdale studio. We'll evaluate your paint and recommend the right service for your vehicle and budget."
         buttonText="Book Your Service"
         buttonHref="/contact"
       />
