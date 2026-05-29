@@ -77,3 +77,27 @@ export interface ServicePage {
   related: { slug: string; label: string }[];
   ogImage?: string;
 }
+
+export interface BlogSection {
+  heading: string;
+  /** Each string is one paragraph. Supports inline [text](/path) links. */
+  paragraphs: string[];
+  bullets?: string[];
+}
+
+export interface BlogPost {
+  slug: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  excerpt: string;
+  /** ISO date, e.g. "2026-05-28" */
+  publishDate: string;
+  heroImage: string;
+  heroAlt: string;
+  category: "News" | "Guide";
+  readMinutes: number;
+  sections: BlogSection[];
+  faqs?: ServiceFAQ[];
+  related?: { slug: string; label: string }[];
+}
