@@ -114,7 +114,7 @@ export const cityPages: CityPage[] = [
     slug: "pembroke-pines",
     metaTitle: "Auto Detailing in Pembroke Pines, FL",
     metaDescription:
-      "Professional auto detailing in Pembroke Pines — ceramic coating, paint correction, window tinting, and interior details. Mobile-friendly drop-off at our studio in Fort Lauderdale, FL.",
+      "Professional auto detailing in Pembroke Pines — ceramic coating, paint correction, window tinting, and interior details. Drop off at our studio in Fort Lauderdale, FL.",
     h1: "Auto Detailing in Pembroke Pines, FL",
     eyebrow: "Serving Pembroke Pines · ~25–30 min from Fort Lauderdale",
     intro:

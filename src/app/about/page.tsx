@@ -481,7 +481,7 @@ export default function AboutPage() {
             <SectionHeading
               label="Where We Serve"
               title="South Florida Service Area"
-              subtitle="Sunflo Detailing serves Fort Lauderdale and surrounding Broward County cities. Drop off at our studio at 837 NW 8th Ave, or book a mobile appointment and we come to you."
+              subtitle="Sunflo Detailing serves Fort Lauderdale and surrounding Broward County cities. Drop off at our studio at 837 NW 8th Ave."
             />
           </div>
 

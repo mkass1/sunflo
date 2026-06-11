@@ -65,10 +65,10 @@ export default function LocationMap() {
               <Car size={15} className="text-brand-400 shrink-0 mt-0.5" />
               <div>
                 <p className="text-[11px] font-medium tracking-[0.14em] uppercase text-brand-400 mb-1">
-                  Studio or Mobile
+                  Studio Drop-Off
                 </p>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Drop off at our Fort Lauderdale studio, or we come to you. Same professional results either way — call to discuss which works best for your service.
+                  Drop off at our Fort Lauderdale studio — climate-controlled environment built for premium results. Call to schedule your appointment.
                 </p>
               </div>
             </div>

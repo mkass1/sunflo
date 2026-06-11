@@ -263,9 +263,7 @@ export default async function CityPage({
               {/* Map CTA */}
               <div className="p-6 border border-dark-border rounded-sm bg-dark-muted/40 flex flex-col justify-between">
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                  Drop off at our Fort Lauderdale studio, or book a mobile appointment
-                  and we come to you anywhere in South Florida. Call to discuss
-                  which option works best for your service.
+                  Drop off at our Fort Lauderdale studio at 837 NW 8th Ave. Call to discuss your service and schedule a time that works for you.
                 </p>
                 <a
                   href={MAPS_URL}

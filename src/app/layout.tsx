@@ -156,11 +156,11 @@ const localBusinessJsonLd = {
     "https://www.google.com/maps?cid=10210086538245009620",
   ],
   employee: { "@id": `${SITE_URL}#jason` },
-  // Verified 2026-04-21 — update reviewCount monthly to match live GBP
+  // Verified 2026-06-11 — update reviewCount monthly to match live GBP
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: 5.0,
-    reviewCount: 120,
+    reviewCount: 121,
     bestRating: 5,
     worstRating: 1,
   },

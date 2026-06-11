@@ -42,7 +42,7 @@ export default function LocationsPage() {
             as="h1"
             label="Service Areas"
             title="Serving South Florida"
-            subtitle="Drop off at our Fort Lauderdale studio or book a mobile appointment. We serve all of Broward County and beyond."
+            subtitle="Drop off at our Fort Lauderdale studio. We serve all of Broward County and beyond."
           />
         </Container>
       </section>
@@ -87,7 +87,7 @@ export default function LocationsPage() {
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               We serve all of South Florida including Boca Raton, Miami, Lauderdale-by-the-Sea, and more.
-              Drop off at our studio in Fort Lauderdale or contact us to arrange a mobile appointment.
+              Drop off at your convenience at our studio in Fort Lauderdale.
             </p>
             <Link
               href="/contact"

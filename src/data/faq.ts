@@ -122,14 +122,7 @@ export const faqs: FAQ[] = [
     category: "location",
     question: "What areas of South Florida do you serve?",
     answer:
-      "Sunflo Detailing serves all of South Florida — including Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Oakland Park, Pompano Beach, Wilton Manors, Boca Raton, and Miami. You can drop off at our Fort Lauderdale studio or book a mobile appointment and we&apos;ll come to you. Call us to figure out which option works best for your specific service.",
-  },
-  {
-    id: "17",
-    category: "location",
-    question: "Do you offer mobile detailing?",
-    answer:
-      "Yes — Sunflo Detailing offers both studio and mobile appointments. Drop off at our Fort Lauderdale studio at 837 NW 8th Ave, or we can come to your home, office, or wherever your vehicle is located across South Florida. Some services — like multi-stage paint correction and ceramic coating applications — deliver better results in our climate-controlled studio environment, but we offer mobile for a wide range of detailing work. Call or message us and we&apos;ll recommend the right setup for your job.",
+      "Sunflo Detailing serves all of South Florida — including Pembroke Pines, Weston, Davie, Cooper City, Hollywood, Plantation, Oakland Park, Pompano Beach, Wilton Manors, Boca Raton, and Miami. Drop off at our Fort Lauderdale studio at 837 NW 8th Ave and we&apos;ll take it from there.",
   },
   {
     id: "18",
