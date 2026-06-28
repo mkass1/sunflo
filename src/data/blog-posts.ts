@@ -2,6 +2,107 @@ import type { BlogPost } from "@/types";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "is-ceramic-coating-worth-it-florida",
+    title:
+      "Is Ceramic Coating Worth It in Florida? Cost, Benefits & How Long It Lasts",
+    metaTitle:
+      "Is Ceramic Coating Worth It in Florida? Cost & Lifespan | Sunflo",
+    metaDescription:
+      "A Fort Lauderdale detailer's honest guide to ceramic coating in Florida — what it costs, how long it lasts in the sun and salt air, and whether it's worth it for your car.",
+    excerpt:
+      "Florida's sun, salt air, and afternoon storms are brutal on car paint. Here's an honest breakdown of what ceramic coating costs, how long it actually lasts down here, and when it's worth the money.",
+    publishDate: "2026-06-28",
+    heroImage: "/images/gallery/cquartz-black-sedan.jpg",
+    heroAlt:
+      "Water beading on the freshly ceramic-coated hood of a black sedan at the Sunflo Detailing studio",
+    category: "Guide",
+    readMinutes: 6,
+    sections: [
+      {
+        heading: "Why Florida Is Hard on Your Paint",
+        paragraphs: [
+          "South Florida is one of the toughest environments in the country for a car's finish. The UV index sits high nearly year-round, baking the clear coat and fading paint faster than it would up north. Add coastal salt air, daily humidity, lovebug season, sprinkler spotting, and the afternoon storms that leave hard-water marks all over your hood, and a brand-new finish can start looking tired within a couple of summers.",
+          "That's the backdrop for the question we get more than any other: is a ceramic coating actually worth it down here? The short answer is that Florida is exactly the climate where a good coating earns its keep — but only if the paint underneath is prepped correctly and you go in with realistic expectations. Here's the honest version.",
+        ],
+      },
+      {
+        heading: "What a Ceramic Coating Actually Does",
+        paragraphs: [
+          "A [ceramic coating](/services/ceramic-coating) is a liquid polymer that chemically bonds to your vehicle's clear coat and cures into a hard, semi-permanent layer. Unlike a wax or spray sealant that sits on top of the paint for a few weeks, a coating becomes part of the surface — and it doesn't wash away with the next few rounds of soap.",
+          "What you get from that layer is real, but it's specific. A coating is a protection and maintenance upgrade, not a force field. Here's what it does and doesn't do:",
+        ],
+        bullets: [
+          "Repels water and contaminants — rain, mud, and bug splatter sheet off instead of bonding to the paint",
+          "Blocks UV — slows the oxidation and fading that Florida sun causes faster than almost anywhere",
+          "Makes washing easier — dirt releases with far less effort, so you spend less time scrubbing",
+          "Adds deep gloss — the paint looks wetter, glossier, and more reflective",
+          "Does NOT prevent rock chips or deep scratches — that's the job of paint protection film, not a coating",
+        ],
+      },
+      {
+        heading: "How Much Does Ceramic Coating Cost?",
+        paragraphs: [
+          "Pricing depends on the size of the vehicle, the condition of the paint, and how many years of protection you want. At Sunflo, professional ceramic coating packages start at $800 and run through three tiers based on protection duration and the amount of paint prep involved.",
+          "It's worth understanding why prices vary so much across shops. A coating is only as good as the surface it's applied to — it locks in whatever is underneath, swirls and all. A cheap coating quote usually means little or no correction beforehand, which means you're sealing in defects for years. A proper job includes decontamination, a clay bar treatment, and at minimum a light polish before anything is applied. For paint that's already swirled or scratched, that prep step grows into [paint correction](/services/paint-correction), which is priced separately because it's genuinely more work.",
+        ],
+        bullets: [
+          "Entry ceramic coating — from $800, ideal for newer paint in good condition",
+          "Mid and premium tiers — longer-lasting protection with more paint prep included",
+          "Add paint correction first — for older or swirled paint that needs to be corrected before coating",
+          "Final pricing is confirmed after we inspect the paint in person",
+        ],
+      },
+      {
+        heading: "How Long Does It Last in the Florida Sun?",
+        paragraphs: [
+          "Manufacturers love to advertise five-, seven-, even ten-year coatings. In a garage in a mild climate, those numbers are plausible. In South Florida — parked outside, daily sun, salt air, regular rain — it's more realistic to think in terms of how the coating is maintained than the number on the bottle.",
+          "A quality professionally applied coating will give you years of strong hydrophobic performance here, especially if the car is washed correctly and kept out of the worst of the elements when possible. The coating's lifespan drops fast under automatic brush car washes, harsh chemicals, and neglect. Treat it well and it holds; abuse it and even a premium coating wears thin early. We send every coated car home with simple maintenance guidance so you actually get the years you paid for.",
+        ],
+      },
+      {
+        heading: "So — Is It Worth It?",
+        paragraphs: [
+          "For most South Florida drivers, yes — with one condition. A ceramic coating is worth it when it's applied over properly prepped paint by someone who corrects defects first. Applied that way, it protects your finish from the exact things that wreck Florida cars, keeps the car looking glossy for years, and makes upkeep dramatically easier. That's a strong return, especially on a newer car or one you plan to keep.",
+          "Where it's not worth it is the bargain coating sprayed over swirled, contaminated paint with no prep — that just seals in problems and disappoints fast. If your main worry is rock chips and road debris rather than UV and water spotting, [paint protection film](/services/paint-protection-film) may be the better spend, and the two are often combined. The right answer depends on your car, your paint's condition, and how you drive — which is exactly what an in-person inspection is for.",
+        ],
+      },
+      {
+        heading: "Get a Straight Answer for Your Car",
+        paragraphs: [
+          "We've corrected and coated 2,000+ vehicles since 2017, from daily drivers to exotics, out of our [Fort Lauderdale](/locations/fort-lauderdale) studio. We serve Fort Lauderdale, Oakland Park, Wilton Manors, Pompano Beach, Pembroke Pines, Weston, Davie, and the rest of South Florida.",
+          "Want to know whether a coating makes sense for your car — and what it'll actually cost? [Get in touch](/contact) and we'll inspect the paint, tell you honestly what it needs, and quote the right package.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is ceramic coating worth it in Florida?",
+        answer:
+          "For most South Florida drivers, yes — provided the paint is properly prepped and corrected first. Florida's intense UV, salt air, humidity, and frequent rain are exactly what a ceramic coating protects against. It repels water, blocks UV fading, adds gloss, and makes washing far easier. The main exception is a cheap coating applied over swirled, unprepped paint, which just seals in defects.",
+      },
+      {
+        question: "How much does ceramic coating cost?",
+        answer:
+          "At Sunflo Detailing, professional ceramic coating packages start at $800 and run through three tiers based on protection duration, vehicle size, and the amount of paint prep involved. Paint that needs correction before coating is priced separately. Final pricing is confirmed after an in-person inspection of the paint.",
+      },
+      {
+        question: "How long does ceramic coating last in the Florida sun?",
+        answer:
+          "A quality professionally applied coating gives years of strong protection in South Florida, but real-world lifespan depends heavily on maintenance. Correct washing and avoiding automatic brush car washes and harsh chemicals will let a coating last for years; neglect and abuse wear it down early. We provide maintenance guidance so coated cars reach their full lifespan.",
+      },
+      {
+        question: "Does ceramic coating protect against rock chips and scratches?",
+        answer:
+          "No. A ceramic coating protects against UV, water spotting, contaminants, and chemical etching, and it adds gloss and easier cleaning — but it does not stop rock chips or deep scratches. For impact protection on high-risk areas like the hood and bumper, paint protection film (PPF) is the right product, and it's often combined with a coating.",
+      },
+    ],
+    related: [
+      { slug: "ceramic-coating", label: "Ceramic Coating" },
+      { slug: "paint-correction", label: "Paint Correction" },
+      { slug: "paint-protection-film", label: "Paint Protection Film" },
+    ],
+  },
+  {
     slug: "exotic-car-detailing-fort-lauderdale",
     title:
       "Exotic Car Detailing in Fort Lauderdale: Our New Studio & PAID Motorsports Partnership",
